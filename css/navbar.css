@@ -1,0 +1,66 @@
+#menu-container {
+  background-color: #222;
+  border: 25px solid #444;
+  padding: 8% 12%;
+  color: white;
+}
+
+#menu-container h1 {
+  font-size: 70px;
+}
+
+#temp-menu-container {
+  background-color: #222;
+  border: 25px solid #444;
+  padding: 8% 12%;
+  color: white;
+}
+
+#temp-menu-container h1 {
+  font-size: 40px;
+}
+
+.navigation-item {
+  font-size: 35px;
+  font-family: avn-ultra;
+}
+
+.active-item {
+  font-family: avn-regular;
+  color: crimson;
+}
+
+.nav-socials {
+  line-height: 40px;
+  font-size: 40px;
+}
+
+.nav-social-item {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 15px solid #222;
+  margin-top: 10px;
+  background-color: white;
+  text-align: center;
+  color: #222;
+  padding-bottom: 20px;
+  font-size: 25px;
+}
+
+.navigation-action-btn {
+  border: 3px solid white;
+  max-width: 60%;
+  margin: 20px;
+  padding: 10px 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.navigation-desc {
+  display: none;
+}
+
+.active-desc {
+  display: block;
+}

@@ -1,0 +1,327 @@
+@font-face {
+  font-family: "avn-bold";
+  src: url("../assets/fonts/AvenirNext-Bold.ttf");
+  src:
+  url("../assets/fonts/AvenirNext-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "avn-bold-i";
+  src: url("../assets/fonts/AvenirNext-BoldItalic.ttf");
+  src:
+  url("../assets/fonts/AvenirNext-BoldItalic.ttf") format("truetype"),
+  url("../assets/fonts/AvenirNext-BoldItalic.ttf");
+}
+
+@font-face {
+  font-family: "avn-demi";
+  src: url("../assets/fonts/fonts/AvenirNext-DemiBold.ttf");
+  src:
+  url("../assets/fonts/AvenirNext-DemiBold.ttf") format("truetype"),
+  url("../assets/fonts/AvenirNext-DemiBold.ttf");
+}
+
+@font-face {
+  font-family: "avn-demi-i";
+  src: url("../assets/fonts/fonts/AvenirNext-DemiBoldItalic.ttf");
+  src:
+  url("../assets/fonts/AvenirNext-DemiBoldItalic.ttf") format("truetype"),
+  url("../assets/fonts/AvenirNext-DemiBoldItalic.ttf");
+}
+
+@font-face {
+  font-family: "avn-heavy";
+  src: url("../assets/fonts/fonts/AvenirNext-Heavy.ttf");
+  src:
+  url("../assets/fonts/AvenirNext-Heavy.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "avn-heavy-i";
+  src: url("../assets/fonts/AvenirNex-HeavyItalic.ttf");
+  src:
+  url("../assets/fonts/AvenirNext-HeavyItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "avn-i";
+  src: url("../assets/fonts/fonts/AvenirNext-Italic.ttf");
+  src:
+  url("../assets/fonts/AvenirNext-Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "avn-medium";
+  src: url("../assets/fonts/AvenirNext-Medium.ttf");
+  src:
+  url("../assets/fonts/AvenirNext-Medium.ttf") format("truetype"),
+  url("../assets/fonts/AvenirNext-Medium.ttf");
+}
+
+@font-face {
+  font-family: "avn-medium-i";
+  src: url("../assets/fonts/fonts/AvenirNext-MediumItalic.ttf");
+  src:
+  url("../assets/fonts/AvenirNext-MediumItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "avn-regular";
+  src: url("../assets/fonts/fonts/AvenirNext-Regular.ttf");
+  src:
+  url("../assets/fonts/AvenirNext-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "avn-ultra";
+  src: url("../assets/fonts/fonts/AvenirNext-UltraLight.ttf");
+  src:
+  url("../assets/fonts/AvenirNext-UltraLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "avn-ultra-i";
+  src: url("../assets/fonts/fonts/AvenirNext-UltraLightItalic.ttf");
+  src:
+  url("../assets/fonts/AvenirNext-UltraLightItalic.ttf") format("truetype");
+}
+
+/*
+  1. HTML Element Styling
+*/
+html, body{
+  height: 100%;
+  width: 100%;
+  font-family: avn-medium;
+  background-color: crimson;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: crimson;
+  text-decoration: none;
+}
+
+.row {
+  margin: 0px;
+}
+
+/*
+  2. Custom Classes
+*/
+
+.fixed-full {
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  display: none;
+  z-index: 999;
+}
+
+.section-full {
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+  background-color: red;
+}
+
+.windows-hover-ne {
+  position: fixed;
+  z-index: 99;
+  top: 40px;
+  right: 60px;
+  width: 160px;
+  line-height: 25px;
+  padding: 0px 20px;
+  border-radius: 50px;
+}
+
+.navigation {
+  font-size: 40px;
+  color: white;
+  line-height: 10px;
+  z-index: 9999;
+}
+
+.option {
+  cursor: pointer;
+  text-align: center;
+  padding: 15px 0px;
+}
+
+.hover-text{
+  font-size: 15px;
+  line-height: 10px;
+  display: none;
+}
+
+.center-box {
+  padding-top: 6%;
+  width: 100%;
+  text-align: center;
+}
+
+.center-caption {
+  font-family: avn-ultra;
+  margin-bottom: 2%;
+  letter-spacing: 2px;
+  color: white;
+  font-size: 40px;
+  padding: 0px 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.dash-box {
+  width: 60%;
+  margin: 5% 20%;
+  margin-bottom: 0px;
+  height: 150px;
+  border: 3px dotted white;
+  border-radius: 5px;
+  line-height: 150px;
+  font-size: 20px;
+  font-family: avn-regular;
+}
+
+.email-input {
+  padding-right: 0px;
+  text-align: right;
+}
+
+#mce-EMAIL {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  line-height: 20px;
+  font-size: 20px;
+  border: none;
+  text-decoration: none;
+}
+
+#mc-embedded-subscribe {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  line-height: 20px;
+  font-size: 20px;
+  border: none;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+}
+
+#mc_embed_signup {
+  margin-top: 5%;
+}
+
+.email-input {
+  padding-right: 0px;
+  text-align: right;
+}
+
+.email-submit {
+  width: 50%;
+  padding-left: 0px;
+  text-align: left;
+}
+
+.mc-field-group {
+  width: 80%;
+}
+
+.theme {
+  font-size: 30px;
+}
+
+
+/*
+  2. Helpers (One liner Class Shorthands)
+*/
+
+/* Display: */
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.mobile-only {
+  display: none;
+}
+
+/* Background: */
+.black-shadow {
+  text-shadow: -1px 1px 4px rgba(0,0,0,0.2);
+}
+
+.crimson-bg {
+  background-color: crimson;
+}
+
+.white-bg {
+  background-color: white;
+}
+
+/* Text: */
+.black-txt {
+  color: black;
+}
+
+.white-txt {
+  color: white;
+}
+
+/* Font-Size */
+.font-size-20 {
+  font-size: 20px;
+}
+
+.font-size-25 {
+  font-size: 25px;
+}
+
+.font-size-30 {
+  font-size: 30px;
+}
+
+/* Alignment */
+.center-txt {
+  text-align: center;
+}
+
+.right-txt {
+  text-align: right;
+}
+
+.left-txt {
+  text-align: left;
+}
+
+.ultra-txt {
+  font-family: avn-ultra;
+}
+
+.highlighted {
+  font-family: avn-medium;
+  color: crimson;
+}
+
+.email {
+  text-decoration: underline;
+}
+
+.mini-margin {
+  margin-top: 30px;
+}

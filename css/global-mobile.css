@@ -1,0 +1,250 @@
+@media only screen and (max-width: 767px) {
+
+    html, body{
+      height: 100%;
+      width: 100%;
+      font-family: avn-medium;
+      background-color: crimson;
+    }
+
+    body {
+      overflow-x: hidden;
+    }
+
+    a {
+      color: white;
+    }
+
+    a:hover {
+      color: crimson;
+      text-decoration: none;
+    }
+
+    /*
+      2. Custom Classes
+    */
+
+    .fixed-full {
+      position: fixed;
+      display: none;
+      width: 100%;
+      height: 100%;
+      left: 0px
+      right: 0px
+      z-index: 999;
+      overflow: hidden;
+    }
+
+    .section-full {
+      width: 100%;
+      height: 100%;
+      min-height: 500px;
+      background-color: red;
+    }
+
+    .windows-hover-ne {
+      position: fixed;
+      z-index: 99;
+      top: 20px;
+      right: 10px;
+      width: 160px;
+      line-height: 25px;
+      padding: 0px 20px;
+      border-radius: 50px;
+    }
+
+    .navigation {
+      font-size: 40px;
+      color: white;
+      line-height: 10px;
+      z-index: 9999;
+    }
+
+    .option {
+      cursor: pointer;
+      text-align: center;
+      padding: 15px 0px;
+    }
+
+    .hover-text{
+      font-size: 15px;
+      line-height: 10px;
+      display: none;
+    }
+
+    .center-box {
+      padding-top: 6%;
+      width: 100%;
+      text-align: center;
+    }
+
+    .center-caption {
+      font-family: avn-ultra;
+      margin-bottom: 2%;
+      letter-spacing: 2px;
+      color: white;
+      font-size: 25px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .dash-box {
+      width: 60%;
+      margin: 5% 20%;
+      margin-bottom: 0px;
+      height: 150px;
+      border: 3px dotted white;
+      border-radius: 5px;
+      line-height: 150px;
+      font-size: 20px;
+      font-family: avn-regular;
+    }
+
+    #mce-EMAIL {
+      width: 100%;
+      height: 25px;
+      padding: 5px;
+      line-height: 15px;
+      font-size: 12px;
+      border: none;
+      text-decoration: none;
+    }
+
+    #mc-embedded-subscribe {
+      width: 100%;
+      height: 25px;
+      padding: 5px;
+      line-height: 15px;
+      font-size: 12px;
+      border: none;
+      background-color: black;
+      color: white;
+      border: 1px solid white;
+    }
+
+    #mc_embed_signup {
+      margin-top: 5%;
+    }
+
+    .email-input {
+      padding-right: 0px;
+      text-align: right;
+    }
+
+    .email-submit {
+      width: 50%;
+      padding-left: 0px;
+      text-align: left;
+    }
+
+    .mc-field-group {
+      width: 80%;
+    }
+
+    /*
+      3. Shorthands
+    */
+
+    .black-shadow {
+      text-shadow: -1px 1px 4px rgba(0,0,0,0.2);
+    }
+
+    .white-bg {
+      background-color: white;
+    }
+
+    .black-txt {
+      color: black;
+    }
+
+    .white-txt {
+      color: white;
+    }
+
+    .crimson-bg {
+      background-color: crimson;
+    }
+
+    .mobile-font-size-15 {
+      font-size: 15px;
+    }
+
+    .mobile-font-size-20 {
+      font-size: 20px;
+    }
+
+    .center-txt-mobile {
+      text-align: center;
+      margin-top: 5%;
+    }
+
+    .mobile-height-adjust {
+      height: auto;
+      min-height: 96%;
+    }
+
+    .mobile-only {
+      display: block;
+    }
+
+    .left-border-line {
+      border-left: 1px solid black;
+    }
+
+    .highlighted {
+      font-family: avn-medium;
+      color: crimson;
+    }
+
+    .show {
+      display: block;
+    }
+
+    .hide {
+      display: none;
+    }
+
+    .mobile-hide {
+      display: none;
+    }
+
+    .left-txt {
+      text-align: left;
+    }
+
+    .mini-margin {
+      margin-top: 30px;
+    }
+
+    .center-txt {
+      text-align: center;
+    }
+
+    .ultra-txt {
+      font-family: avn-ultra;
+    }
+
+    .font-size-12 {
+      font-size: 12px;
+    }
+
+    .font-size-15 {
+      font-size: 15px;
+    }
+
+    .font-size-20 {
+      font-size: 20px;
+    }
+
+    .font-size-25 {
+      font-size: 25px;
+    }
+
+    .font-size-30 {
+      font-size: 30px;
+    }
+
+    .email {
+      text-decoration: underline;
+    }
+}
