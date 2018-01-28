@@ -2,8 +2,10 @@
   #menu-container {
     background-color: #222;
     border: 25px solid #444;
-    padding: 8% 12%;
+    padding: 8% 5%;
+    padding-top: 15%;
     color: white;
+    text-align: center;
   }
 
   #menu-container h1 {
@@ -22,7 +24,8 @@
   }
 
   .navigation-item {
-    font-size: 35px;
+    font-size: 28px;
+    line-height: 40px;
     font-family: avn-ultra;
   }
 
@@ -52,9 +55,10 @@
   .navigation-action-btn {
     border: 3px solid white;
     max-width: 60%;
-    margin: 20px;
+    margin: auto;
+    margin-top: 20px;
     padding: 10px 20px;
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
   }
 
