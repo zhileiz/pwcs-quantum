@@ -8,6 +8,7 @@
 
   #section-1 {
     background-color: crimson;
+    height: 50%;
   }
 
   .section-1-left {
@@ -17,7 +18,7 @@
 
   .section-1-right {
     background-color: crimson;
-    height: 50%;
+    height: 100%;
   }
 
   .caller-h2 {
@@ -94,26 +95,135 @@
 
   /*
   ================
-  TEMP Section CSS
+  Section  Title CSS
   ================
   */
 
-  #section-temp {
-    background-color: #333;
-    width: 97%;
-    min-height: 96%;
+  .speakers-section-caption {
+    font-size: 25px;
+  }
+
+  .speakers-section-subcaption {
+    font-size: 18px;
+  }
+
+  .panels-section-caption {
+    font-size: 30px;
+  }
+
+  .panels-section-subcaption {
+    font-size: 18px;
+  }
+
+  .mobile-small {
+    font-size: 12px;
+  }
+
+  #section-2 {
+    padding: 5px;
+    max-height: 1200px;
+  }
+
+  /*
+  ============== */
+
+  .speaker-img {
+    border: 5px solid #EFE9E1;
+    box-shadow: -10px 20px crimson;
+    margin-top: 0px;
+    width: 100%;
+    max-width: 240px;
     height: auto;
-    margin: 2%;
-    margin-right: 1%;
   }
 
-  .desc {
-    margin-top: 2%;
-    margin-bottom: 2%
+  .speaker-name {
+    width: 100%;
+    max-width: 240px;
+    text-align: left;
+    color: white;
+    font-family: avn-demi;
+    font-size: 15px;
+    line-height: 20px;
+    margin: auto;
+    letter-spacing: 1px;
   }
 
-  .qr-code-img {
-    margin-top: 10px;
+  .speaker-title {
+    width: 100%;
+    max-width: 240px;
+    text-align: left;
+    line-height: 15px;
+    font-size: 12px;
+    margin: auto;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+  }
+
+  .speaker-item {
+    padding: 0px 8px;
+  }
+
+  /*
+  ================
+  Section  Banner
+  ================
+  */
+
+  .section-banner {
+    height: 150px;
+  }
+
+  .sponsor-caption {
+    padding-top: 15px;
+    font-size: 25px;
+    font-family: avn-demi;
+    letter-spacing: 2px;
+    color: white;
+  }
+
+  .contact-icon {
+    font-size: 30px;
+    color: #E6E6E6;
+    line-height: 30px;
+  }
+
+  .contact-caption {
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+
+
+  .panel-banner {
+    height: 15%;
+  }
+
+  .panel-name {
+    position: absolute;
+    font-family: avn-demi;
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: white;
+    top:auto;
+    bottom: 5px;
+    right: auto;
+    left: 20px;
+    transform: rotate(0deg);
+    transform-origin: auto;
+  }
+
+
+  .panel-desc p {
+    font-size: 14px;
+    font-family: avn-regular;
+    text-align: justify;
+    line-height: 18px;
+  }
+
+  .desc-back-btn {
+    border: 1px solid white;
+    padding: 3px 5px;
     width: 100px;
+    text-align: center;
   }
+
 }

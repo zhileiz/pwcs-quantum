@@ -42,28 +42,56 @@
       background-color: red;
     }
 
+    .section-full-mobile-half {
+      width: 100%;
+      height: 50%;
+      min-height: 200px;
+      background-color: red;
+    }
+
     .windows-hover-ne {
       position: fixed;
       z-index: 99;
-      top: 20px;
-      right: 10px;
-      width: 160px;
+      top: 30px;
+      right: 40px;
+      width: 270px;
       line-height: 25px;
-      padding: 0px 20px;
       border-radius: 50px;
     }
 
     .navigation {
-      font-size: 40px;
+      font-size: 30px;
       color: white;
-      line-height: 10px;
+      line-height: 20px;
       z-index: 9999;
+    }
+
+    #nav-toggle {
+      color: green;
+    }
+
+    #reg {
+      display: none;
+      margin-right: 10px;
+    }
+
+    .button-box {
+      height: 35px;
+      width: 100%;
+      background-color: green;
+      line-height: 35px;
+      font-size: 15px;
+      letter-spacing: 1px;
+      text-align: center;
     }
 
     .option {
       cursor: pointer;
       text-align: center;
-      padding: 15px 0px;
+      padding: 2.5px 0px;
+      height: 35px;
+      width: 40px;
+      margin-left: 5px;
     }
 
     .hover-text{
@@ -187,10 +215,6 @@
       display: block;
     }
 
-    .left-border-line {
-      border-left: 1px solid black;
-    }
-
     .highlighted {
       font-family: avn-medium;
       color: crimson;
@@ -244,7 +268,32 @@
       font-size: 30px;
     }
 
+    .height-70-mobile {
+      height: 70%;
+    }
+
+    .vertical-center-m {
+      position: inherit;
+      top: auto;
+      transform: none;
+    }
+
     .email {
       text-decoration: underline;
     }
+
+    /* Tracy's About */
+    .no-bg {
+      background-color: transparent;
+    }
+
+    .bg{
+      min-width: 100%;
+    }
+
+    .white-paragraph {
+      font-weight: 100;
+      color: rgba(255, 255, 255, 0.5);
+    }
+
 }

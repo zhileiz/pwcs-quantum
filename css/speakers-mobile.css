@@ -1,0 +1,178 @@
+@media only screen and (max-width: 767px) {
+  @font-face {
+    font-family: "ThomasMag-reg";
+    src: url("../../../assets/fonts/Thomas Mag Regular.otf");
+    src:
+    url("../../../assets/fonts/Thomas Mag Regular.otf") format("opentype");
+  }
+
+  html{
+    height: 100%;
+    width: 100%;
+    /*overflow-x: hidden;
+    overflow-y: hidden;*/
+    background-color: white;
+  }
+
+  body{
+    height: 100%;
+    width: 100%;
+    /*overflow: hidden;*/
+    font-size: 50%;
+  }
+
+  .container{
+    max-width: none;
+    margin-left: 8%;
+    width: 84%;
+    margin-right: 8%;
+    padding-top: 3%;
+  }
+
+  .grand-title{
+    color: red;
+    font-size: 400%;
+    padding-bottom: 3%;
+  }
+
+  .caption{
+    margin-bottom: 3%;
+    font-size: 100%;
+    height: 20%;
+  }
+
+  .panel{
+    font-size: 200%;
+    padding-bottom: 3%;
+  }
+
+  .name{
+    color: red;
+    font-size: 120%;
+  }
+
+  .panel-name{
+    color: white;
+    font-size: 120%;
+  }
+
+  .panel-title{
+    color: grey;
+    font-size: 100%;
+  }
+
+  .first-line{
+    text-align: center;
+    color: grey;
+    font-size: 180%
+  }
+
+  .second-line{
+    text-align: center;
+    color: red;
+    font-size: 200%
+  }
+
+  .spacer{
+    padding-top: 3%;
+  }
+
+  .black{
+    width:100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 3%;
+    padding-bottom: 10%;
+    background-color: black;
+    color: white;
+  }
+
+  .image_container1{
+    width: 100%;
+    padding-top: 111%;
+    background-image: url("../assets/images/10.jpg");
+    background-color: rgba(100, 0, 0, 0.2);
+    background-blend-mode: multiply;
+    filter: brightness(120%);
+    background-position: 20% 20%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .image_container2{
+    width: 100%;
+    padding-top: 100%;
+    background-image: url("../assets/images/10.jpg");
+    filter: contrast(70%) brightness(120%);
+    background-position: 20% 20%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .image_container3{
+    width: 100%;
+    padding-top: 100%;
+    background-image: url("../assets/images/10.jpg");
+    background-color: rgba(100, 0, 0, 0.2);
+    background-blend-mode: multiply;
+    filter: brightness(120%);
+    background-position: 20% 20%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .image_container4{
+    width: 100%;
+    padding-top: 50%;
+    background-image: url("../../../assets/images/panels/1.jpg");
+    background-position: 0% 5%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    filter: contrast(80%);
+  }
+
+  .TiankaiCui{
+    background-image: url("../assets/images/TiankaiCui.jpg");
+  }
+
+  .QiyueZhang{
+    background-image: url("../assets/images/QiyueZhang.png");
+  }
+
+  .JizhongZhang{
+    background-image: url("../assets/images/JizhongZhang.png");
+    background-position: 20% 0%;
+  }
+
+  .ShiyiPan{
+    background-image: url("../assets/images/ShiyiPan.png");
+    background-position: 20% 0%;
+  }
+
+  .XinZhou{
+    background-image: url("../assets/images/XinZhou.png");
+    background-position: 20% 0%;
+  }
+
+  .NingLi{
+    background-image: url("../assets/images/NingLi.png");
+    background-position: 20% 0%;
+  }
+  .YimingZhang{
+    background-image: url("../assets/images/YimingZhang.png");
+    background-position: 20% 0%;
+  }
+  .TadSmith{
+    background-image: url("../assets/images/TadSmith.jpg");
+    background-size: 95%;
+    background-position: 20% 5%;
+  }
+  .JiwuWang{
+    background-image: url("../assets/images/JiwuWang.png");
+    background-position: 20% 0%;
+  }
+  .KaijingYan{
+    background-image: url("../assets/images/KaijingYan.png");
+    background-position: 20% 0%;
+  }
+}

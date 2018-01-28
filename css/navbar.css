@@ -48,6 +48,14 @@
   font-size: 25px;
 }
 
+.nav-social-item i {
+  color: black;
+}
+
+.nav-social-item i:hover {
+  color: crimson;
+}
+
 .navigation-action-btn {
   border: 3px solid white;
   max-width: 60%;
