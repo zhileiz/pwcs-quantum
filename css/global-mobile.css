@@ -169,40 +169,6 @@
       width: 80%;
     }
 
-
-    .strip{
-      padding-bottom: 15px;
-    }
-    .number{
-      color: white;
-      font-size: 50px;
-    }
-    .img-responsive img{
-      max-width: 100%;
-      max-height: 100%;
-    }
-    .picture{
-      width: 100%;
-    }
-    .carousel-item{
-      padding-bottom: 10%;
-    }
-    .carousel-indicators li {
-      background-color: #999;
-      background-color: rgba(70,70,70,.25);
-    }
-
-    .carousel-indicators .active {
-      background-color: #444;
-    }
-    .container{
-      padding-top: 10%;
-    }
-    .carousel-item{
-      margin-bottom: 10%;
-    }
-
-
     /*
       3. Shorthands
     */
@@ -225,9 +191,6 @@
 
     .crimson-bg {
       background-color: crimson;
-    }
-    .bg{
-      min-width: 100%;
     }
 
     .mobile-font-size-15 {
@@ -283,10 +246,6 @@
 
     .ultra-txt {
       font-family: avn-ultra;
-    }
-    .white-paragraph {
-      font-weight: 100;
-      color: rgba(255, 255, 255, 0.5);
     }
 
     .font-size-12 {

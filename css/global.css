@@ -259,46 +259,6 @@ a:hover {
 }
 
 
-.strip{
-  padding-bottom: 15px;
-}
-.number{
-  color: white;
-  font-size: 50px;
-}
-.img-responsive img{
-  max-width: 100%;
-  max-height: 100%;
-}
-.picture{
-  width: 100%;
-}
-.carousel-item{
-  padding-bottom: 10%;
-}
-.carousel-indicators li {
-  background-color: #999;
-  background-color: rgba(70,70,70,.25);
-}
-
-.carousel-indicators .active {
-  background-color: #444;
-}
-.intro-container{
-  padding-top: 10%;
-  background-color: white;
-  padding-left: 10%;
-  padding-right: 10%;
-}
-.container {
-  background-color: white;
-  padding-top: 10%;
-}
-.carousel-item{
-  margin-bottom: 10%;
-}
-
-
 /*
   2. Helpers (One liner Class Shorthands)
 */
@@ -341,14 +301,6 @@ a:hover {
   background-color: white;
 }
 
-.no-bg {
-  background-color: transparent;
-}
-
-.bg{
-  min-width: 100%;
-}
-
 /* Text: */
 .black-txt {
   color: black;
@@ -358,14 +310,8 @@ a:hover {
   color: white;
 }
 
-<<<<<<< HEAD
-.white-paragraph {
-  font-weight: 100;
-  color: rgba(255, 255, 255, 0.5);
-=======
 .crimson-txt {
   color: crimson;
->>>>>>> upstream/master
 }
 
 /* Font-Size */
