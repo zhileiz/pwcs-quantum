@@ -1,0 +1,49 @@
+#whitebox{
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 15%;
+}
+#recap{
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  right: 5px;
+}
+#question{
+  color: red;
+  padding-bottom: 30px;
+}
+#whycome{
+  text-align: center;
+  padding-top: 60px;
+  color: rgba(160, 160, 160, 0.5);
+  font-size: 80px;
+}
+#redbox{
+  background-color: crimson;
+  padding: 10%;
+}
+#blackbox{
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10%;
+}
+.my-icon-next{
+  content: url("../assets/images/next-icon.png") !IMPORTANT;
+  position: absolute;
+  bottom: 5%;
+  right: 0;
+  width: 40%;
+}
+.my-icon-prev{
+  content: url("../assets/images/prev-icon.png") !IMPORTANT;
+  position: absolute;
+  bottom: 5%;
+  left: 0;
+  width: 40%;
+}
+.carousel-control-next{
+  max-width: 10%;
+}
+.carousel-control-prev{
+  max-width: 10%;
+}
