@@ -32,6 +32,8 @@ body{
   height: 20%;
 }
 
+<<<<<<< HEAD
+=======
 .caption .name {
   color: white;
   letter-spacing: 1px;
@@ -39,6 +41,7 @@ body{
   line-height:30px;
 }
 
+>>>>>>> upstream/master
 .panel{
   font-size: 200%;
   padding-bottom: 3%;
@@ -89,9 +92,15 @@ body{
   width: 100%;
   padding-top: 111%;
   background-image: url("../assets/images/10.jpg");
+<<<<<<< HEAD
+  background-color: rgba(100, 0, 0, 0.2);
+  background-blend-mode: multiply;
+  filter: brightness(120%);
+=======
   /* background-color: rgba(100, 0, 0, 0.2);
   background-blend-mode: multiply;
   filter: brightness(120%); */
+>>>>>>> upstream/master
   background-position: 20% 20%;
   background-size: 100%;
   background-repeat: no-repeat;
