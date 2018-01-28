@@ -1,6 +1,6 @@
 @media only screen and (max-width: 767px) {
   .header {
-    background: url("../assets/images/dean-bg-mobile.jpg");
+    background: url("../assets/images/mobile-bg.png");
     background-position: right top;
     background-size: cover;
   }
@@ -22,7 +22,7 @@
     line-height: 55px;
     color: white;
     position: absolute;
-    top: 25%;
+    top: 20%;
     left: 10%;
   }
 
@@ -34,13 +34,14 @@
     line-height: 65px;
     color: white;
     position: absolute;
-    top: 35%;
+    top: 30%;
     left: 10%;
   }
 
   .sub-title {
     position: absolute;
-    left: 32%;
+    left: auto;
+    right: 12%;
     bottom: 20%;
     text-align: right;
     font-family: avn-ultra;

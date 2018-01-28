@@ -1,41 +1,30 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Speakers | Wharton Summit</title>
-    <!-- Meta Tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="../assets/favicons/apple-touch-icon-57x57.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/favicons/apple-touch-icon-114x114.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/favicons/apple-touch-icon-72x72.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/favicons/apple-touch-icon-144x144.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="../assets/favicons/apple-touch-icon-60x60.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="../assets/favicons/apple-touch-icon-120x120.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="../assets/favicons/apple-touch-icon-76x76.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../assets/favicons/apple-touch-icon-152x152.png" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/icofont.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="../css/global-mobile.css">
+    <link rel="stylesheet" href="../css/navbar-mobile.css">
+    <link rel="stylesheet" href="../css/header-mobile.css">
+    <link rel="stylesheet" href="../css/footer-mobile.css">
+    <link rel="stylesheet" href="../css/about-mobile.css">
+    <!-- Favicons -->
     <link rel="icon" type="image/png" href="../assets/favicons/favicon-196x196.png" sizes="196x196" />
     <link rel="icon" type="image/png" href="../assets/favicons/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/png" href="../assets/favicons/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="../assets/favicons/favicon-16x16.png" sizes="16x16" />
     <link rel="icon" type="image/png" href="../assets/favicons/favicon-128.png" sizes="128x128" />
-    <meta name="application-name" content="&nbsp;"/>
-    <meta name="msapplication-TileColor" content="#FFFFFF" />
-    <meta name="msapplication-TileImage" content="../assets/favicons/mstile-144x144.png" />
-    <meta name="msapplication-square70x70logo" content="../assets/favicons/mstile-70x70.png" />
-    <meta name="msapplication-square150x150logo" content="../assets/favicons/mstile-150x150.png" />
-    <meta name="msapplication-wide310x150logo" content="../assets/favicons/mstile-310x150.png" />
-    <meta name="msapplication-square310x310logo" content="../assets/favicons/mstile-310x310.png" />
-
-
-    <link rel="stylesheet" href="../css/global.css">
-    <link rel="stylesheet" href="../css/global-mobile.css">
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/icofont.css">
-    <link rel="stylesheet" href="../css/navbar.css">
-    <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../css/about.css">
-    <link rel="stylesheet" href="../css/about-mobile.css">
+    <!-- External JS -->
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.css' rel='stylesheet' />
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108713232-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -43,725 +32,875 @@
       gtag('js', new Date());
       gtag('config', 'UA-108713232-1');
     </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="../js/bootstrap.min.js"></script>
+    <title>PWCS 2018 | About</title>
   </head>
-
   <body>
-    <!--<h1>Speakers<i class="icofont icofont-social-facebook"></i></h1>
-    <h2>TomZ says this is the homepage<i class="icofont icofont-social-facebook"></i></h2>-->
-      <div class="white-bg" id="whitebox">
-        <div class="row row-eq-height">
-          <div class="col-lg-6 col-sm-12 col-xs-12">
-            <h1 class="title">The Largerst<br>
-              Student-run Sino-US Conference<br>
-              in US</h1>
-            <h3 id="recap">2017 Media Recap</h3>
+
+    <!--
+      MARK: Navigation Buttons
+    -->
+
+    <div class="navigation row windows-hover-ne">
+      <div class="col-2 offset-2 right-txt no-padding font-size-30 mobile-only"  id="nav-toggle">
+        <i class="icofont icofont-caret-right"></i>
+      </div>
+      <div class="col-4 offset-md-4 right-txt no-padding">
+        <a href="#">
+          <div class="button-box" id="reg">
+            REGISTER
           </div>
-          <div class="col-lg-6 col-sm-12 hidden-xs">
-            <div class="row">
-              <div class="col-lg-12 col-sm-12">
-                <h4 id="question">What is Penn Wharton China Summit About?</h4>
-              </div>
-              <div class="col-lg-6 col-sm-6">
-                2018 wharton summit introduction 2018 wharton summit introduction
-                2018 wharton summit introduction 2018 wharton summit introduction
-                2018 wharton summit introduction 2018 wharton summit introduction
-                2018 wharton summit introduction 2018 wharton summit introduction
-                2018 wharton summit introduction 2018 wharton summit introduction
-                2018 wharton summit introduction 2018 wharton summit introduction
-              </div>
-              <div class="col-lg-6 col-sm-6">
-                2018 wharton summit introduction 2018 wharton summit introduction
-                2018 wharton summit introduction 2018 wharton summit introduction
-                2018 wharton summit introduction 2018 wharton summit introduction
-                2018 wharton summit introduction 2018 wharton summit introduction
-                2018 wharton summit introduction 2018 wharton summit introduction
-                2018 wharton summit introduction 2018 wharton summit introduction
-              </div>
+        </a>
+      </div>
+      <div class="col-2 right-txt no-padding">
+        <a href="./home-ch.html">
+          <div class="option" id="lang">
+            <i class="icofont icofont-globe"></i><br/>
+            <span class="hover-text">中文</span>
+          </div>
+        </a>
+      </div>
+      <div class="col-2 right-txt no-padding">
+        <div class="option" id="nav">
+          <i class="icofont icofont-navigation-menu"></i><br/>
+          <span class="hover-text">Menu</span>
+        </div>
+      </div>
+    </div>
+
+    <!--
+      MARK: (TODO) Navigation Menu
+    -->
+
+    <div class="fixed-full" id="menu-container">
+      <div class="row">
+        <div class="col-12 col-md-5">
+          <h1>Menu</h1>
+        </div>
+        <div class="mobile-hide col-md-7 row nav-socials">
+          <div class="col-3">
+            <div class="nav-social-item">
+              <a href="https://www.hotmail.com">
+              <i class="icofont icofont-social-facebook"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="nav-social-item">
+              <a href="https://www.hotmail.com">
+              <i class="icofont icofont-social-wechat"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="nav-social-item">
+              <a href="https://www.hotmail.com">
+                <i class="icofont icofont-social-weibo"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="nav-social-item">
+              <a href="https://www.hotmail.com">
+                <i class="icofont icofont-email"></i>
+              </a>
             </div>
           </div>
         </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-5 offset-md-0 row left-txt">
+          <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item active-item" id="item-0"> <a href="./home.html" class="active-item">Home</a> <i class="icofont icofont-dotted-left"></i> </div>
+          <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-4"> <a href="./about.html">About</a> </div>
+          <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-1"> <a href="./panels.html">Panels</a> </div>
+          <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-2"> <a href="./speakers.html">Speakers</a> </div>
+          <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-3"> <a href="./agenda.html">Agenda</a> </div>
+          <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-3"> <a href="./past.html">Past</a> </div>
+          <div class="col-12 navigation-action-btn"> <a href="#">Register</a> </div>
+        </div>
+        <div class="mobile-hide col-md-7 row">
+          <div class="col-12 navigation-desc active-desc" id="desc-0">
+            Stay Tuned, Our Site is Under Maintenance
+          </div>
+          <div class="col-12 navigation-desc" id="desc-1">
+            My Panels
+          </div>
+          <div class="col-12 navigation-desc" id="desc-2">
+            My Speakers
+          </div>
+          <div class="col-12 navigation-desc" id="desc-3">
+            My Partnership
+          </div>
+          <div class="col-12 navigation-desc" id="desc-4">
+            My About
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--
+      MARK: Header
+    -->
+
+    <div class="section-full header" id="section-0">
+      <div class="left-square"></div>
+      <div class="sub-title">April.13th - 15th<br/>University of Pennsylvania</div>
+      <div class="vertical-sub-title mobile-hide">
+        A Summit that builds the bridge between us
+      </div>
+      <div class="vertical-sub-title mobile-only">
+        To Build the Bridge Between Us
+      </div>
+      <div class="page-caption black-shadow">
+         ABOUT <br/> PWCS
+      </div>
+      <div class="bottom-square">
         <div class="row">
-          <div class="col-lg-12 col-sm-12 col-xs-12">
-            <h1 id="whycome">WHY COME?</h1>
+          <div class="col-10 white-txt crimson-bg ls-1" style="letter-spacing: 3px;">REGISTER</div>
+          <div class="col-2 white-bg action-area">
+            <a href="#section-temp" class="black-txt"><i class="icofont icofont-dotted-right"></i></a>
           </div>
         </div>
       </div>
-      <div class="row no-gutters white-bg">
-        <div class="col-lg-6 col-sm-12 col-xs-12">
-          <div id="redbox">
-            <div class="row">
-              <div class="strip">
-                <img src="../assets/images/black.png">
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-2 col-sm-2 col-xs-2 number">01</div>
-              <div class="col-lg-10 col-sm-10 col-xs-10 text">
+    </div>
 
-                <h4>It's time to level up</h4>
-                <p class="white-paragraph">level up level up level up level up level up level up
-                  level up level up level up level up level up level up
-                  level up level up level up level up level up level up
-                  level up level up level up level up level up level up
-                  level up level up level up level up level up level up</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="strip">
-                <img src="../assets/images/black.png">
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-2 col-sm-2 col-xs-2 number">02</div>
-              <div class="col-lg-10 col-sm-10 col-xs-10 text">
-                <h4>Deepen our understanding</h4>
-                <p class="white-paragraph">level up level up level up level up level up level up
-                  level up level up level up level up level up level up
-                  level up level up level up level up level up level up
-                  level up level up level up level up level up level up
-                  level up level up level up level up level up level up</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="strip">
-                <img src="../assets/images/black.png">
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-2 col-sm-2 col-xs-2 number">03</div>
-              <div class="col-lg-10 col-sm-10 col-xs-10 text">
-                <h4>It's time to level up</h4>
-                <p class="white-paragraph">level up level up level up level up level up level up
-                  level up level up level up level up level up level up
-                  level up level up level up level up level up level up
-                  level up level up level up level up level up level up
-                  level up level up level up level up level up level up</p>
-              </div>
-            </div>
-          </div>
+
+<!-- MARK: TRACY! -->
+
+<div class="white-bg" id="whitebox">
+  <div class="row row-eq-height">
+    <div class="col-lg-6 col-sm-12 col-xs-12">
+      <h1 class="title">The Largerst<br>
+        Student-run Sino-US Conference<br>
+        in US</h1>
+      <h3 id="recap">2017 Media Recap</h3>
+    </div>
+    <div class="col-lg-6 col-sm-12 hidden-xs">
+      <div class="row">
+        <div class="col-lg-12 col-sm-12">
+          <h4 id="question">What is Penn Wharton China Summit About?</h4>
         </div>
-        <div class="col-lg-6 col-sm-12 col-xs-12">
-          <div id="blackbox">
-            <div class="row">
-              <div class="strip">
-                <img src="../assets/images/red.png">
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-2 col-sm-2 col-xs-2 number">01</div>
-              <div class="col-lg-10 col-sm-10 col-xs-10 text">
-                <h4 class="white-txt">It's time to level up</h4>
-                <p class="white-paragraph">level up level up level up level up level up level up
-                  level up level up level up level up level up level up
-                  level up level up level up level up level up level up
-                  level up level up level up level up level up level up
-                  level up level up level up level up level up level up</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="strip">
-                <img src="../assets/images/red.png">
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-2 col-sm-2 col-xs-2 number">02</div>
-              <div class="col-lg-10 col-sm-10 col-xs-10 text">
-                <h4 class="white-txt">Deepen our understanding</h4>
-                <p class="white-paragraph">level up level up level up level up level up level up
-                  level up level up level up level up level up level up
-                  level up level up level up level up level up level up
-                  level up level up level up level up level up level up
-                  level up level up level up level up level up level up</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="strip">
-                <img src="../assets/images/red.png">
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-2 col-sm-2 col-xs-2 number">03</div>
-              <div class="col-lg-10 col-sm-10 col-xs-10 text">
-                <h4 class="white-txt">It's time to level up</h4>
-                <p class="white-paragraph">level up level up level up level up level up level up
-                  level up level up level up level up level up level up
-                  level up level up level up level up level up level up
-                  level up level up level up level up level up level up
-                  level up level up level up level up level up level up</p>
-              </div>
-            </div>
+        <div class="col-lg-6 col-sm-6">
+          2018 wharton summit introduction 2018 wharton summit introduction
+          2018 wharton summit introduction 2018 wharton summit introduction
+          2018 wharton summit introduction 2018 wharton summit introduction
+          2018 wharton summit introduction 2018 wharton summit introduction
+          2018 wharton summit introduction 2018 wharton summit introduction
+          2018 wharton summit introduction 2018 wharton summit introduction
+        </div>
+        <div class="col-lg-6 col-sm-6">
+          2018 wharton summit introduction 2018 wharton summit introduction
+          2018 wharton summit introduction 2018 wharton summit introduction
+          2018 wharton summit introduction 2018 wharton summit introduction
+          2018 wharton summit introduction 2018 wharton summit introduction
+          2018 wharton summit introduction 2018 wharton summit introduction
+          2018 wharton summit introduction 2018 wharton summit introduction
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12 col-sm-12 col-xs-12">
+      <h1 id="whycome">WHY COME?</h1>
+    </div>
+  </div>
+</div>
+<div class="row no-gutters white-bg">
+  <div class="col-lg-6 col-sm-12 col-xs-12">
+    <div id="redbox">
+      <div class="row">
+        <div class="strip">
+          <img src="../assets/images/black.png">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-2 col-sm-2 col-xs-2 number">01</div>
+        <div class="col-lg-10 col-sm-10 col-xs-10 text">
+
+          <h4>It's time to level up</h4>
+          <p class="white-paragraph">level up level up level up level up level up level up
+            level up level up level up level up level up level up
+            level up level up level up level up level up level up
+            level up level up level up level up level up level up
+            level up level up level up level up level up level up</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="strip">
+          <img src="../assets/images/black.png">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-2 col-sm-2 col-xs-2 number">02</div>
+        <div class="col-lg-10 col-sm-10 col-xs-10 text">
+          <h4>Deepen our understanding</h4>
+          <p class="white-paragraph">level up level up level up level up level up level up
+            level up level up level up level up level up level up
+            level up level up level up level up level up level up
+            level up level up level up level up level up level up
+            level up level up level up level up level up level up</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="strip">
+          <img src="../assets/images/black.png">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-2 col-sm-2 col-xs-2 number">03</div>
+        <div class="col-lg-10 col-sm-10 col-xs-10 text">
+          <h4>It's time to level up</h4>
+          <p class="white-paragraph">level up level up level up level up level up level up
+            level up level up level up level up level up level up
+            level up level up level up level up level up level up
+            level up level up level up level up level up level up
+            level up level up level up level up level up level up</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-6 col-sm-12 col-xs-12">
+    <div id="blackbox">
+      <div class="row">
+        <div class="strip">
+          <img src="../assets/images/red.png">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-2 col-sm-2 col-xs-2 number">01</div>
+        <div class="col-lg-10 col-sm-10 col-xs-10 text">
+          <h4 class="white-txt">It's time to level up</h4>
+          <p class="white-paragraph">level up level up level up level up level up level up
+            level up level up level up level up level up level up
+            level up level up level up level up level up level up
+            level up level up level up level up level up level up
+            level up level up level up level up level up level up</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="strip">
+          <img src="../assets/images/red.png">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-2 col-sm-2 col-xs-2 number">02</div>
+        <div class="col-lg-10 col-sm-10 col-xs-10 text">
+          <h4 class="white-txt">Deepen our understanding</h4>
+          <p class="white-paragraph">level up level up level up level up level up level up
+            level up level up level up level up level up level up
+            level up level up level up level up level up level up
+            level up level up level up level up level up level up
+            level up level up level up level up level up level up</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="strip">
+          <img src="../assets/images/red.png">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-2 col-sm-2 col-xs-2 number">03</div>
+        <div class="col-lg-10 col-sm-10 col-xs-10 text">
+          <h4 class="white-txt">It's time to level up</h4>
+          <p class="white-paragraph">level up level up level up level up level up level up
+            level up level up level up level up level up level up
+            level up level up level up level up level up level up
+            level up level up level up level up level up level up
+            level up level up level up level up level up level up</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+<div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+
+    <!--carousel indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+      <!--page 1 -->
+      <div class="carousel-item active">
+        <h4>THE TEAM - BOARD</h4>
+        <div class="row">
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
           </div>
         </div>
       </div>
-
-      <div class="container">
-      <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
-
-          <!--carousel indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-          </ol>
-          <div class="carousel-inner" role="listbox">
-            <!--page 1 -->
-            <div class="carousel-item active">
-              <h4>THE TEAM - BOARD</h4>
-              <div class="row">
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-              </div>
-            </div>
-            <!--page 2 -->
-            <div class="carousel-item">
-              <h4>THE TEAM - MARKETING</h4>
-              <div class="row">
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-              </div>
-            </div>
-            <!-- page 3 -->
-            <div class="carousel-item">
-              <h4>THE TEAM - OPERATIONS</h4>
-              <div class="row">
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-              </div>
-            </div>
-            <!-- page 4 -->
-            <div class="carousel-item">
-              <h4>THE TEAM - ADMINISTRATION</h4>
-              <div class="row">
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-              </div>
-            </div>
-            <!-- page 5 -->
-            <div class="carousel-item">
-              <h4>THE TEAM - BUSINESS DEVELOPMENT</h4>
-              <div class="row">
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-6">
-                  <img class="img-fluid" src="../assets/images/unnamed.png">
-                  <h4>Xiao Ming</h4>
-                  <h5>Director of Nothing</h5>
-                </div>
-              </div>
-            </div>
+      <!--page 2 -->
+      <div class="carousel-item">
+        <h4>THE TEAM - MARKETING</h4>
+        <div class="row">
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
           </div>
-          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="my-icon-prev" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="my-icon-next" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
         </div>
       </div>
-      <div class="picture">
-        <img src="../assets/images/jmhh.png" class="bg img-fluid">
+      <!-- page 3 -->
+      <div class="carousel-item">
+        <h4>THE TEAM - OPERATIONS</h4>
+        <div class="row">
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+        </div>
       </div>
+      <!-- page 4 -->
+      <div class="carousel-item">
+        <h4>THE TEAM - ADMINISTRATION</h4>
+        <div class="row">
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+        </div>
+      </div>
+      <!-- page 5 -->
+      <div class="carousel-item">
+        <h4>THE TEAM - BUSINESS DEVELOPMENT</h4>
+        <div class="row">
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-6">
+            <img class="img-fluid" src="../assets/images/unnamed.png">
+            <h4>Xiao Ming</h4>
+            <h5>Director of Nothing</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="my-icon-prev" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="my-icon-next" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+
+
+
+
+    <!--
+      MARK: Footer
+    -->
+
+    <div class="row footer-img" id="section-footer">
+      <div class="col-12" style="text-align:center;">
+        <div class="stop-sign"></div>
+      </div>
+      <div class="col-12">
+        <img src="../assets/images/pwcs-banner.png" width="100%">
+      </div>
+    </div>
+
+    <!--
+      MARK: Page End
+    *******************
+    -->
+
     <script src="../js/bootstrap.min.js"></script>
-    <!--<script> $('.carousel').carousel()</script>-->
-
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="../js/global.js"></script>
+    <script src="../js/home.js"></script>
+    <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoidG9teiIsImEiOiJjajJyN3dyenkwMDVqMndzN3Y0cjk0bTRmIn0.FEEGdubneAr17N9f8ZHh5g';
+    var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/dark-v9',
+    center: [-75.1982673, 39.9529105],
+    zoom: 9
+    });
+    $('.carousel').carousel();
+    </script>
   </body>
 </html>
