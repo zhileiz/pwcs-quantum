@@ -1,0 +1,952 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/icofont.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/panels.css">
+    <link rel="stylesheet" href="../css/global-mobile.css">
+    <link rel="stylesheet" href="../css/navbar-mobile.css">
+    <link rel="stylesheet" href="../css/header-mobile.css">
+    <link rel="stylesheet" href="../css/footer-mobile.css">
+    <link rel="stylesheet" href="../css/panels-mobile.css">
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="../assets/favicons/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="../assets/favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="../assets/favicons/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="../assets/favicons/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="../assets/favicons/favicon-128.png" sizes="128x128" />
+    <!-- External JS -->
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.css' rel='stylesheet' />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108713232-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-108713232-1');
+    </script>
+    <title>PWCS 2018 | Speakers</title>
+  </head>
+  <body>
+
+    <!--
+      MARK: Navigation Buttons
+    -->
+
+    <div class="navigation row windows-hover-ne">
+      <div class="col-2 offset-2 right-txt no-padding font-size-30 mobile-only"  id="nav-toggle">
+        <i class="icofont icofont-caret-right"></i>
+      </div>
+      <div class="col-4 offset-md-4 right-txt no-padding">
+        <a href="#">
+          <div class="button-box" id="reg">
+            REGISTER
+          </div>
+        </a>
+      </div>
+      <div class="col-2 right-txt no-padding">
+        <a href="./home-ch.html">
+          <div class="option" id="lang">
+            <i class="icofont icofont-globe"></i><br/>
+            <span class="hover-text">中文</span>
+          </div>
+        </a>
+      </div>
+      <div class="col-2 right-txt no-padding">
+        <div class="option" id="nav">
+          <i class="icofont icofont-navigation-menu"></i><br/>
+          <span class="hover-text">Menu</span>
+        </div>
+      </div>
+    </div>
+
+    <!--
+      MARK: (TODO) Navigation Menu
+    -->
+
+    <div class="fixed-full" id="menu-container">
+      <div class="row">
+        <div class="col-12 col-md-5">
+          <h1>Menu</h1>
+        </div>
+        <div class="mobile-hide col-md-7 row nav-socials">
+          <div class="col-3">
+            <div class="nav-social-item">
+              <a href="https://www.hotmail.com">
+              <i class="icofont icofont-social-facebook"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="nav-social-item">
+              <a href="https://www.hotmail.com">
+              <i class="icofont icofont-social-wechat"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="nav-social-item">
+              <a href="https://www.hotmail.com">
+                <i class="icofont icofont-social-weibo"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="nav-social-item">
+              <a href="https://www.hotmail.com">
+                <i class="icofont icofont-email"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-5 offset-md-0 row left-txt">
+          <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item active-item" id="item-0"> <a href="./home.html" class="active-item">Home</a> <i class="icofont icofont-dotted-left"></i> </div>
+          <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-4"> <a href="./about.html">About</a> </div>
+          <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-1"> <a href="./panels.html">Panels</a> </div>
+          <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-2"> <a href="./speakers.html">Speakers</a> </div>
+          <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-3"> <a href="./agenda.html">Agenda</a> </div>
+          <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-3"> <a href="./past.html">Past</a> </div>
+          <div class="col-12 navigation-action-btn"> <a href="#">Register</a> </div>
+        </div>
+        <div class="mobile-hide col-md-7 row">
+          <div class="col-12 navigation-desc active-desc" id="desc-0">
+            Stay Tuned, Our Site is Under Maintenance
+          </div>
+          <div class="col-12 navigation-desc" id="desc-1">
+            My Panels
+          </div>
+          <div class="col-12 navigation-desc" id="desc-2">
+            My Speakers
+          </div>
+          <div class="col-12 navigation-desc" id="desc-3">
+            My Partnership
+          </div>
+          <div class="col-12 navigation-desc" id="desc-4">
+            My About
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--
+      MARK: Header
+    -->
+
+    <div class="section-full header" id="section-0">
+      <div class="left-square"></div>
+      <div class="sub-title">April.13th - 15th<br/>University of Pennsylvania</div>
+      <div class="vertical-sub-title mobile-hide">
+        A Summit that builds the bridge between us
+      </div>
+      <div class="vertical-sub-title mobile-only">
+        To Build the Bridge Between Us
+      </div>
+      <div class="page-caption black-shadow">
+         SIX <br/> PANELS
+      </div>
+      <div class="bottom-square">
+        <div class="row">
+          <div class="col-10 white-txt crimson-bg ls-1" style="letter-spacing: 3px;">REGISTER</div>
+          <div class="col-2 white-bg action-area">
+            <a href="#section-temp" class="black-txt"><i class="icofont icofont-dotted-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--
+      TODO: NEW SECTIONS HERE
+    -->
+
+    <!-- Speakers main section -->
+    <div class="main-section">
+      <div class="container">
+
+        <!-- First Panel -->
+        <div class="row">
+          <div class="col">
+              <div class="subtitle fancy"><span>Finance</span>
+              </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="row">
+              <div class="col">
+                <div class="speakers-header">
+                  Introduction:
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu aliquet felis, ac gravida lorem. Mauris et enim non nunc imperdiet varius at vel nisi. Aenean efficitur maximus mi, nec vehicula sapien dictum vel. Suspendisse sagittis justo quis volutpat gravida. Suspendisse nunc odio, dapibus id ornare eget, imperdiet non sem. Proin mattis sed nibh at porttitor. Sed erat dolor, suscipit placerat diam sit amet, congue dapibus lectus. Suspendisse sit amet hendrerit ante. Sed in sollicitudin tortor, eu auctor augue. Curabitur vestibulum velit quis magna dapibus molestie. Morbi cursus, nisl a cursus pulvinar, magna nunc rutrum quam, sed luctus nibh lorem sed diam.</p>
+
+                <p>Proin laoreet congue facilisis. Suspendisse egestas lectus id consequat feugiat. Praesent convallis pretium ex, et laoreet tortor ullamcorper nec. Maecenas sit amet velit consequat, eleifend tortor vel, euismod orci. Etiam blandit eleifend velit, vitae venenatis eros porttitor at. Duis tincidunt diam quis neque commodo, non consequat nisl rhoncus. Donec ullamcorper sagittis tincidunt. Curabitur faucibus odio ac diam mattis, non dictum elit tempus. Praesent dignissim et mauris id vestibulum. Etiam condimentum lorem et purus hendrerit, porttitor elementum dui sagittis. Curabitur eu elementum augue.</p>
+                <p class="time-location"> Location: Annenberg Center</p>
+                <p class="time-location"> Time: April 15th, 10:00am - 12:00am</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="row">
+              <div class="col">
+                <div class="speakers-header">
+                  Speakers:
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <div class="row">
+                  <div class="col">
+                    <div class="image_container2 ShiyiPan generic-speaker-img">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <div class="caption">
+                      <div class="name">
+                        Shiyi Pan
+                      </div>
+                      <div class="title">
+                        Chairman of SOHO China
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="row">
+                  <div class="col">
+                    <div class="image_container2 ShiyiPan generic-speaker-img">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <div class="caption">
+                      <div class="name">
+                        Shiyi Pan
+                      </div>
+                      <div class="title">
+                        Chairman of SOHO China
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-6">
+                <div class="row">
+                  <div class="col">
+                    <div class="image_container2 ShiyiPan generic-speaker-img">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <div class="caption">
+                      <div class="name">
+                        Shiyi Pan
+                      </div>
+                      <div class="title">
+                        Chairman of SOHO China
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="row">
+                  <div class="col">
+                    <div class="image_container2 ShiyiPan generic-speaker-img">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <div class="caption">
+                      <div class="name">
+                        Shiyi Pan
+                      </div>
+                      <div class="title">
+                        Chairman of SOHO China
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Second Panel -->
+
+        <div class="row">
+          <div class="col">
+              <div class="subtitle fancy"><span>International Relations</span>
+              </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <div class="row">
+              <div class="col">
+                <div class="speakers-header">
+                  Introduction:
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu aliquet felis, ac gravida lorem. Mauris et enim non nunc imperdiet varius at vel nisi. Aenean efficitur maximus mi, nec vehicula sapien dictum vel. Suspendisse sagittis justo quis volutpat gravida. Suspendisse nunc odio, dapibus id ornare eget, imperdiet non sem. Proin mattis sed nibh at porttitor. Sed erat dolor, suscipit placerat diam sit amet, congue dapibus lectus. Suspendisse sit amet hendrerit ante. Sed in sollicitudin tortor, eu auctor augue. Curabitur vestibulum velit quis magna dapibus molestie. Morbi cursus, nisl a cursus pulvinar, magna nunc rutrum quam, sed luctus nibh lorem sed diam.</p>
+
+                <p>Proin laoreet congue facilisis. Suspendisse egestas lectus id consequat feugiat. Praesent convallis pretium ex, et laoreet tortor ullamcorper nec. Maecenas sit amet velit consequat, eleifend tortor vel, euismod orci. Etiam blandit eleifend velit, vitae venenatis eros porttitor at. Duis tincidunt diam quis neque commodo, non consequat nisl rhoncus. Donec ullamcorper sagittis tincidunt. Curabitur faucibus odio ac diam mattis, non dictum elit tempus. Praesent dignissim et mauris id vestibulum. Etiam condimentum lorem et purus hendrerit, porttitor elementum dui sagittis. Curabitur eu elementum augue.</p>
+                <p class="time-location"> Location: Annenberg Center</p>
+                <p class="time-location"> Time: April 14th, 3:00pm - 5:00pm</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="row">
+              <div class="col">
+                <div class="speakers-header">
+                  Speakers:
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col">
+                    <div class="image_container2 ShiyiPan generic-speaker-img">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <div class="caption">
+                      <div class="name">
+                        Shiyi Pan
+                      </div>
+                      <div class="title">
+                        Chairman of SOHO China
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col">
+                    <div class="image_container2 ShiyiPan generic-speaker-img">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <div class="caption">
+                      <div class="name">
+                        Shiyi Pan
+                      </div>
+                      <div class="title">
+                        Chairman of SOHO China
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col">
+                    <div class="image_container2 ShiyiPan generic-speaker-img">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <div class="caption">
+                      <div class="name">
+                        Shiyi Pan
+                      </div>
+                      <div class="title">
+                        Chairman of SOHO China
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col">
+                    <div class="image_container2 ShiyiPan generic-speaker-img">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <div class="caption">
+                      <div class="name">
+                        Shiyi Pan
+                      </div>
+                      <div class="title">
+                        Chairman of SOHO China
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Third Panel -->
+
+        <div class="row">
+          <div class="col">
+              <div class="subtitle fancy"><span>Technology</span>
+              </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <div class="row">
+              <div class="col">
+                <div class="speakers-header">
+                  Introduction:
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu aliquet felis, ac gravida lorem. Mauris et enim non nunc imperdiet varius at vel nisi. Aenean efficitur maximus mi, nec vehicula sapien dictum vel. Suspendisse sagittis justo quis volutpat gravida. Suspendisse nunc odio, dapibus id ornare eget, imperdiet non sem. Proin mattis sed nibh at porttitor. Sed erat dolor, suscipit placerat diam sit amet, congue dapibus lectus. Suspendisse sit amet hendrerit ante. Sed in sollicitudin tortor, eu auctor augue. Curabitur vestibulum velit quis magna dapibus molestie. Morbi cursus, nisl a cursus pulvinar, magna nunc rutrum quam, sed luctus nibh lorem sed diam.</p>
+
+                <p>Proin laoreet congue facilisis. Suspendisse egestas lectus id consequat feugiat. Praesent convallis pretium ex, et laoreet tortor ullamcorper nec. Maecenas sit amet velit consequat, eleifend tortor vel, euismod orci. Etiam blandit eleifend velit, vitae venenatis eros porttitor at. Duis tincidunt diam quis neque commodo, non consequat nisl rhoncus. Donec ullamcorper sagittis tincidunt. Curabitur faucibus odio ac diam mattis, non dictum elit tempus. Praesent dignissim et mauris id vestibulum. Etiam condimentum lorem et purus hendrerit, porttitor elementum dui sagittis. Curabitur eu elementum augue.</p>
+                <p class="time-location"> Location: Annenberg Center</p>
+                <p class="time-location"> Time: April 14th, 12:30pm - 14:30pm</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="row">
+              <div class="col">
+                <div class="speakers-header">
+                  Speakers:
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col">
+                    <div class="image_container2 ShiyiPan generic-speaker-img">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <div class="caption">
+                      <div class="name">
+                        Shiyi Pan
+                      </div>
+                      <div class="title">
+                        Chairman of SOHO China
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col">
+                    <div class="image_container2 ShiyiPan generic-speaker-img">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <div class="caption">
+                      <div class="name">
+                        Shiyi Pan
+                      </div>
+                      <div class="title">
+                        Chairman of SOHO China
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col">
+                    <div class="image_container2 ShiyiPan generic-speaker-img">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <div class="caption">
+                      <div class="name">
+                        Shiyi Pan
+                      </div>
+                      <div class="title">
+                        Chairman of SOHO China
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col">
+                    <div class="image_container2 ShiyiPan generic-speaker-img">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <div class="caption">
+                      <div class="name">
+                        Shiyi Pan
+                      </div>
+                      <div class="title">
+                        Chairman of SOHO China
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fourth Panel -->
+
+        <div class="row">
+          <div class="col">
+              <div class="subtitle fancy"><span>Real Estates</span>
+              </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <div class="row">
+              <div class="col">
+                <div class="speakers-header">
+                  Introduction:
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu aliquet felis, ac gravida lorem. Mauris et enim non nunc imperdiet varius at vel nisi. Aenean efficitur maximus mi, nec vehicula sapien dictum vel. Suspendisse sagittis justo quis volutpat gravida. Suspendisse nunc odio, dapibus id ornare eget, imperdiet non sem. Proin mattis sed nibh at porttitor. Sed erat dolor, suscipit placerat diam sit amet, congue dapibus lectus. Suspendisse sit amet hendrerit ante. Sed in sollicitudin tortor, eu auctor augue. Curabitur vestibulum velit quis magna dapibus molestie. Morbi cursus, nisl a cursus pulvinar, magna nunc rutrum quam, sed luctus nibh lorem sed diam.</p>
+
+                <p>Proin laoreet congue facilisis. Suspendisse egestas lectus id consequat feugiat. Praesent convallis pretium ex, et laoreet tortor ullamcorper nec. Maecenas sit amet velit consequat, eleifend tortor vel, euismod orci. Etiam blandit eleifend velit, vitae venenatis eros porttitor at. Duis tincidunt diam quis neque commodo, non consequat nisl rhoncus. Donec ullamcorper sagittis tincidunt. Curabitur faucibus odio ac diam mattis, non dictum elit tempus. Praesent dignissim et mauris id vestibulum. Etiam condimentum lorem et purus hendrerit, porttitor elementum dui sagittis. Curabitur eu elementum augue.</p>
+                <p class="time-location"> Location: Irvine Auditorium</p>
+                <p class="time-location"> Time: April 14th, 12:30pm - 14:30pm</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="row">
+              <div class="col">
+                <div class="speakers-header">
+                  Speakers:
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col">
+                    <div class="image_container2 ShiyiPan generic-speaker-img">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <div class="caption">
+                      <div class="name">
+                        Shiyi Pan
+                      </div>
+                      <div class="title">
+                        Chairman of SOHO China
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col">
+                    <div class="image_container2 ShiyiPan generic-speaker-img">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <div class="caption">
+                      <div class="name">
+                        Shiyi Pan
+                      </div>
+                      <div class="title">
+                        Chairman of SOHO China
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col">
+                    <div class="image_container2 ShiyiPan generic-speaker-img">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <div class="caption">
+                      <div class="name">
+                        Shiyi Pan
+                      </div>
+                      <div class="title">
+                        Chairman of SOHO China
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col">
+                    <div class="image_container2 ShiyiPan generic-speaker-img">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <div class="caption">
+                      <div class="name">
+                        Shiyi Pan
+                      </div>
+                      <div class="title">
+                        Chairman of SOHO China
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fifth Panel -->
+
+        <div class="row">
+          <div class="col">
+              <div class="subtitle fancy"><span>Social</span>
+              </div>
+          </div>
+        </div>
+        <div class="row bottom-margin">
+          <div class="col-md-6 col-sm-12">
+            <div class="row">
+              <div class="col">
+                <div class="speakers-header">
+                  Introduction:
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu aliquet felis, ac gravida lorem. Mauris et enim non nunc imperdiet varius at vel nisi. Aenean efficitur maximus mi, nec vehicula sapien dictum vel. Suspendisse sagittis justo quis volutpat gravida. Suspendisse nunc odio, dapibus id ornare eget, imperdiet non sem. Proin mattis sed nibh at porttitor. Sed erat dolor, suscipit placerat diam sit amet, congue dapibus lectus. Suspendisse sit amet hendrerit ante. Sed in sollicitudin tortor, eu auctor augue. Curabitur vestibulum velit quis magna dapibus molestie. Morbi cursus, nisl a cursus pulvinar, magna nunc rutrum quam, sed luctus nibh lorem sed diam.</p>
+
+                <p>Proin laoreet congue facilisis. Suspendisse egestas lectus id consequat feugiat. Praesent convallis pretium ex, et laoreet tortor ullamcorper nec. Maecenas sit amet velit consequat, eleifend tortor vel, euismod orci. Etiam blandit eleifend velit, vitae venenatis eros porttitor at. Duis tincidunt diam quis neque commodo, non consequat nisl rhoncus. Donec ullamcorper sagittis tincidunt. Curabitur faucibus odio ac diam mattis, non dictum elit tempus. Praesent dignissim et mauris id vestibulum. Etiam condimentum lorem et purus hendrerit, porttitor elementum dui sagittis. Curabitur eu elementum augue.</p>
+                <p class="time-location"> Location: Irvine Auditorium</p>
+                <p class="time-location"> Time: April 14th, 10:00am - 12:00am</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="row">
+              <div class="col">
+                <div class="speakers-header">
+                  Speakers:
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col">
+                    <div class="image_container2 ShiyiPan generic-speaker-img">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <div class="caption">
+                      <div class="name">
+                        Shiyi Pan
+                      </div>
+                      <div class="title">
+                        Chairman of SOHO China
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col">
+                    <div class="image_container2 ShiyiPan generic-speaker-img">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <div class="caption">
+                      <div class="name">
+                        Shiyi Pan
+                      </div>
+                      <div class="title">
+                        Chairman of SOHO China
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col">
+                    <div class="image_container2 ShiyiPan generic-speaker-img">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <div class="caption">
+                      <div class="name">
+                        Shiyi Pan
+                      </div>
+                      <div class="title">
+                        Chairman of SOHO China
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col">
+                    <div class="image_container2 ShiyiPan generic-speaker-img">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <div class="caption">
+                      <div class="name">
+                        Shiyi Pan
+                      </div>
+                      <div class="title">
+                        Chairman of SOHO China
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sixth Panel -->
+
+        <div class="row">
+          <div class="col">
+              <div class="subtitle fancy"><span>Entertainment</span>
+              </div>
+          </div>
+        </div>
+        <div class="row bottom-margin">
+          <div class="col-md-6 col-sm-12">
+            <div class="row">
+              <div class="col">
+                <div class="speakers-header">
+                  Introduction:
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu aliquet felis, ac gravida lorem. Mauris et enim non nunc imperdiet varius at vel nisi. Aenean efficitur maximus mi, nec vehicula sapien dictum vel. Suspendisse sagittis justo quis volutpat gravida. Suspendisse nunc odio, dapibus id ornare eget, imperdiet non sem. Proin mattis sed nibh at porttitor. Sed erat dolor, suscipit placerat diam sit amet, congue dapibus lectus. Suspendisse sit amet hendrerit ante. Sed in sollicitudin tortor, eu auctor augue. Curabitur vestibulum velit quis magna dapibus molestie. Morbi cursus, nisl a cursus pulvinar, magna nunc rutrum quam, sed luctus nibh lorem sed diam.</p>
+
+                <p>Proin laoreet congue facilisis. Suspendisse egestas lectus id consequat feugiat. Praesent convallis pretium ex, et laoreet tortor ullamcorper nec. Maecenas sit amet velit consequat, eleifend tortor vel, euismod orci. Etiam blandit eleifend velit, vitae venenatis eros porttitor at. Duis tincidunt diam quis neque commodo, non consequat nisl rhoncus. Donec ullamcorper sagittis tincidunt. Curabitur faucibus odio ac diam mattis, non dictum elit tempus. Praesent dignissim et mauris id vestibulum. Etiam condimentum lorem et purus hendrerit, porttitor elementum dui sagittis. Curabitur eu elementum augue.</p>
+                <p class="time-location"> Location: Irvine Auditorium</p>
+                <p class="time-location"> Time: April 14th, 3:00pm - 5:00pm</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="row">
+              <div class="col">
+                <div class="speakers-header">
+                  Speakers:
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col">
+                    <div class="image_container2 ShiyiPan generic-speaker-img">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <div class="caption">
+                      <div class="name">
+                        Shiyi Pan
+                      </div>
+                      <div class="title">
+                        Chairman of SOHO China
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col">
+                    <div class="image_container2 ShiyiPan generic-speaker-img">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <div class="caption">
+                      <div class="name">
+                        Shiyi Pan
+                      </div>
+                      <div class="title">
+                        Chairman of SOHO China
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col">
+                    <div class="image_container2 ShiyiPan generic-speaker-img">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <div class="caption">
+                      <div class="name">
+                        Shiyi Pan
+                      </div>
+                      <div class="title">
+                        Chairman of SOHO China
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col">
+                    <div class="image_container2 ShiyiPan generic-speaker-img">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <div class="caption">
+                      <div class="name">
+                        Shiyi Pan
+                      </div>
+                      <div class="title">
+                        Chairman of SOHO China
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+
+
+    <!--
+      MARK: Footer
+    -->
+
+    <div class="row footer-img" id="section-footer">
+      <div class="col-12" style="text-align:center;">
+        <div class="stop-sign"></div>
+      </div>
+      <div class="col-12">
+        <img src="../assets/images/pwcs-banner.png" width="100%">
+      </div>
+    </div>
+
+    <!--
+      MARK: Page End
+    *******************
+    -->
+
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="../js/global.js"></script>
+    <script src="../js/home.js"></script>
+    <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoidG9teiIsImEiOiJjajJyN3dyenkwMDVqMndzN3Y0cjk0bTRmIn0.FEEGdubneAr17N9f8ZHh5g';
+    var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/dark-v9',
+    center: [-75.1982673, 39.9529105],
+    zoom: 9
+    });
+    $('.carousel').carousel();
+    </script>
+  </body>
+</html>
