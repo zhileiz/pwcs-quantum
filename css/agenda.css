@@ -1,0 +1,37 @@
+.section-free {
+  width: 100%;
+  padding: 5% 0%;
+  background-color: white;
+}
+
+.agenda-date {
+  font-size: 45px;
+  font-family: avn-ultra;
+}
+
+.agenda-item {
+  max-width: 300px;
+  margin: 25px auto;
+}
+
+.item-time {
+}
+
+.item-title {
+  margin: 3px 0px;
+  color: crimson;
+  font-size: 20px;
+  font-family: avn-demi;
+}
+
+.item-location {
+  font-family: avn-regular
+}
+
+.item-desc {
+  color: #999;
+  font-family: avn-regular;
+  font-size: 14px;
+  margin-top: 5px;
+  text-align: justify;
+}
