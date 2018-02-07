@@ -54,12 +54,13 @@
 
   .navigation-action-btn {
     border: 3px solid white;
-    max-width: 60%;
+    max-width: 80%;
     margin: auto;
-    margin-top: 20px;
     padding: 10px 20px;
     font-size: 25px;
     text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
   }
 
   .navigation-desc {
@@ -68,5 +69,9 @@
 
   .active-desc {
     display: block;
+  }
+
+  .menu-items {
+    text-align: left;
   }
 }

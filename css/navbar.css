@@ -1,7 +1,7 @@
 #menu-container {
   background-color: #222;
   border: 25px solid #444;
-  padding: 8% 12%;
+  padding: 5% 12%;
   color: white;
 }
 
@@ -40,6 +40,7 @@
   height: 70px;
   border-radius: 50%;
   border: 15px solid #222;
+  margin: auto;
   margin-top: 10px;
   background-color: white;
   text-align: center;
@@ -58,12 +59,26 @@
 
 .navigation-action-btn {
   border: 3px solid white;
-  max-width: 60%;
-  margin: 20px;
+  color: white;
+  max-width: 40%;
   padding: 10px 20px;
   font-size: 30px;
   text-align: center;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
+
+.navigation-action-btn:hover {
+  border: 3px solid crimson;
+  background-color: crimson;
+}
+
+.menu-items {
+  text-align: center;
+}
+
+
 
 .navigation-desc {
   display: none;

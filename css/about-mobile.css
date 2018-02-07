@@ -1,3 +1,4 @@
+@media only screen and (max-width: 767px) {
 #whitebox{
   padding-left: 10%;
   padding-right: 10%;
@@ -26,6 +27,11 @@
 #blackbox{
   background-color: rgba(0, 0, 0, 0.8);
   padding: 10%;
+}
+.header {
+  background: url("../assets/images/mobile-bg-about.jpg");
+  background-position: right top;
+  background-size: cover;
 }
 .my-icon-next{
   content: url("../assets/images/next-icon.png") !IMPORTANT;
@@ -85,4 +91,5 @@
 }
 .carousel-item{
   margin-bottom: 10%;
+}
 }

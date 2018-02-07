@@ -17,6 +17,12 @@
 .item-time {
 }
 
+.header {
+  background: url("../assets/images/agenda-bg.jpg");
+  background-position: right top;
+  background-size: cover;
+}
+
 .item-title {
   margin: 3px 0px;
   color: crimson;

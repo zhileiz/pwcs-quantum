@@ -27,6 +27,11 @@
   background-color: rgba(0, 0, 0, 0.8);
   padding: 10%;
 }
+.header {
+  background: url("../assets/images/about-bg.jpg");
+  background-position: right top;
+  background-size: cover;
+}
 .my-icon-next{
   content: url("../assets/images/next-icon.png") !IMPORTANT;
   position: absolute;

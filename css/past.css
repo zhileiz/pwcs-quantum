@@ -28,6 +28,12 @@
   padding: 10%;
 }
 
+.header {
+  background: url("../assets/images/past-bg.JPG");
+  background-position: right top;
+  background-size: cover;
+}
+
 .year-title {
   font-family: avn-demi;
   font-size: 50px;
@@ -38,7 +44,7 @@
   line-height: 35px;
 }
 
-.year-desc {
+.year-desc p {
   font-family: avn-regular;
   font-size: 15px;
   line-height: 25px;
