@@ -22,10 +22,12 @@
 #redbox{
   background-color: crimson;
   padding: 10%;
+  height: 100%;
 }
 #blackbox{
   background-color: rgba(0, 0, 0, 0.8);
   padding: 10%;
+  height: 100%;
 }
 .my-icon-next{
   content: url("../assets/images/next-icon.png") !IMPORTANT;
@@ -61,6 +63,23 @@
 }
 .picture{
   width: 100%;
+}
+.mid-pos{
+
+}
+.last-pos{
+
+}
+.mid-rs{
+}
+.last-rs{
+
+}
+
+.flex{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .carousel-item{
   padding-bottom: 10%;
