@@ -24,7 +24,7 @@
   }
 
   .navigation-item {
-    font-size: 28px;
+    font-size: 25px;
     line-height: 40px;
     font-family: avn-ultra;
   }
@@ -73,5 +73,30 @@
 
   .menu-items {
     text-align: left;
+  }
+
+  .navigation-mb {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    height: 50px;
+    background-color: #272726;
+    padding: 0px;
+    z-index: 99;
+    line-height: 50px;
+  }
+
+  .m-menu-title {
+    font-size: 30px;
+    font-family: avn-demi;
+    letter-spacing: 2px;
+    margin: 10px 0px;
+  }
+
+  .m-close-btn {
+    text-align: center;
+    margin: 20px auto;
+    font-size: 30px;
   }
 }

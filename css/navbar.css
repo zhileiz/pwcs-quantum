@@ -87,3 +87,34 @@
 .active-desc {
   display: block;
 }
+
+
+.navigation-mb {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  height: 60px;
+  background-color: #272726;
+  z-index: 99;
+  line-height: 60px;
+  color: white;
+  font-size: 16px;
+  font-family: avn-regular;
+  padding: 0px 5%;
+}
+
+.nav-custom-item {
+  float: left;
+  margin: 0px 20px;
+}
+
+.nav-custom-item:hover {
+  color: crimson;
+  border-top: 5px solid crimson;
+}
+
+.register-item {
+  font-family: avn-demi;
+  color: crimson;
+}

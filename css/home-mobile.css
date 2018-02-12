@@ -226,4 +226,9 @@
     text-align: center;
   }
 
+  .mobile-ultra {
+    font-family: avn-ultra;
+    font-size: 18px;
+  }
+
 }

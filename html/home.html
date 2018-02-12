@@ -40,8 +40,8 @@
       MARK: Navigation Buttons
     -->
 
-    <div class="navigation row windows-hover-ne">
-      <div class="col-2 offset-2 right-txt no-padding font-size-30 mobile-only"  id="nav-toggle">
+    <div class="navigation row windows-hover-ne" id="abs-nav">
+      <!-- <div class="col-2 offset-2 right-txt no-padding font-size-30 mobile-only"  id="nav-toggle">
         <i class="icofont icofont-caret-right"></i>
       </div>
       <div class="col-4 offset-md-4 right-txt no-padding">
@@ -50,8 +50,8 @@
             REGISTER
           </div>
         </a>
-      </div>
-      <div class="col-2 right-txt no-padding">
+      </div> -->
+      <div class="col-6 right-txt no-padding">
         <a href="./home-ch.html">
           <div class="option" id="lang">
             <i class="icofont icofont-globe"></i><br/>
@@ -59,10 +59,62 @@
           </div>
         </a>
       </div>
-      <div class="col-2 right-txt no-padding">
+      <div class="col-6 right-txt no-padding">
         <div class="option" id="nav">
           <i class="icofont icofont-navigation-menu"></i><br/>
           <span class="hover-text">Menu</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="navigation windows-hover-ne hide" id="close-nav">
+      <div class="col-6 offset-6 right-txt no-padding">
+        <div id="close">
+          <i class="icofont icofont-close"></i><br/>
+        </div>
+      </div>
+    </div>
+
+    <div class="navigation-mb hide" id="alt-nav">
+
+        <div class="row mobile-hide">
+          <div class="col-7">
+            <img src="../assets/images/banner.png" height="40px"/>
+          </div>
+          <div class="col-5 right-txt">
+            <div class="right-txt" style="float:right;">
+              <div class="nav-custom-item right-txt">
+                <a href="./home-ch.html">
+                  <i class="icofont icofont-globe"></i>
+                   简体中文
+                </a>
+              </div>
+              <div class="nav-custom-item right-txt" id="alt-nav-btn">
+                <i class="icofont icofont-navigation-menu"></i>
+                MENU
+              </div>
+              <div class="nav-custom-item right-txt register-item">
+                REGISTER
+                <i class="icofont icofont-dotted-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <div class="container mobile-only">
+        <div class="row height-100">
+          <div class="col-5 register-item">
+            REGISTER
+            <i class="icofont icofont-dotted-right"></i>
+          </div>
+          <div class="col-3 no-padding right-txt">
+            <i class="icofont icofont-globe"></i>
+            中文
+          </div>
+          <div class="col-4 no-padding center-txt" id="m-alt-nav-btn">
+            <i class="icofont icofont-navigation-menu"></i>
+            Menu
+          </div>
         </div>
       </div>
     </div>
@@ -71,7 +123,7 @@
       MARK:  Navigation Menu
     -->
     <div class="fixed-full" id="menu-container">
-      <div class="vertical-center">
+      <div class="vertical-center mobile-hide">
         <div class="row center-txt">
           <div class="col-12">
             <a href="#"><div class="navigation-action-btn">Register</div></a>
@@ -79,12 +131,12 @@
         </div>
         <div class="row">
           <div class="col-12 col-md-12 row menu-items">
-            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item active-item" id="item-0"> <a href="./home.html" class="active-item">Home</a> <i class="icofont icofont-dotted-left"></i> </div>
-            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-4"> <a href="./about.html">About</a> </div>
-            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-1"> <a href="./panels.html">Panels</a> </div>
-            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-2"> <a href="./panels.html">Speakers</a> </div>
-            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-3"> <a href="./agenda.html">Agenda</a> </div>
-            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-3"> <a href="./past.html">Past</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item active-item" id="item-0"> <a href="/html/home.html" class="active-item">Home</a> <i class="icofont icofont-dotted-left"></i> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-4"> <a href="/html/about.html">About</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-1"> <a href="/html/panels.html">Panels</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-2"> <a href="/html/panels.html">Speakers</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-3"> <a href="/html/agenda.html">Agenda</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-3"> <a href="/html/past.html">Past</a> </div>
           </div>
         </div>
         <div class="row center-txt">
@@ -114,6 +166,31 @@
               <a href="https://www.hotmail.com">
                 <i class="icofont icofont-email"></i>
               </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="verticl-center mobile-only">
+        <div class="row">
+          <div class="col-12 center-txt m-menu-title">
+            MENU
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-12 row menu-items center-txt">
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item active-item" id="item-0"> <a href="/html/home.html" class="active-item">Home</a> <i class="icofont icofont-dotted-left"></i> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-4"> <a href="/html/about.html">About</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-1"> <a href="/html/panels.html">Panels</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-2"> <a href="/html/panels.html">Speakers</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-3"> <a href="/html/agenda.html">Agenda</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-3"> <a href="/html/past.html">Past</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-6"> <a href="/html/past.html">Register</a> </div>
+          </div>
+        </div>
+        <div class="row hide" id="m-close-nav">
+          <div class="col-12 center-txt">
+            <div class="m-close-btn verticl-center">
+              <i class="icofont icofont-close"></i>
             </div>
           </div>
         </div>
@@ -183,7 +260,8 @@
       <!-- RIGHT: -->
       <div class="col-12 col-md-6 section-1-right">
         <div class="section-1-right-middle-content">
-          <strong>PWCS 2018 Theme:
+          <strong>
+            <span class="mobile-ultra">PWCS 2018 Theme:</span>
             <div class="theme">Our Generation</div>
           </strong><br/><br/>
           <p class="mobile-hide">The World to China: Challenges in Supply-Side Reform.<br/>
@@ -375,28 +453,28 @@
     <div class="section-full" id="section-3">
       <div class="row height-100">
         <div class="col-12 col-md-2 panel-banner" id="pbi-1">
-          <img src="../assets/images/panel-finance-tall.png" class="hover-show" id="panel-img-1"/>
-          <h2 class="panel-name">FINANCE</h2>
+          <img src="../assets/images/sketch1.jpg" class="hover-show" id="panel-img-1"/>
+          <h2 class="panel-name" id="panel-title-1">FINANCE</h2>
         </div>
         <div class="col-12 col-md-2 panel-banner" id="pbi-2">
-          <img src="../assets/images/panel-art-tall.png" class="hover-show" id="panel-img-2"/>
-          <h2 class="panel-name">I.R.</h2>
+          <img src="../assets/images/sketch2.jpg" class="hover-show" id="panel-img-2"/>
+          <h2 class="panel-name" id="panel-title-2">I.R.</h2>
         </div>
         <div class="col-12 col-md-2 panel-banner" id="pbi-3">
-          <img src="../assets/images/panel-tech-tall.png" class="hover-show" id="panel-img-3"/>
-          <h2 class="panel-name">TECHNOLOGY</h2>
+          <img src="../assets/images/sketch3.jpg" class="hover-show" id="panel-img-3"/>
+          <h2 class="panel-name" id="panel-title-3">TECHNOLOGY</h2>
         </div>
         <div class="col-12 col-md-2 panel-banner" id="pbi-4">
-          <img src="../assets/images/panel-real-tall.png" class="hover-show" id="panel-img-4"/>
-          <h2 class="panel-name">REAL&nbsp;&nbsp;ESTATES</h2>
+          <img src="../assets/images/sketch4.jpg" class="hover-show" id="panel-img-4"/>
+          <h2 class="panel-name" id="panel-title-4">REAL&nbsp;&nbsp;ESTATES</h2>
         </div>
         <div class="col-12 col-md-2 panel-banner" id="pbi-5">
-          <img src="../assets/images/panel-edu-tall.png" class="hover-show" id="panel-img-5"/>
-          <h2 class="panel-name">SOCIAL</h2>
+          <img src="../assets/images/sketch5.jpg" class="hover-show" id="panel-img-5"/>
+          <h2 class="panel-name" id="panel-title-5">SOCIAL</h2>
         </div>
         <div class="col-12 col-md-2 panel-banner" id="pbi-6">
-          <img src="../assets/images/panel-sport-tall.png" class="hover-show" id="panel-img-6"/>
-          <h2 class="panel-name">ENTERTAINMENT</h2>
+          <img src="../assets/images/sketch6.jpg" class="hover-show" id="panel-img-6"/>
+          <h2 class="panel-name" id="panel-title-6">ENTERTAINMENT</h2>
         </div>
         <div class="col-12 col-md-8 offset-md-1 panel-desc hide" class="hover-show" id="pdesc-1">
           <div class="vertical-center-m">
