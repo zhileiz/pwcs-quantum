@@ -301,6 +301,10 @@ a:hover {
   background-color: white;
 }
 
+.black-bg {
+  background-color: black;
+}
+
 /* Text: */
 .black-txt {
   color: black;
