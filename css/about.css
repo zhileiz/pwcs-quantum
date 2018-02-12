@@ -1,7 +1,12 @@
 #whitebox{
   padding-left: 10%;
   padding-right: 10%;
-  padding-top: 15%;
+  padding-top: 8%;
+}
+
+#whitebox .title{
+  margin-bottom: 20px;
+  font-family: avn-demi;
 }
 #recap{
   text-align: right;
@@ -69,16 +74,13 @@
 .picture{
   width: 100%;
 }
-.mid-pos{
 
+#redbox .reason {
+  min-height: 190px;
 }
-.last-pos{
 
-}
-.mid-rs{
-}
-.last-rs{
-
+#blackbox .reason {
+  min-height: 190px;
 }
 
 .flex{
@@ -103,7 +105,7 @@
   padding-left: 10%;
   padding-right: 10%;
 }
-.container {
+.white-container {
   background-color: white;
   padding-top: 10%;
   display: none;
@@ -116,14 +118,37 @@
   padding: 5%;
 }
 
+.team-profile h2{
+  font-family: avn-demi;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
 .ourProfiles{
   display: none;
-  padding: 5%;
+  padding: 2%;
+}
+
+.ourProfiles h4{
+  font-size: 18px;
+  margin-top: 5px;
+  margin-bottom: 3px;
+}
+
+.ourProfiles h5{
+  font-size: 14px;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  font-family: avn-regular;
+}
+
+.links {
+  margin-bottom: 15px;
 }
 
 .teamBars{
   cursor: pointer;
-  padding-top: 5%;
+  padding-top: 2%;
 }
 
 .active, .teamBars:hover {
@@ -135,6 +160,11 @@
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
+}
+
+.summary {
+  font-family: avn-regular;
+  text-align: justify;
 }
 
 @-webkit-keyframes fade {

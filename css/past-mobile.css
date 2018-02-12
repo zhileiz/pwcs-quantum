@@ -16,9 +16,10 @@
   }
   #whycome{
     text-align: center;
-    padding-top: 60px;
+    padding-top: 20px;
     color: rgba(160, 160, 160, 0.5);
-    font-size: 80px;
+    font-size: 55px;
+    margin-bottom: -5px;
   }
   #redbox{
     background-color: crimson;
@@ -85,11 +86,41 @@
     padding-left: 10%;
     padding-right: 10%;
   }
-  .container {
-    background-color: white;
-    padding-top: 10%;
-  }
+
   .carousel-item{
     margin-bottom: 10%;
   }
+
+  .year-desc p {
+    font-size: 14px;
+  }
+
+  .summit-year {
+    width: 350px;
+    margin: auto;
+    font-family: avn-ultra;
+    font-size: 40px;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+    line-height: 45px;
+  }
+
+  #redbox {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  #blackbox {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .speaker-name {
+    margin-top: 10px;
+  }
+
+  .speaker-title {
+    margin-top: 10px;
+  }
+
 }

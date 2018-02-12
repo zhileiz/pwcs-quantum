@@ -40,8 +40,8 @@
       MARK: Navigation Buttons
     -->
 
-    <div class="navigation row windows-hover-ne">
-      <div class="col-2 offset-2 right-txt no-padding font-size-30 mobile-only"  id="nav-toggle">
+    <div class="navigation row windows-hover-ne" id="abs-nav">
+      <!-- <div class="col-2 offset-2 right-txt no-padding font-size-30 mobile-only"  id="nav-toggle">
         <i class="icofont icofont-caret-right"></i>
       </div>
       <div class="col-4 offset-md-4 right-txt no-padding">
@@ -50,8 +50,8 @@
             REGISTER
           </div>
         </a>
-      </div>
-      <div class="col-2 right-txt no-padding">
+      </div> -->
+      <div class="col-6 right-txt no-padding">
         <a href="./home-ch.html">
           <div class="option" id="lang">
             <i class="icofont icofont-globe"></i><br/>
@@ -59,10 +59,62 @@
           </div>
         </a>
       </div>
-      <div class="col-2 right-txt no-padding">
+      <div class="col-6 right-txt no-padding">
         <div class="option" id="nav">
           <i class="icofont icofont-navigation-menu"></i><br/>
           <span class="hover-text">Menu</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="navigation windows-hover-ne hide" id="close-nav">
+      <div class="col-6 offset-6 right-txt no-padding">
+        <div id="close">
+          <i class="icofont icofont-close"></i><br/>
+        </div>
+      </div>
+    </div>
+
+    <div class="navigation-mb hide" id="alt-nav">
+
+        <div class="row mobile-hide">
+          <div class="col-7">
+            <img src="../assets/images/banner.png" height="40px"/>
+          </div>
+          <div class="col-5 right-txt">
+            <div class="right-txt" style="float:right;">
+              <div class="nav-custom-item right-txt">
+                <a href="./home-ch.html">
+                  <i class="icofont icofont-globe"></i>
+                   简体中文
+                </a>
+              </div>
+              <div class="nav-custom-item right-txt" id="alt-nav-btn">
+                <i class="icofont icofont-navigation-menu"></i>
+                MENU
+              </div>
+              <div class="nav-custom-item right-txt register-item">
+                REGISTER
+                <i class="icofont icofont-dotted-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <div class="container mobile-only">
+        <div class="row height-100">
+          <div class="col-5 register-item">
+            REGISTER
+            <i class="icofont icofont-dotted-right"></i>
+          </div>
+          <div class="col-3 no-padding right-txt">
+            <i class="icofont icofont-globe"></i>
+            中文
+          </div>
+          <div class="col-4 no-padding center-txt" id="m-alt-nav-btn">
+            <i class="icofont icofont-navigation-menu"></i>
+            Menu
+          </div>
         </div>
       </div>
     </div>
@@ -71,7 +123,7 @@
       MARK:  Navigation Menu
     -->
     <div class="fixed-full" id="menu-container">
-      <div class="vertical-center">
+      <div class="vertical-center mobile-hide">
         <div class="row center-txt">
           <div class="col-12">
             <a href="#"><div class="navigation-action-btn">Register</div></a>
@@ -118,10 +170,42 @@
           </div>
         </div>
       </div>
+      <div class="verticl-center mobile-only">
+        <div class="row">
+          <div class="col-12 center-txt m-menu-title">
+            MENU
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-12 row menu-items center-txt">
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-0"> <a href="./home.html">Home</a></div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-4"> <a href="./about.html">About</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-1"> <a href="./panels.html">Panels</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-2"> <a href="./panels.html">Speakers</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item active-item" id="item-5"> <a class="active-item" href="./agenda.html">Agenda</a> <i class="icofont icofont-dotted-left"></i> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-3"> <a href="./past.html">Past</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-6"> <a href="./past.html">Register</a> </div>
+          </div>
+        </div>
+        <div class="row hide" id="m-close-nav">
+          <div class="col-12 center-txt">
+            <div class="m-close-btn verticl-center">
+              <i class="icofont icofont-close"></i>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
 
     <!--
       MARK: Header
+      <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-0"> <a href="./home.html">Home</a></div>
+      <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-4"> <a href="./about.html">About</a> </div>
+      <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-1"> <a href="./panels.html">Panels</a> </div>
+      <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-2"> <a href="./panels.html">Speakers</a> </div>
+      <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item active-item" id="item-5"> <a class="active-item" href="./agenda.html">Agenda</a> <i class="icofont icofont-dotted-left"></i> </div>
+      <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-3"> <a href="./past.html">Past</a> </div>
     -->
 
     <div class="section-full header" id="section-0">
