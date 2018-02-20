@@ -453,30 +453,36 @@
     <div class="section-full" id="section-3">
       <div class="row height-100">
         <div class="col-12 col-md-2 panel-banner" id="pbi-1">
-          <img src="../assets/images/sketch1.jpg" class="hover-show" id="panel-img-1"/>
+          <img src="../assets/images/panel-horizontal-1.jpg" class="hover-show mobile-hide" id="panel-img-1"/>
+          <img src="../assets/images/panel-vertical-1.jpg" class="hover-show mobile-only" id="panel-m-img-1"/>
           <h2 class="panel-name" id="panel-title-1">FINANCE</h2>
         </div>
         <div class="col-12 col-md-2 panel-banner" id="pbi-2">
-          <img src="../assets/images/sketch2.jpg" class="hover-show" id="panel-img-2"/>
+          <img src="../assets/images/panel-horizontal-2.jpg" class="hover-show mobile-hide" id="panel-img-2"/>
+          <img src="../assets/images/panel-vertical-2.jpg" class="hover-show mobile-only" id="panel-m-img-2"/>
           <h2 class="panel-name" id="panel-title-2">I.R.</h2>
         </div>
         <div class="col-12 col-md-2 panel-banner" id="pbi-3">
-          <img src="../assets/images/sketch3.jpg" class="hover-show" id="panel-img-3"/>
+          <img src="../assets/images/panel-horizontal-3.jpg" class="hover-show mobile-hide" id="panel-img-3"/>
+          <img src="../assets/images/panel-vertical-3.jpg" class="hover-show mobile-only" id="panel-m-img-3"/>
           <h2 class="panel-name" id="panel-title-3">TECHNOLOGY</h2>
         </div>
         <div class="col-12 col-md-2 panel-banner" id="pbi-4">
-          <img src="../assets/images/sketch4.jpg" class="hover-show" id="panel-img-4"/>
+          <img src="../assets/images/panel-horizontal-4.jpg" class="hover-show mobile-hide" id="panel-img-4"/>
+          <img src="../assets/images/panel-vertical-4.jpg" class="hover-show mobile-only" id="panel-m-img-4"/>
           <h2 class="panel-name" id="panel-title-4">REAL&nbsp;&nbsp;ESTATES</h2>
         </div>
         <div class="col-12 col-md-2 panel-banner" id="pbi-5">
-          <img src="../assets/images/sketch5.jpg" class="hover-show" id="panel-img-5"/>
+          <img src="../assets/images/panel-horizontal-5.jpg" class="hover-show mobile-hide" id="panel-img-5"/>
+          <img src="../assets/images/panel-vertical-5.jpg" class="hover-show mobile-only" id="panel-m-img-5"/>
           <h2 class="panel-name" id="panel-title-5">SOCIAL</h2>
         </div>
         <div class="col-12 col-md-2 panel-banner" id="pbi-6">
-          <img src="../assets/images/sketch6.jpg" class="hover-show" id="panel-img-6"/>
+          <img src="../assets/images/panel-horizontal-6.jpg" class="hover-show mobile-hide" id="panel-img-6"/>
+          <img src="../assets/images/panel-vertical-6.jpg" class="hover-show mobile-only" id="panel-m-img-6"/>
           <h2 class="panel-name" id="panel-title-6">ENTERTAINMENT</h2>
         </div>
-        <div class="col-12 col-md-8 offset-md-1 panel-desc hide" class="hover-show" id="pdesc-1">
+        <div class="col-12 col-md-8 offset-md-1 panel-desc hide" class="hover-show mobile-hide" id="pdesc-1">
           <div class="vertical-center-m">
             <h1 class="mobile-hide"> FINANCE </h1>
             <p>
@@ -522,7 +528,10 @@
           <div class="vertical-center-m">
             <h1 class="mobile-hide"> REAL ESTATES </h1>
             <p>
-              (We are updating the content for real estates panel.)
+              Recently, the increasing rate of Chinese real estate industry has been declining. While the market started rejuvenating in first-tier metropolis, markets in second or third-tier cities didn’t see as much an improvement. Facing such a stagnant market, how traditional real-estate companies should innovate became a widely-discussed issue.
+            </p>
+            <p>
+              In this pivotal moment of transformation, how should the traditional real estate industry adjust smoothly into this new era? How should companies adapt based on their unique characteristics instead of blindly following the trend? What attitude and expectations does the government have about this new mode? These topics and questions are what the real estate panel will ponder upon.
             </p>
             <div class="desc-back-btn mobile-only" id="descbbtn-4"><i class="icofont icofont-simple-left"></i> BACK</div>
           </div>
@@ -531,7 +540,13 @@
           <div class="vertical-center-m">
             <h1 class="mobile-hide"> SOCIAL </h1>
             <p>
-              (We are updating the content for social panel.)
+              "Our generation" is not only one that excels in innovation and dares to challenge, but also a generation that assumes social responsibility while practicing sustainable development.
+            </p>
+            <p>
+              For enterprises, the realization of social value is as important as that of the commercial value. For public welfare institutions, the linkage of social resources is conducive to the improvement and solution of social problems. For government and media, focusing on social issues, promoting social development, and spreading the positive energy of society have always been needed.
+            </p>
+            <p>
+              Therefore, our panel will invite outstanding entrepreneurs to discuss the status, problems, solutions and future prospects of sustainable development and social responsibility of Chinese enterprises.
             </p>
             <div class="desc-back-btn mobile-only" id="descbbtn-5"><i class="icofont icofont-simple-left"></i> BACK</div>
           </div>
@@ -540,7 +555,10 @@
           <div class="vertical-center-m">
             <h1 class="mobile-hide"> ENTERTAINMENT </h1>
             <p>
-              (We are updating the content for entertainment panel.)
+              As the Chinese entertainment and fashion industries have matured over recent years, talent-centered mode of production and new media-focused means of distribution have and will continue to disrupt Chinese entertainment. In fashion, on the other hand, celebrities have become the “new faces” in fashion shows, advertisements and magazines covers.
+            </p>
+            <p>
+              In the near future, will we be witnesses to a new age of Chinese entertainment? What would already-established figures say about current Chinese fashion and entertainment? How have industry changes influenced their lines of work? What are their opinions on the impact that an increasing influx of capital has on the industry? Moreover, what do they envision for the future of the industry? These questions will be answered at the Entertainment Panel of the Penn Wharton China Summit.
             </p>
             <div class="desc-back-btn mobile-only" id="descbbtn-6"><i class="icofont icofont-simple-left"></i> BACK</div>
           </div>
@@ -734,8 +752,11 @@
     var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/dark-v9',
-    center: [-75.1982673, 39.9529105],
-    zoom: 9
+    center: [-75.17, 39.9429105],
+    zoom: 9,
+    zoomControl: false,
+    scrollZoom: false,
+    interactive: false
     });
     $('.carousel').carousel();
     </script>

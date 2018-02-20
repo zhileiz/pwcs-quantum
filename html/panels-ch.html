@@ -1,0 +1,644 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/icofont.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/panels.css">
+    <link rel="stylesheet" href="../css/global-mobile.css">
+    <link rel="stylesheet" href="../css/navbar-mobile.css">
+    <link rel="stylesheet" href="../css/header-mobile.css">
+    <link rel="stylesheet" href="../css/footer-mobile.css">
+    <link rel="stylesheet" href="../css/panels-mobile.css">
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="../assets/favicons/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="../assets/favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="../assets/favicons/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="../assets/favicons/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="../assets/favicons/favicon-128.png" sizes="128x128" />
+    <!-- External JS -->
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.css' rel='stylesheet' />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108713232-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-108713232-1');
+    </script>
+    <title>PWCS 2018 | Speakers</title>
+  </head>
+  <body>
+
+    <!--
+      MARK: Navigation Buttons
+    -->
+
+    <div class="navigation row windows-hover-ne" id="abs-nav">
+      <!-- <div class="col-2 offset-2 right-txt no-padding font-size-30 mobile-only"  id="nav-toggle">
+        <i class="icofont icofont-caret-right"></i>
+      </div>
+      <div class="col-4 offset-md-4 right-txt no-padding">
+        <a href="#">
+          <div class="button-box" id="reg">
+            REGISTER
+          </div>
+        </a>
+      </div> -->
+      <div class="col-6 right-txt no-padding">
+        <a href="./home-ch.html">
+          <div class="option" id="lang">
+            <i class="icofont icofont-globe"></i><br/>
+            <span class="hover-text">中文</span>
+          </div>
+        </a>
+      </div>
+      <div class="col-6 right-txt no-padding">
+        <div class="option" id="nav">
+          <i class="icofont icofont-navigation-menu"></i><br/>
+          <span class="hover-text">Menu</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="navigation windows-hover-ne hide" id="close-nav">
+      <div class="col-6 offset-6 right-txt no-padding">
+        <div id="close">
+          <i class="icofont icofont-close"></i><br/>
+        </div>
+      </div>
+    </div>
+
+    <div class="navigation-mb hide" id="alt-nav">
+
+        <div class="row mobile-hide">
+          <div class="col-7">
+            <img src="../assets/images/banner.png" height="40px"/>
+          </div>
+          <div class="col-5 right-txt">
+            <div class="right-txt" style="float:right;">
+              <div class="nav-custom-item right-txt">
+                <a href="./home-ch.html">
+                  <i class="icofont icofont-globe"></i>
+                   简体中文
+                </a>
+              </div>
+              <div class="nav-custom-item right-txt" id="alt-nav-btn">
+                <i class="icofont icofont-navigation-menu"></i>
+                MENU
+              </div>
+              <div class="nav-custom-item right-txt register-item">
+                REGISTER
+                <i class="icofont icofont-dotted-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <div class="container mobile-only">
+        <div class="row height-100">
+          <div class="col-5 register-item">
+            REGISTER
+            <i class="icofont icofont-dotted-right"></i>
+          </div>
+          <div class="col-3 no-padding right-txt">
+            <i class="icofont icofont-globe"></i>
+            中文
+          </div>
+          <div class="col-4 no-padding center-txt" id="m-alt-nav-btn">
+            <i class="icofont icofont-navigation-menu"></i>
+            Menu
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--
+      MARK:  Navigation Menu
+    -->
+    <div class="fixed-full" id="menu-container">
+      <div class="vertical-center mobile-hide">
+        <div class="row center-txt">
+          <div class="col-12">
+            <a href="#"><div class="navigation-action-btn">Register</div></a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-12 row menu-items">
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-0"> <a href="./home.html">Home</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-4"> <a href="./about.html">About</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item active-item" id="item-1"> <a class="active-item" href="./panels.html">Panels</a> <i class="icofont icofont-dotted-left"></i> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-2"> <a href="./panels.html">Speakers</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-3"> <a href="./agenda.html">Agenda</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-3"> <a href="./past.html">Past</a> </div>
+          </div>
+        </div>
+        <div class="row center-txt">
+          <div class="col-4 offset-2 col-md-2 offset-md-2 center-txt">
+            <div class="nav-social-item center-txt">
+              <a href="https://www.hotmail.com">
+                <i class="icofont icofont-social-facebook"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-4 col-md-2 center-txt">
+            <div class="nav-social-item center-txt">
+              <a href="https://www.hotmail.com">
+                <i class="icofont icofont-social-wechat"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-4 offset-2 col-md-2 offset-md-0 center-txt">
+            <div class="nav-social-item center-txt">
+              <a href="https://www.hotmail.com">
+                <i class="icofont icofont-social-weibo"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-4 col-md-2 center-txt">
+            <div class="nav-social-item center-txt">
+              <a href="https://www.hotmail.com">
+                <i class="icofont icofont-email"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="verticl-center mobile-only">
+        <div class="row">
+          <div class="col-12 center-txt m-menu-title">
+            MENU
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-12 row menu-items center-txt">
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-0"> <a href="./home.html">Home</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-4"> <a href="./about.html">About</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item active-item" id="item-1"> <a class="active-item" href="./panels.html">Panels</a> <i class="icofont icofont-dotted-left"></i> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-2"> <a href="./panels.html">Speakers</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-3"> <a href="./agenda.html">Agenda</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-3"> <a href="./past.html">Past</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-6"> <a href="./past.html">Register</a> </div>
+          </div>
+        </div>
+        <div class="row hide" id="m-close-nav">
+          <div class="col-12 center-txt">
+            <div class="m-close-btn verticl-center">
+              <i class="icofont icofont-close"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--
+      MARK: Header
+
+      <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-0"> <a href="./home.html">Home</a> </div>
+      <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-4"> <a href="./about.html">About</a> </div>
+      <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item active-item" id="item-1"> <a class="active-item" href="./panels.html">Panels</a> <i class="icofont icofont-dotted-left"></i> </div>
+      <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-2"> <a href="./panels.html">Speakers</a> </div>
+      <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-3"> <a href="./agenda.html">Agenda</a> </div>
+      <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-3"> <a href="./past.html">Past</a> </div>
+    -->
+
+    <div class="section-full header" id="section-0">
+      <div class="left-square"></div>
+      <div class="sub-title">April.13th - 15th<br/>University of Pennsylvania</div>
+      <div class="vertical-sub-title mobile-hide">
+        A Summit that builds the bridge between us
+      </div>
+      <div class="vertical-sub-title mobile-only">
+        To Build the Bridge Between Us
+      </div>
+      <div class="page-caption black-shadow">
+         SIX <br/> PANELS
+      </div>
+      <div class="bottom-square">
+        <div class="row">
+          <div class="col-10 white-txt crimson-bg ls-1" style="letter-spacing: 3px;">REGISTER</div>
+          <div class="col-2 white-bg action-area">
+            <a href="#section-temp" class="black-txt"><i class="icofont icofont-dotted-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--
+      TODO: NEW SECTIONS HERE
+    -->
+    <div class="container">
+      <div class="row panel-nav">
+        <div class="col-12 col-sm-6 col-md-2 center-txt">
+          <a href="#first-panel">Finance</a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-2 center-txt">
+          <a href="#second-panel">Technology</a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-2 center-txt">
+          <a href="#third-panel">I.R.</a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-2 center-txt">
+          <a href="#fourth-panel">Real Estate</a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-2 center-txt">
+          <a href="#fifth-panel">Entertainment</a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-2 center-txt">
+          <a href="#sixth-panel">Social</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Speakers main section -->
+    <div class="main-section">
+      <div class="container">
+
+        <div class="row panel-row" id="first-panel">
+          <div class="col-12 col-md-6">
+            <div class="row">
+              <div class="col">
+                <div class="speakers-header">
+                  Finance Panel:
+                </div>
+              </div>
+            </div>
+            <div class="row panel-desc">
+              <div class="col">
+                <p>For the past decade, low real interest rates, declining productivity growth, and lack of attractive domestic investment opportunities have forced global investors to seek higher returns in less familiar territories. During this process, emerging markets, specifically China, have stood out with its rapid developments in almost all areas of the economy. </p>
+                <p>Private investment in China has been growing consistently for the past several years. As China shifts from an export-driven growth model towards a domestic consumption-driven growth model, there will be more room for global investors to participate. In addition, China is leading the globalization initiative with its “One Belt, One Road” policy, thus creating a myriad of opportunities for other world economies. Meanwhile, the government is encouraging inbound investments with favorable policies. Domestically, the rapid expansion of technology firms is supplying momentum for the world’s largest emerging market.</p>
+                <p>With continuous regulatory changes, constant technological industry disruptions, and rising valuations across major asset classes, how can investors prepare themselves to capitalize on the new wave of opportunities in China? What role should China play in the next generation of Globalization?</p>
+                <p class="time-location"> <i class="icofont icofont-location-pin"></i> &nbsp; Annenberg Center</p>
+                <p class="time-location"> <i class="icofont icofont-calendar"></i> &nbsp; April 15th, 10:00am - 12:00am</p>
+                <p class="time-location"><i class="icofont icofont-globe"></i> &nbsp; Language: Chinese</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="row">
+              <div class="col">
+                <div class="speakers-header">
+                  Speakers:
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <!-- <div class="col-6 center-txt speaker-item">
+                <img class="speaker-img" src="../assets/images/cuitiankai.jpg"/>
+                <div class="speaker-name">Tiankai Cui</div>
+                <div class="speaker-title">Chinese Ambassador</div>
+              </div>
+              <div class="col-6 center-txt speaker-item">
+                <img class="speaker-img" src="../assets/images/lining.jpg"/>
+                <div class="speaker-name">Li Ning</div>
+                <div class="speaker-title">CEO of Li-Ning</div>
+              </div>
+              <div class="col-6 center-txt speaker-item">
+                <img class="speaker-img" src="../assets/images/panshiyi.jpg"/>
+                <div class="speaker-name">Shiyi Pan</div>
+                <div class="speaker-title">CEO of SOHO China</div>
+              </div>
+              <div class="col-6 center-txt speaker-item">
+                <img class="speaker-img" src="../assets/images/leijun2.jpg"/>
+                <div class="speaker-name">Lei Jun</div>
+                <div class="speaker-title">CEO of XiaoMi</div>
+              </div> -->
+              <div class="col-12 center-txt">
+                <img src="../assets/images/speakers-tba.jpg" style="width:100%; max-height: 100%;"/>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Second Panel -->
+        <div class="row panel-row" id="fourth-panel">
+          <div class="col-md-6 col-sm-12">
+            <div class="row">
+              <div class="col">
+                <div class="speakers-header">
+                  Technology Panel:
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <!-- <div class="col-6 center-txt speaker-item">
+                <img class="speaker-img" src="../assets/images/cuitiankai.jpg"/>
+                <div class="speaker-name">Tiankai Cui</div>
+                <div class="speaker-title">Chinese Ambassador</div>
+              </div>
+              <div class="col-6 center-txt speaker-item">
+                <img class="speaker-img" src="../assets/images/lining.jpg"/>
+                <div class="speaker-name">Li Ning</div>
+                <div class="speaker-title">CEO of Li-Ning</div>
+              </div>
+              <div class="col-6 center-txt speaker-item">
+                <img class="speaker-img" src="../assets/images/panshiyi.jpg"/>
+                <div class="speaker-name">Shiyi Pan</div>
+                <div class="speaker-title">CEO of SOHO China</div>
+              </div>
+              <div class="col-6 center-txt speaker-item">
+                <img class="speaker-img" src="../assets/images/leijun2.jpg"/>
+                <div class="speaker-name">Lei Jun</div>
+                <div class="speaker-title">CEO of XiaoMi</div>
+              </div> -->
+              <div class="col-12 center-txt">
+                <img src="../assets/images/speakers-tba.jpg" style="width:100%; max-height: 100%;"/>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="row">
+              <div class="col">
+                <div class="speakers-header">
+                  Introduction:
+                </div>
+              </div>
+            </div>
+            <div class="row panel-desc">
+              <div class="col">
+                <p>In a world of rapid technological changes, a new wave of innovation has seeped into our society and has become interwoven with our everyday lives. A technology led economy is key to helping China’s economy achieve a new norm. With the rise of big data, AI, renewable energy, and internet of things, how can traditional industries adapt and thrive? Can social networks such as Weibo replace traditional media? How can electric cars successfully break into a market filled with established players? What can we learn from Hero Entertainment’s successful entry into the gaming market? What roles will AI and big data play in this round of technology revolution?</p>
+                <p>The conference will focus on the influence cast on the traditional industries by emerging industries that are fuelled by technological innovation. At the same time, we will also explore the dynamics in between the technology firms within the innovation ecosystem. How will these new forces shape the trajectories of technology development in China and in the world? As college students, how should we leverage surrounding opportunities to make a dent in the universe?</p>
+                <p class="time-location"> <i class="icofont icofont-location-pin"></i> &nbsp; Irvine Auditorium</p>
+                <p class="time-location"> <i class="icofont icofont-calendar"></i> &nbsp; April 14th, 12:30pm - 14:30pm</p>
+                <p class="time-location"><i class="icofont icofont-globe"></i> &nbsp; Language: Chinese</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Third Panel -->
+        <div class="row panel-row" id="third-panel">
+          <div class="col-md-6 col-sm-12">
+            <div class="row">
+              <div class="col">
+                <div class="speakers-header">
+                  International Relations Panel:
+                </div>
+              </div>
+            </div>
+            <div class="row panel-desc">
+              <div class="col">
+                <p>As we are approaching a new decade, no relationship will be as important to the twenty-first century as the one between the United States, the largest developed country, and China, the largest developing country. As the world’s two foremost economic superpowers, how can United States and China avoid the “Thucydides Trap”— recurrent conflicts between the existing and rising powers. Under the present wave of globalization, could Sino-US cooperation become the new status quo? Currently, some Americans support U.S. pursuing an integrative strategy with China, as the latter continues to expand its global presence. Some others, with an alternative understanding of China and the dynamics of the world, believe that China’s strategic interests are incompatible with those of the United States. </p>
+                <p>In today's world, how do we make sense of the consensus between the two presidents and the significance of the Belt and Road initiative? From these significant summits and forums, many people, particularly the students, want to know what the takeaways are for them. What will be the impact of the Sino-US relationship on their lives? What can the 21st century students specifically contribute to help strengthen the two countries’ relationship?</p>
+                <p class="time-location"> <i class="icofont icofont-location-pin"></i> &nbsp; Annenberg Center</p>
+                <p class="time-location"> <i class="icofont icofont-calendar"></i> &nbsp; April 14th, 12:30pm - 14:30pm</p>
+                <p class="time-location"><i class="icofont icofont-globe"></i> &nbsp; Language: Chinese</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="row">
+              <div class="col">
+                <div class="speakers-header">
+                  Speakers:
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <!-- <div class="col-6 center-txt speaker-item">
+                <img class="speaker-img" src="../assets/images/cuitiankai.jpg"/>
+                <div class="speaker-name">Tiankai Cui</div>
+                <div class="speaker-title">Chinese Ambassador</div>
+              </div>
+              <div class="col-6 center-txt speaker-item">
+                <img class="speaker-img" src="../assets/images/lining.jpg"/>
+                <div class="speaker-name">Li Ning</div>
+                <div class="speaker-title">CEO of Li-Ning</div>
+              </div>
+              <div class="col-6 center-txt speaker-item">
+                <img class="speaker-img" src="../assets/images/panshiyi.jpg"/>
+                <div class="speaker-name">Shiyi Pan</div>
+                <div class="speaker-title">CEO of SOHO China</div>
+              </div>
+              <div class="col-6 center-txt speaker-item">
+                <img class="speaker-img" src="../assets/images/leijun2.jpg"/>
+                <div class="speaker-name">Lei Jun</div>
+                <div class="speaker-title">CEO of XiaoMi</div>
+              </div> -->
+              <div class="col-12 center-txt">
+                <img src="../assets/images/speakers-tba.jpg" style="width:100%; max-height: 100%;"/>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fourth Panel -->
+        <div class="row panel-row" id="fourth-panel">
+          <div class="col-md-6 col-sm-12">
+            <div class="row">
+              <div class="col">
+                <div class="speakers-header">
+                  Real Estate Panel:
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <!-- <div class="col-6 center-txt speaker-item">
+                <img class="speaker-img" src="../assets/images/cuitiankai.jpg"/>
+                <div class="speaker-name">Tiankai Cui</div>
+                <div class="speaker-title">Chinese Ambassador</div>
+              </div>
+              <div class="col-6 center-txt speaker-item">
+                <img class="speaker-img" src="../assets/images/lining.jpg"/>
+                <div class="speaker-name">Li Ning</div>
+                <div class="speaker-title">CEO of Li-Ning</div>
+              </div>
+              <div class="col-6 center-txt speaker-item">
+                <img class="speaker-img" src="../assets/images/panshiyi.jpg"/>
+                <div class="speaker-name">Shiyi Pan</div>
+                <div class="speaker-title">CEO of SOHO China</div>
+              </div>
+              <div class="col-6 center-txt speaker-item">
+                <img class="speaker-img" src="../assets/images/leijun2.jpg"/>
+                <div class="speaker-name">Lei Jun</div>
+                <div class="speaker-title">CEO of XiaoMi</div>
+              </div> -->
+              <div class="col-12 center-txt">
+                <img src="../assets/images/speakers-tba.jpg" style="width:100%; max-height: 100%;"/>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="row">
+              <div class="col">
+                <div class="speakers-header">
+                  Introduction:
+                </div>
+              </div>
+            </div>
+            <div class="row panel-desc">
+              <div class="col">
+                <p>Recently, the increasing rate of Chinese real estate industry has been declining. The skyrocketing price has resulted in an exceeding supply in the market. As the transaction volume could not keep up with the pace of increasing supply, the government introduced stimulatory policies aiming to invigorate the market by trying to reduce the inventory. However, regional markets responded to such initiatives differently. While the market started rejuvenating in first-tier metropolis, markets in second or third-tier cities didn’t see as much an improvement. Facing such a stagnant market, how traditional real-estate companies should innovate became a widely-discussed issue.</p>
+                <p>Several solutions emerged in this tide of industry transformation that involves changes in the landscapes of multi-function real estate, commercial real estate, as well as both experience-based and public housing projects.</p>
+                <p>In this pivotal moment of transformation, how should the traditional real estate industry adjust smoothly into this new era? How should companies adapt based on their unique characteristics instead of blindly following the trend? What attitude and expectations does the government have about this new mode? These topics and questions are what the real estate panel will ponder upon.</p>
+                <p class="time-location"> <i class="icofont icofont-location-pin"></i> &nbsp; Irvine Auditorium</p>
+                <p class="time-location"> <i class="icofont icofont-calendar"></i> &nbsp; April 14th, 12:30pm - 14:30pm</p>
+                <p class="time-location"><i class="icofont icofont-globe"></i> &nbsp; Language: Chinese</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fifth Panel -->
+
+        <div class="row panel-row" id="fifth-panel">
+          <div class="col-md-6 col-sm-12">
+            <div class="row">
+              <div class="col">
+                <div class="speakers-header">
+                  Entertainment and Fashion Panel:
+                </div>
+              </div>
+            </div>
+            <div class="row panel-desc">
+              <div class="col">
+                <p>As the Chinese entertainment and fashion industries have matured over recent years, the integration of new media and the infusion of capital have greatly impacted their development. Chinese agencies have begun to play increasingly important roles in bringing new talents into the film and entertainment industry; at the same time, established artists continue to find ways to maximize and realize their commercial value. In short, talent-centered mode of production and new media-focused means of distribution have and will continue to disrupt Chinese entertainment. Moreover, consumer demand is also shifting. For example, Iqiyi’s reality show, “Rap of China”, was not only wildly successful, but it was also a show produced following a different line of thinking. In fashion, on the other hand, celebrities have become the “new faces” in fashion shows, advertisements and magazines covers.</p>
+                <p>In the near future, will we be witnesses to a new age of Chinese entertainment? What would already-established figures say about current Chinese fashion and entertainment? How have industry changes influenced their lines of work? What are their opinions on the impact that an increasing influx of capital has on the industry? Moreover, what do they envision for the future of the industry? These questions will be answered at the Entertainment Panel of the Penn Wharton China Summit.</p>
+                <p class="time-location"> <i class="icofont icofont-location-pin"></i> &nbsp; Irvine Auditorium</p>
+                <p class="time-location"> <i class="icofont icofont-calendar"></i> &nbsp; April 14th, 10:00am - 12:00am</p>
+                <p class="time-location"><i class="icofont icofont-globe"></i> &nbsp; Language: Chinese</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="row">
+              <div class="col">
+                <div class="speakers-header">
+                  Speakers:
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <!-- <div class="col-6 center-txt speaker-item">
+                <img class="speaker-img" src="../assets/images/cuitiankai.jpg"/>
+                <div class="speaker-name">Tiankai Cui</div>
+                <div class="speaker-title">Chinese Ambassador</div>
+              </div>
+              <div class="col-6 center-txt speaker-item">
+                <img class="speaker-img" src="../assets/images/lining.jpg"/>
+                <div class="speaker-name">Li Ning</div>
+                <div class="speaker-title">CEO of Li-Ning</div>
+              </div>
+              <div class="col-6 center-txt speaker-item">
+                <img class="speaker-img" src="../assets/images/panshiyi.jpg"/>
+                <div class="speaker-name">Shiyi Pan</div>
+                <div class="speaker-title">CEO of SOHO China</div>
+              </div>
+              <div class="col-6 center-txt speaker-item">
+                <img class="speaker-img" src="../assets/images/leijun2.jpg"/>
+                <div class="speaker-name">Lei Jun</div>
+                <div class="speaker-title">CEO of XiaoMi</div>
+              </div> -->
+              <div class="col-12 center-txt">
+                <img src="../assets/images/speakers-tba.jpg" style="width:100%; max-height: 100%;"/>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sixth Panel -->
+        <div class="row panel-row" id="sixth-panel">
+          <div class="col-md-6 col-sm-12">
+            <div class="row">
+              <div class="col">
+                <div class="speakers-header">
+                  Social Responsibilities Panel:
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <!-- <div class="col-6 center-txt speaker-item">
+                <img class="speaker-img" src="../assets/images/cuitiankai.jpg"/>
+                <div class="speaker-name">Tiankai Cui</div>
+                <div class="speaker-title">Chinese Ambassador</div>
+              </div>
+              <div class="col-6 center-txt speaker-item">
+                <img class="speaker-img" src="../assets/images/lining.jpg"/>
+                <div class="speaker-name">Li Ning</div>
+                <div class="speaker-title">CEO of Li-Ning</div>
+              </div>
+              <div class="col-6 center-txt speaker-item">
+                <img class="speaker-img" src="../assets/images/panshiyi.jpg"/>
+                <div class="speaker-name">Shiyi Pan</div>
+                <div class="speaker-title">CEO of SOHO China</div>
+              </div>
+              <div class="col-6 center-txt speaker-item">
+                <img class="speaker-img" src="../assets/images/leijun2.jpg"/>
+                <div class="speaker-name">Lei Jun</div>
+                <div class="speaker-title">CEO of XiaoMi</div>
+              </div> -->
+              <div class="col-12 center-txt">
+                <img src="../assets/images/speakers-tba.jpg" style="width:100%; max-height: 100%;"/>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="row">
+              <div class="col">
+                <div class="speakers-header">
+                  Introduction:
+                </div>
+              </div>
+            </div>
+            <div class="row panel-desc">
+              <div class="col">
+                <p>"Our generation" is not only one that excels in innovation and dares to challenge, but also a generation that assumes social responsibility while practicing sustainable development. </p>
+                <p>Today, with the transformation of China's economic structure, many social problems have started to come about, and the implementation of the national 13th five-year plan and sustainable development goals faces many opportunities and challenges. With the efforts of all the explorers and practitioners, as well as the integration of business, media, science and technology, innovation and culture, China's philanthropic industry is developing in a positive way. For enterprises, the realization of social value is as important as that of the commercial value. The public welfare element can aid the construction of enterprise brand and culture, the promotion of social influence and the transformation of strategy. For public welfare institutions, the linkage of social resources is conducive to the improvement and solution of social problems. For government and media, focusing on social issues, promoting social development, and spreading the positive energy of society have always been needed.
+                </p>
+                <p>Therefore, our panel will invite outstanding entrepreneurs to discuss the status, problems, solutions and future prospects of sustainable development and social responsibility of Chinese enterprises. </p>
+                <p class="time-location"> <i class="icofont icofont-location-pin"></i> &nbsp; Irvine Auditorium</p>
+                <p class="time-location"> <i class="icofont icofont-calendar"></i> &nbsp; April 14th, 3:00pm - 5:00pm</p>
+                <p class="time-location"><i class="icofont icofont-globe"></i> &nbsp; Language: English</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+
+
+    <!--
+      MARK: Footer
+    -->
+
+    <div class="row footer-img" id="section-footer">
+      <div class="col-12" style="text-align:center;">
+        <div class="stop-sign"></div>
+      </div>
+      <div class="col-12">
+        <img src="../assets/images/pwcs-banner.png" width="100%">
+      </div>
+    </div>
+
+    <!--
+      MARK: Page End
+    *******************
+    -->
+
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="../js/global.js"></script>
+    <script src="../js/home.js"></script>
+    <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoidG9teiIsImEiOiJjajJyN3dyenkwMDVqMndzN3Y0cjk0bTRmIn0.FEEGdubneAr17N9f8ZHh5g';
+    var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/dark-v9',
+    center: [-75.1982673, 39.9529105],
+    zoom: 9
+    });
+    $('.carousel').carousel();
+    </script>
+  </body>
+</html>

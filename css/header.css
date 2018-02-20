@@ -1,5 +1,5 @@
 .header {
-  background: url("../assets/images/dean-bg.jpg");
+  background: url("../assets/images/bg-best.jpg");
   background-position: right top;
   background-size: cover;
 }
@@ -16,13 +16,13 @@
 .site-caption {
   font-size: 60px;
   font-family: avn-demi;
-  letter-spacing: 3px;
+  letter-spacing: 4px;
   text-transform: uppercase;
-  line-height: 75px;
+  line-height: 80px;
   color: white;
   position: absolute;
   top: 15%;
-  left: 12%;
+  left: 15%;
 }
 
 .page-caption {

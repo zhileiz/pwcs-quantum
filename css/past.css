@@ -25,7 +25,6 @@
   color: white;
   font-family: avn-regular;
   line-height: 30px;
-  height: 100%;
 }
 
 #redbox .speaker-name{
@@ -44,7 +43,7 @@
 }
 
 .header {
-  background: url("../assets/images/past-bg.JPG");
+  background: url("../assets/images/bg-past.JPG");
   background-position: right top;
   background-size: cover;
 }

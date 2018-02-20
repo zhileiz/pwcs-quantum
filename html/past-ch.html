@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/icofont.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/past.css">
+    <link rel="stylesheet" href="../css/global-mobile.css">
+    <link rel="stylesheet" href="../css/navbar-mobile.css">
+    <link rel="stylesheet" href="../css/header-mobile.css">
+    <link rel="stylesheet" href="../css/footer-mobile.css">
+    <link rel="stylesheet" href="../css/past-mobile.css">
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="../assets/favicons/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="../assets/favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="../assets/favicons/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="../assets/favicons/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="../assets/favicons/favicon-128.png" sizes="128x128" />
+    <!-- External JS -->
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.css' rel='stylesheet' />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108713232-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-108713232-1');
+    </script>
+    <title>PWCS 2018 | Past Summits</title>
+  </head>
+  <body>
+
+    <!--
+      MARK: Navigation Buttons
+    -->
+    <div class="navigation row windows-hover-ne" id="abs-nav">
+      <!-- <div class="col-2 offset-2 right-txt no-padding font-size-30 mobile-only"  id="nav-toggle">
+        <i class="icofont icofont-caret-right"></i>
+      </div>
+      <div class="col-4 offset-md-4 right-txt no-padding">
+        <a href="#">
+          <div class="button-box" id="reg">
+            REGISTER
+          </div>
+        </a>
+      </div> -->
+      <div class="col-6 right-txt no-padding">
+        <a href="./home-ch.html">
+          <div class="option" id="lang">
+            <i class="icofont icofont-globe"></i><br/>
+            <span class="hover-text">中文</span>
+          </div>
+        </a>
+      </div>
+      <div class="col-6 right-txt no-padding">
+        <div class="option" id="nav">
+          <i class="icofont icofont-navigation-menu"></i><br/>
+          <span class="hover-text">Menu</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="navigation windows-hover-ne hide" id="close-nav">
+      <div class="col-6 offset-6 right-txt no-padding">
+        <div id="close">
+          <i class="icofont icofont-close"></i><br/>
+        </div>
+      </div>
+    </div>
+
+    <div class="navigation-mb hide" id="alt-nav">
+
+        <div class="row mobile-hide">
+          <div class="col-7">
+            <img src="../assets/images/banner.png" height="40px"/>
+          </div>
+          <div class="col-5 right-txt">
+            <div class="right-txt" style="float:right;">
+              <div class="nav-custom-item right-txt">
+                <a href="./home-ch.html">
+                  <i class="icofont icofont-globe"></i>
+                   简体中文
+                </a>
+              </div>
+              <div class="nav-custom-item right-txt" id="alt-nav-btn">
+                <i class="icofont icofont-navigation-menu"></i>
+                MENU
+              </div>
+              <div class="nav-custom-item right-txt register-item">
+                REGISTER
+                <i class="icofont icofont-dotted-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <div class="container mobile-only">
+        <div class="row height-100">
+          <div class="col-5 register-item">
+            REGISTER
+            <i class="icofont icofont-dotted-right"></i>
+          </div>
+          <div class="col-3 no-padding right-txt">
+            <i class="icofont icofont-globe"></i>
+            中文
+          </div>
+          <div class="col-4 no-padding center-txt" id="m-alt-nav-btn">
+            <i class="icofont icofont-navigation-menu"></i>
+            Menu
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--
+      MARK:  Navigation Menu
+    -->
+    <div class="fixed-full" id="menu-container">
+      <div class="vertical-center mobile-hide">
+        <div class="row center-txt">
+          <div class="col-12">
+            <a href="#"><div class="navigation-action-btn">Register</div></a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-12 row menu-items">
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-0"> <a href="./home.html">Home</a></div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-4"> <a href="./about.html">About</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-1"> <a href="./panels.html">Panels</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-2"> <a href="./panels.html">Speakers</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-3"> <a href="./agenda.html">Agenda</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item active-item" id="item-5"> <a class="active-item" href="./past.html">Past</a> <i class="icofont icofont-dotted-left"></i> </div>
+          </div>
+        </div>
+        <div class="row center-txt">
+          <div class="col-4 offset-2 col-md-2 offset-md-2 center-txt">
+            <div class="nav-social-item center-txt">
+              <a href="https://www.hotmail.com">
+                <i class="icofont icofont-social-facebook"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-4 col-md-2 center-txt">
+            <div class="nav-social-item center-txt">
+              <a href="https://www.hotmail.com">
+                <i class="icofont icofont-social-wechat"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-4 offset-2 col-md-2 offset-md-0 center-txt">
+            <div class="nav-social-item center-txt">
+              <a href="https://www.hotmail.com">
+                <i class="icofont icofont-social-weibo"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-4 col-md-2 center-txt">
+            <div class="nav-social-item center-txt">
+              <a href="https://www.hotmail.com">
+                <i class="icofont icofont-email"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="verticl-center mobile-only">
+        <div class="row">
+          <div class="col-12 center-txt m-menu-title">
+            MENU
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-12 row menu-items center-txt">
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-0"> <a href="./home.html">Home</a></div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-4"> <a href="./about.html">About</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-1"> <a href="./panels.html">Panels</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-2"> <a href="./panels.html">Speakers</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-3"> <a href="./agenda.html">Agenda</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item active-item" id="item-5"> <a class="active-item" href="./past.html">Past</a> <i class="icofont icofont-dotted-left"></i> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-6"> <a href="./past.html">Register</a> </div>
+          </div>
+        </div>
+        <div class="row hide" id="m-close-nav">
+          <div class="col-12 center-txt">
+            <div class="m-close-btn verticl-center">
+              <i class="icofont icofont-close"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--
+      MARK: Header
+      <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-0"> <a href="./home.html">Home</a></div>
+      <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-4"> <a href="./about.html">About</a> </div>
+      <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-1"> <a href="./panels.html">Panels</a> </div>
+      <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-2"> <a href="./panels.html">Speakers</a> </div>
+      <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-3"> <a href="./agenda.html">Agenda</a> </div>
+      <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item active-item" id="item-5"> <a class="active-item" href="./past.html">Past</a> <i class="icofont icofont-dotted-left"></i> </div>
+
+    -->
+
+    <div class="section-full header" id="section-0">
+      <div class="left-square"></div>
+      <div class="sub-title">April.13th - 15th<br/>University of Pennsylvania</div>
+      <div class="vertical-sub-title mobile-hide">
+        A Summit that builds the bridge between us
+      </div>
+      <div class="vertical-sub-title mobile-only">
+        To Build the Bridge Between Us
+      </div>
+      <div class="page-caption black-shadow">
+         PAST <br/> SUMMITS
+      </div>
+      <div class="bottom-square">
+        <div class="row">
+          <div class="col-10 white-txt crimson-bg ls-1" style="letter-spacing: 3px;">REGISTER</div>
+          <div class="col-2 white-bg action-area">
+            <a href="#section-temp" class="black-txt"><i class="icofont icofont-dotted-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--
+      MARK: content
+    -->
+
+    <!-- MARK: TRACY! -->
+
+    <div class="white-bg" id="whitebox">
+      <div class="row row-eq-height">
+        <div class="col-lg-5 col-sm-12 col-xs-12">
+          <h1 class="year-title">2017</h1>
+          <h1 class="slogan-title">
+            <span>the World to China: </span>Challenges in Supply Side Reform<br>
+            <span>China to the World: </span>Integration in Globalization Strategy</h1>
+        </div>
+        <div class="col-lg-7 col-sm-12 hidden-xs year-desc">
+          <p>The 2017 Summit aimed to build the
+            United States’ most influential exchange
+            platform for overseas elites by inviting
+            leaders from all walks of life to shed
+            light on the developmental prospects of
+            Chinese enterprises, and to divulge the
+            many opportunities as China found its
+            place on the global track.</p>
+          <p>We invited a number of distinguished guests
+              from all walks of life to converse with elite
+              Chinese and American students at the second
+              Penn Wharton China Summit. These leaders
+              talked about the opportunities in global
+              strategic integration and the challenges
+              brought by the supply-side reform with
+              respect to the seven major sections topics/
+              themes of real estate, healthcare, financial
+              markets, culture and the arts, business reform,
+              science and technology, and education.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 col-sm-12 col-xs-12">
+          <h1 id="whycome">PAST SPEAKERS</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="row no-gutters white-bg row-eq-height">
+      <div class="col-lg-6 col-sm-12 col-xs-12">
+        <div id="redbox">
+          <div class="row center-txt">
+            <div class="summit-year">PWCS 2017</div>
+          </div>
+          <div class="row row-eq-height">
+            <div class="col-4 speaker-name">Qiyue Zhang</div>
+            <div class="col-8 speaker-title"> Consulate General of China in New York<br/></div>
+            <div class="col-4 speaker-name">Shiyi Pan</div>
+            <div class="col-8 speaker-title"> Chairman of Soho China</div>
+            <div class="col-4 speaker-name">Jizhong Zhang</div>
+            <div class="col-8 speaker-title"> Chinese TV Producer</div>
+            <div class="col-4 speaker-name">Xin Zhou</div>
+            <div class="col-8 speaker-title"> Chairman of Ehouse Holdings</div>
+            <div class="col-4 speaker-name">Ning Li</div>
+            <div class="col-8 speaker-title"> Executive Director of Li Ning Co.</div>
+            <div class="col-4 speaker-name">Yiming Zhang</div>
+            <div class="col-8 speaker-title"> CEO of Toutiao</div>
+            <div class="col-4 speaker-name">Tad Smith</div>
+            <div class="col-8 speaker-title"> CEO of Sotheby’s</div>
+            <div class="col-4 speaker-name">Jiwu Wang</div>
+            <div class="col-8 speaker-title"> Board Director of Tuspark Holdings</div>
+            <div class="col-4 speaker-name">KaiJing Yan</div>
+            <div class="col-8 speaker-title"> Chairman of Tasly Pharmaceutical Group</div>
+            <div class="col-4 speaker-name">Ying Yu</div>
+            <div class="col-8 speaker-title"> VP of Poly Real Estate</div>
+            <div class="col-4 speaker-name">Jianzhong Fu</div>
+            <div class="col-8 speaker-title"> Co-founder of Geekhouse Capital</div>
+            <div class="col-4 speaker-name">Haiping Hu</div>
+            <div class="col-8 speaker-title"> Board Director of Shanshan Investment Holding Co LTD.</div>
+            <div class="col-4 speaker-name">Qiang Wang</div>
+            <div class="col-8 speaker-title"> Founder of ZhenFund</div>
+            <div class="col-4 speaker-name">Xu Chen</div>
+            <div class="col-8 speaker-title"> CEO of Bank of China USA</div>
+            <div class="col-4 speaker-name">Xiaojie Huang</div>
+            <div class="col-8 speaker-title"> Founding Partner of JD Investment</div>
+            <div class="col-4 speaker-name">Pinjue Che</div>
+            <div class="col-8 speaker-title"> Head of Data Committee of Alibaba</div>
+            <div class="col-4 speaker-name">Jian Sun</div>
+            <div class="col-8 speaker-title"> CEO of Homeinn Hotel Group</div>
+            <div class="col-4 speaker-name">Zuyu Ding</div>
+            <div class="col-8 speaker-title"> CEO of Ehouse China</div>
+            <div class="col-4 speaker-name">Zuyu Ding</div>
+            <div class="col-8 speaker-title">CEO of Ehouse China</div>
+            <div class="col-4 speaker-name">Theresa Tse</div>
+            <div class="col-8 speaker-title"> CEO of CP Pharmaceutical Group</div>
+            <div class="col-4 speaker-name">Lawton R. Burns</div>
+            <div class="col-8 speaker-title"> Chair of the Health Care Management Department</div>
+            <div class="col-4 speaker-name">Bruce Novich</div>
+            <div class="col-8 speaker-title"> Executive Vice President and General Management of Cellular Dynamics</div>
+            <div class="col-4 speaker-name">Xiaoyu Weng</div>
+            <div class="col-8 speaker-title"> Deputy Curator of Guggenheim Museum</div>
+            <div class="col-4 speaker-name">Xiongwen Lu</div>
+            <div class="col-8 speaker-title"> Dean of Management of Fudan University</div>
+            <div class="col-4 speaker-name">Linda He</div>
+            <div class="col-8 speaker-title"> President of Wailian Consulting</div>
+            <div class="col-4 speaker-name">Zheng Yan</div>
+            <div class="col-8 speaker-title"> Special Advisor to Columbia University Teacher College</div>
+            <div class="col-4 speaker-name">Huining Cao</div>
+            <div class="col-8 speaker-title"> Chair of Finance Department At CKGSB</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-sm-12 col-xs-12">
+        <div id="blackbox">
+          <div class="row center-txt">
+            <div class="summit-year">PWCS 2016</div>
+          </div>
+          <div class="row">
+            <div class="col-4 speaker-name">Jun Lei</div>
+            <div class="col-8 speaker-title">Founder of Xiaomi technology</div>
+            <div class="col-4 speaker-name">Jixing Zhang</div>
+            <div class="col-8 speaker-title">General manager of Sinopec USA</div>
+            <div class="col-4 speaker-name">Qiang Tan</div>
+            <div class="col-8 speaker-title">CEO of MetLife China</div>
+            <div class="col-4 speaker-name">Xin Zhou</div>
+            <div class="col-8 speaker-title">Chairman of Ehouse Holdings</div>
+            <div class="col-4 speaker-name">Jun Pan</div>
+            <div class="col-8 speaker-title">Chairman and CEO of Fantasia Holdings</div>
+            <div class="col-4 speaker-name">Zhonghua Lin</div>
+            <div class="col-8 speaker-title">Founder of Ruifeng fund</div>
+            <div class="col-4 speaker-name">Changfeng Ding</div>
+            <div class="col-8 speaker-title">Director of Vanke commercial real estate</div>
+            <div class="col-4 speaker-name">Jianda Ni</div>
+            <div class="col-8 speaker-title">Chairman of Jupai investment group</div>
+            <div class="col-4 speaker-name">David Yi Li</div>
+            <div class="col-8 speaker-title">Chairman and CEO of JP Morgan China</div>
+            <div class="col-4 speaker-name">Kaige Chen</div>
+            <div class="col-8 speaker-title">Renowned Chinese Film Director</div>
+            <div class="col-4 speaker-name">Kennedy Xu</div>
+            <div class="col-8 speaker-title">Renowned writer and screenrighter</div>
+            <div class="col-4 speaker-name">Sanping Han</div>
+            <div class="col-8 speaker-title">Former Chairman of China Film Group</div>
+            <div class="col-4 speaker-name">Max Michael</div>
+            <div class="col-8 speaker-title">Asia Business Director of United Talent</div>
+            <div class="col-4 speaker-name">Yanling Wang</div>
+            <div class="col-8 speaker-title">CEO of 798 Art Zone</div>
+            <div class="col-4 speaker-name">Han Lin</div>
+            <div class="col-8 speaker-title">Founder of M Woods Art Gallery</div>
+            <div class="col-4 speaker-name">Hang Chen</div>
+            <div class="col-8 speaker-title">President of China Cultural Industry Investment Fund Management co.</div>
+            <div class="col-4 speaker-name">Man Chen</div>
+            <div class="col-8 speaker-title">Renowned photographer</div>
+            <div class="col-4 speaker-name">Gong Dong</div>
+            <div class="col-8 speaker-title">Celebrated Chinese architect</div>
+            <div class="col-4 speaker-name">Ke Wei</div>
+            <div class="col-8 speaker-title">Chief operating officer of 36 KR</div>
+            <div class="col-4 speaker-name">Dong Duan</div>
+            <div class="col-8 speaker-title">Vice President of 58 City</div>
+            <div class="col-4 speaker-name">Xiaobo Cui</div>
+            <div class="col-8 speaker-title">Founder and CEO of TalkingData</div>
+            <div class="col-4 speaker-name">Jie Tang</div>
+            <div class="col-8 speaker-title">General Representative of Suning USA</div>
+            <div class="col-4 speaker-name">Jay Coen Gilbert</div>
+            <div class="col-8 speaker-title">Founder and CEO of Grade B Corporate Rating</div>
+            <div class="col-4 speaker-name">Jing Han</div>
+            <div class="col-8 speaker-title">Deputy secretary general of the China Social Entrepreneur Foundation</div>
+            <div class="col-4 speaker-name">Fei Deng</div>
+            <div class="col-8 speaker-title">Editor in Chief of Phoenix Weekly and sponsor of Free Lunch for Children</div>
+            <div class="col-4 speaker-name">Ma Kam-wah</div>
+            <div class="col-8 speaker-title">Hong Kong "Justice of Peace"</div>
+            <div class="col-4 speaker-name">Wayne Silby</div>
+            <div class="col-8 speaker-title">Founder of Calvert Foundation</div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="white-bg" id="whitebox" style="padding-bottom: 5%;">
+      <div class="row row-eq-height">
+        <div class="col-lg-5 col-sm-12 col-xs-12">
+          <h1 class="year-title">2016</h1>
+          <h1 class="slogan-title">
+            <span>China's New Normal: </span><br/>The Next Engine of Growth<br>
+        </div>
+        <div class="col-lg-7 col-sm-12 hidden-xs year-desc">
+          <p>After decades of high-speed growth, China's economy is running out of steam. Traditional drivers including export, infrastructure investment and real estate are losing their momentum. In response, the Chinese Central Bank has slashed interest rates, but the effect is limited by the not-quite-liberalized nature of China’s financial system. The Government is additionally wary of fiscal stimulus because local government debt has grown to dangerous levels. In other words, the old period of high speed growth is over, and China's economy is entering a ‘New Normal’. </p>
+          <p>Going forward, everyone, from government officials to businessmen, academics to investors, is looking for the next driver of growth. Is it innovation and entrepreneurship in tech sector, or a booming entertainment and media industry? Will it be the liberalization in the financial system, or reform in state-owned Enterprises? </p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!--
+      MARK: Footer
+    -->
+
+    <div class="row footer-img" id="section-footer">
+      <div class="col-12" style="text-align:center;">
+        <div class="stop-sign"></div>
+      </div>
+      <div class="col-12">
+        <img src="../assets/images/pwcs-banner.png" width="100%">
+      </div>
+    </div>
+
+    <!--
+      MARK: Page End
+    *******************
+    -->
+
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="../js/global.js"></script>
+    <script src="../js/home.js"></script>
+    <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoidG9teiIsImEiOiJjajJyN3dyenkwMDVqMndzN3Y0cjk0bTRmIn0.FEEGdubneAr17N9f8ZHh5g';
+    var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/dark-v9',
+    center: [-75.1982673, 39.9529105],
+    zoom: 9
+    });
+    $('.carousel').carousel();
+    </script>
+    </body>
+</html>

@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/icofont.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/agenda.css">
+    <link rel="stylesheet" href="../css/global-mobile.css">
+    <link rel="stylesheet" href="../css/navbar-mobile.css">
+    <link rel="stylesheet" href="../css/header-mobile.css">
+    <link rel="stylesheet" href="../css/footer-mobile.css">
+    <link rel="stylesheet" href="../css/agenda-mobile.css">
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="../assets/favicons/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="../assets/favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="../assets/favicons/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="../assets/favicons/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="../assets/favicons/favicon-128.png" sizes="128x128" />
+    <!-- External JS -->
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.css' rel='stylesheet' />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108713232-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-108713232-1');
+    </script>
+    <title>PWCS 2018 | Agenda</title>
+  </head>
+  <body>
+
+    <!--
+      MARK: Navigation Buttons
+    -->
+
+    <div class="navigation row windows-hover-ne" id="abs-nav">
+      <!-- <div class="col-2 offset-2 right-txt no-padding font-size-30 mobile-only"  id="nav-toggle">
+        <i class="icofont icofont-caret-right"></i>
+      </div>
+      <div class="col-4 offset-md-4 right-txt no-padding">
+        <a href="#">
+          <div class="button-box" id="reg">
+            REGISTER
+          </div>
+        </a>
+      </div> -->
+      <div class="col-6 right-txt no-padding">
+        <a href="./home-ch.html">
+          <div class="option" id="lang">
+            <i class="icofont icofont-globe"></i><br/>
+            <span class="hover-text">中文</span>
+          </div>
+        </a>
+      </div>
+      <div class="col-6 right-txt no-padding">
+        <div class="option" id="nav">
+          <i class="icofont icofont-navigation-menu"></i><br/>
+          <span class="hover-text">Menu</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="navigation windows-hover-ne hide" id="close-nav">
+      <div class="col-6 offset-6 right-txt no-padding">
+        <div id="close">
+          <i class="icofont icofont-close"></i><br/>
+        </div>
+      </div>
+    </div>
+
+    <div class="navigation-mb hide" id="alt-nav">
+
+        <div class="row mobile-hide">
+          <div class="col-7">
+            <img src="../assets/images/banner.png" height="40px"/>
+          </div>
+          <div class="col-5 right-txt">
+            <div class="right-txt" style="float:right;">
+              <div class="nav-custom-item right-txt">
+                <a href="./home-ch.html">
+                  <i class="icofont icofont-globe"></i>
+                   简体中文
+                </a>
+              </div>
+              <div class="nav-custom-item right-txt" id="alt-nav-btn">
+                <i class="icofont icofont-navigation-menu"></i>
+                MENU
+              </div>
+              <div class="nav-custom-item right-txt register-item">
+                REGISTER
+                <i class="icofont icofont-dotted-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <div class="container mobile-only">
+        <div class="row height-100">
+          <div class="col-5 register-item">
+            REGISTER
+            <i class="icofont icofont-dotted-right"></i>
+          </div>
+          <div class="col-3 no-padding right-txt">
+            <i class="icofont icofont-globe"></i>
+            中文
+          </div>
+          <div class="col-4 no-padding center-txt" id="m-alt-nav-btn">
+            <i class="icofont icofont-navigation-menu"></i>
+            Menu
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--
+      MARK:  Navigation Menu
+    -->
+    <div class="fixed-full" id="menu-container">
+      <div class="vertical-center mobile-hide">
+        <div class="row center-txt">
+          <div class="col-12">
+            <a href="#"><div class="navigation-action-btn">Register</div></a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-12 row menu-items">
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-0"> <a href="./home.html">Home</a></div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-4"> <a href="./about.html">About</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-1"> <a href="./panels.html">Panels</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-2"> <a href="./panels.html">Speakers</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item active-item" id="item-5"> <a class="active-item" href="./agenda.html">Agenda</a> <i class="icofont icofont-dotted-left"></i> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-3"> <a href="./past.html">Past</a> </div>
+          </div>
+        </div>
+        <div class="row center-txt">
+          <div class="col-4 offset-2 col-md-2 offset-md-2 center-txt">
+            <div class="nav-social-item center-txt">
+              <a href="https://www.hotmail.com">
+                <i class="icofont icofont-social-facebook"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-4 col-md-2 center-txt">
+            <div class="nav-social-item center-txt">
+              <a href="https://www.hotmail.com">
+                <i class="icofont icofont-social-wechat"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-4 offset-2 col-md-2 offset-md-0 center-txt">
+            <div class="nav-social-item center-txt">
+              <a href="https://www.hotmail.com">
+                <i class="icofont icofont-social-weibo"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-4 col-md-2 center-txt">
+            <div class="nav-social-item center-txt">
+              <a href="https://www.hotmail.com">
+                <i class="icofont icofont-email"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="verticl-center mobile-only">
+        <div class="row">
+          <div class="col-12 center-txt m-menu-title">
+            MENU
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-12 row menu-items center-txt">
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-0"> <a href="./home.html">Home</a></div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-4"> <a href="./about.html">About</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-1"> <a href="./panels.html">Panels</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-2"> <a href="./panels.html">Speakers</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item active-item" id="item-5"> <a class="active-item" href="./agenda.html">Agenda</a> <i class="icofont icofont-dotted-left"></i> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-3"> <a href="./past.html">Past</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-6"> <a href="./past.html">Register</a> </div>
+          </div>
+        </div>
+        <div class="row hide" id="m-close-nav">
+          <div class="col-12 center-txt">
+            <div class="m-close-btn verticl-center">
+              <i class="icofont icofont-close"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--
+      MARK: Header
+      <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-0"> <a href="./home.html">Home</a></div>
+      <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-4"> <a href="./about.html">About</a> </div>
+      <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-1"> <a href="./panels.html">Panels</a> </div>
+      <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-2"> <a href="./panels.html">Speakers</a> </div>
+      <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item active-item" id="item-5"> <a class="active-item" href="./agenda.html">Agenda</a> <i class="icofont icofont-dotted-left"></i> </div>
+      <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-3"> <a href="./past.html">Past</a> </div>
+    -->
+
+    <div class="section-full header" id="section-0">
+      <div class="left-square"></div>
+      <div class="sub-title">April.13th - 15th<br/>University of Pennsylvania</div>
+      <div class="vertical-sub-title mobile-hide">
+        A Summit that builds the bridge between us
+      </div>
+      <div class="vertical-sub-title mobile-only">
+        To Build the Bridge Between Us
+      </div>
+      <div class="page-caption black-shadow">
+         2018 <br/> AGENDA
+      </div>
+      <div class="bottom-square">
+        <div class="row">
+          <div class="col-10 white-txt crimson-bg ls-1" style="letter-spacing: 3px;">REGISTER</div>
+          <div class="col-2 white-bg action-area">
+            <a href="#section-temp" class="black-txt"><i class="icofont icofont-dotted-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--
+      MARK: content
+    -->
+
+    <div class="section-free">
+      <div class="row">
+        <div class="col-12 col-md-4 center-txt">
+          <h2 class="agenda-date">April 13th</h2>
+          <div class="agenda-item left-txt">
+            <div class="item-time">
+              4:00PM - 6:00PM
+            </div>
+            <div class="item-title">
+              Media Conference
+            </div>
+            <div class="item-location">
+              Hilton Inn At Penn
+            </div>
+            <div class="item-desc">
+              Hosted by PWCS and Representatives from the Wharton School. An opportunity for media to ask questions.
+            </div>
+          </div>
+          <div class="agenda-item left-txt">
+            <div class="item-time">
+              5:30PM - 8:00PM
+            </div>
+            <div class="item-title">
+              Career Fair
+            </div>
+            <div class="item-location">
+              Hilton Inn at Penn
+            </div>
+            <div class="item-desc">
+              Company Representatives to set up booths. Open to registered audience.
+            </div>
+          </div>
+          <div class="agenda-item left-txt">
+            <div class="item-time">
+              6:00PM - 7:30PM
+            </div>
+            <div class="item-title">
+              Career Advising Panel
+            </div>
+            <div class="item-location">
+              Hilton Inn at Penn
+            </div>
+            <div class="item-desc">
+              Hosted by PWCS, Liepin.com, and representative from China Telecom North America Branch.
+            </div>
+          </div>
+          <div class="agenda-item left-txt">
+            <div class="item-time">
+              6:30PM - 9:00PM
+            </div>
+            <div class="item-title">
+              VIP Banquet
+            </div>
+            <div class="item-location">
+              Huntsman Hall
+            </div>
+            <div class="item-desc">
+              A Dinner Hosted by PWCS and the Wharton School to thank our distinguished guests and partners
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 center-txt">
+          <h2 class="agenda-date">April 14th</h2>
+          <div class="agenda-item left-txt">
+            <div class="item-time">
+              8:00AM - 10:00AM
+            </div>
+            <div class="item-title">
+              General Registration
+            </div>
+            <div class="item-location">
+              Houston Hall Bodek Lounge
+            </div>
+            <div class="item-desc">
+              Audience to register and pick up summit brochure, name tags, and souvenir.
+            </div>
+          </div>
+          <div class="agenda-item left-txt">
+            <div class="item-time">
+              9:00AM - 11:30AM
+            </div>
+            <div class="item-title">
+              Openning Ceremony
+            </div>
+            <div class="item-location">
+              Irvine Auditorium
+            </div>
+            <div class="item-desc">
+              (Content Updating)
+            </div>
+          </div>
+          <div class="agenda-item left-txt">
+            <div class="item-time">
+              12:30PM - 2:30PM
+            </div>
+            <div class="item-title">
+              PANEL 1: Real Estate
+            </div>
+            <div class="item-location">
+              Irvine Auditorium
+            </div>
+            <div class="item-desc">
+              (Content Updating)
+            </div>
+            <div class="item-title">
+              PANEL 2: New Technology
+            </div>
+            <div class="item-location">
+              Annenburg Center
+            </div>
+            <div class="item-desc">
+              (Content Updating)
+            </div>
+          </div>
+          <div class="agenda-item left-txt">
+            <div class="item-time">
+              3:00PM - 5:00PM
+            </div>
+            <div class="item-title">
+              PANEL 3: Entertainment
+            </div>
+            <div class="item-location">
+              Irvine Auditorium
+            </div>
+            <div class="item-desc">
+              (Content Updating)
+            </div>
+            <div class="item-title">
+              PANEL 4: International Relations
+            </div>
+            <div class="item-location">
+              Annenburg Center
+            </div>
+            <div class="item-desc">
+              (Content Updating)
+            </div>
+          </div>
+          <div class="agenda-item left-txt">
+            <div class="item-time">
+              7:00PM - 9:00PM
+            </div>
+            <div class="item-title">
+              INNOTALK Entreprenuership Panel
+            </div>
+            <div class="item-location">
+              Annenberg Center
+            </div>
+            <div class="item-desc">
+              (Content Updating)
+            </div>
+          </div>
+          <div class="agenda-item left-txt">
+            <div class="item-time">
+              9:00PM - 11:00PM
+            </div>
+            <div class="item-title">
+              Social Event
+            </div>
+            <div class="item-location">
+              Marriott Downtown
+            </div>
+            <div class="item-desc">
+              (Content Updating)
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 center-txt">
+          <h2 class="agenda-date">April 15th</h2>
+          <div class="agenda-item left-txt">
+            <div class="item-time">
+              10:00AM - 12:00PM
+            </div>
+            <div class="item-title">
+              PANEL 3: Entertainment
+            </div>
+            <div class="item-location">
+              Irvine Auditorium
+            </div>
+            <div class="item-desc">
+              (Content Updating)
+            </div>
+            <div class="item-title">
+              PANEL 4: International Relations
+            </div>
+            <div class="item-location">
+              Annenburg Center
+            </div>
+            <div class="item-desc">
+              (Content Updating)
+            </div>
+          </div>
+          <div class="agenda-item left-txt">
+            <div class="item-time">
+              1:30PM - 3:30PM
+            </div>
+            <div class="item-title">
+              Closing Ceremony
+            </div>
+            <div class="item-location">
+              Irvine Auditorium
+            </div>
+            <div class="item-desc">
+              (Content Updating)
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!--
+      MARK: Footer
+    -->
+
+    <div class="row footer-img" id="section-footer">
+      <div class="col-12" style="text-align:center;">
+        <div class="stop-sign"></div>
+      </div>
+      <div class="col-12">
+        <img src="../assets/images/pwcs-banner.png" width="100%">
+      </div>
+    </div>
+
+    <!--
+      MARK: Page End
+    *******************
+    -->
+
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="../js/global.js"></script>
+    <script src="../js/home.js"></script>
+    <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoidG9teiIsImEiOiJjajJyN3dyenkwMDVqMndzN3Y0cjk0bTRmIn0.FEEGdubneAr17N9f8ZHh5g';
+    var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/dark-v9',
+    center: [-75.1982673, 39.9529105],
+    zoom: 9
+    });
+    $('.carousel').carousel();
+    </script>
+  </body>
+</html>

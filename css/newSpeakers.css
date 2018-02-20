@@ -1,0 +1,185 @@
+html{
+  height: 100%;
+  width: 100%;
+  /*overflow-x: hidden;
+  overflow-y: hidden;*/
+  background-color: white;
+}
+
+body{
+  height: 100%;
+  width: 100%;
+  /*overflow: hidden;*/
+}
+
+.grid-container {
+  width: 96%;
+  min-width: 1000px;
+  margin: auto;
+  max-width: 1200px;
+  margin-top: 20px;
+}
+
+.left-test-speaker-grid {
+  width: 500px;
+  height: 250px;
+  background-color: crimson;
+  margin-left: auto;
+  margin-right: 10px;
+  -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.23);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.23);  /* Firefox 3.5 - 3.6 */
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.23);  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+.zdepth2 {
+  z-index: 20;
+  -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.23);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.23);  /* Firefox 3.5 - 3.6 */
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.23);  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+.right-test-speaker-grid {
+  width: 500px;
+  height: 250px;
+  background-color: crimson;
+}
+
+.test-desc-block {
+  width: 100%;
+  height: 250px;
+  background-color: white;
+}
+
+.speaker-block{
+  display:inline-block;
+  height: 50px;
+  width: 100%;
+}
+
+.image_container{
+  display: inline-block;
+  width: 50%;
+  padding-top: 50%;
+  background-color: red;
+  background-image: url("../assets/images/10.jpg");
+  background-position: 20% 20%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.caption-block{
+  width: 50%;
+  background-color: #efe9e1;
+}
+
+.caption-block:before{
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
+.captions-left{
+  right: 50%;
+  left: 0;
+}
+
+.captions-right{
+  left: 50%;
+  right: 0;
+}
+
+.captions{
+    position:  absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.asdf {
+   display: table;
+   width: 100%;
+   height: 100%;
+}
+
+.captions span {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    color: black;
+}
+
+.speaker-row {
+  height: 260px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.speakers-content {
+  padding-top: 50px;
+  margin-bottom: 100px;
+}
+
+.speaker-name{
+  font-size: 100%;
+  font-weight: bold;
+}
+
+.panel-title{
+  font-size: 200%;
+  font-weight: bold;
+  color: red;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.TiankaiCui{
+  background-image: url("../assets/images/TiankaiCui.jpg");
+}
+
+.QiyueZhang{
+  background-image: url("../assets/images/QiyueZhang.png");
+}
+
+.JizhongZhang{
+  background-image: url("../assets/images/JizhongZhang.png");
+  background-position: 20% 0%;
+}
+
+.ShiyiPan{
+  background-image: url("../assets/images/ShiyiPan.png");
+  background-position: 20% 0%;
+}
+
+.XinZhou{
+  background-image: url("../assets/images/XinZhou.png");
+  background-position: 20% 0%;
+}
+
+.NingLi{
+  background-image: url("../assets/images/NingLi.png");
+  background-position: 20% 0%;
+}
+.YimingZhang{
+  background-image: url("../assets/images/YimingZhang.png");
+  background-position: 20% 0%;
+}
+.TadSmith{
+  background-image: url("../assets/images/TadSmith.jpg");
+  background-size: 95%;
+  background-position: 20% 5%;
+}
+.JiwuWang{
+  background-image: url("../assets/images/JiwuWang.png");
+  background-position: 20% 0%;
+}
+.KaijingYan{
+  background-image: url("../assets/images/KaijingYan.png");
+  background-position: 20% 0%;
+}
