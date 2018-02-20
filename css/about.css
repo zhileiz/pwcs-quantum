@@ -176,3 +176,11 @@
   from {opacity: 0}
   to {opacity: 1}
 }
+
+.links a {
+  color: black;
+}
+
+.links a:hover {
+  color: crimson;
+}
