@@ -25,6 +25,21 @@
         min-width: 250px;
         text-align: right;
       }
+
+      .theme {
+        margin-top: 20px
+      }
+      @media only screen and (max-width: 767px) {
+        .site-caption {
+          top: 30%;
+          left: 15%;
+          font-size: 45px;
+        }
+
+        .theme {
+          font-size: 25px;
+        }
+      }
     </style>
     <!-- Favicons -->
     <link rel="icon" type="image/png" href="../assets/favicons/favicon-196x196.png" sizes="196x196" />
@@ -43,7 +58,7 @@
       gtag('js', new Date());
       gtag('config', 'UA-108713232-1');
     </script>
-    <title>PWCS 2018 | Home Page</title>
+    <title>宾大沃顿中美峰会 | 2018</title>
   </head>
   <body>
 
@@ -63,17 +78,17 @@
         </a>
       </div> -->
       <div class="col-6 right-txt no-padding">
-        <a href="./home-ch.html">
+        <a href="/home.html">
           <div class="option" id="lang">
             <i class="icofont icofont-globe"></i><br/>
-            <span class="hover-text">中文</span>
+            <span class="hover-text">English</span>
           </div>
         </a>
       </div>
       <div class="col-6 right-txt no-padding">
         <div class="option" id="nav">
           <i class="icofont icofont-navigation-menu"></i><br/>
-          <span class="hover-text">Menu</span>
+          <span class="hover-text">菜单</span>
         </div>
       </div>
     </div>
@@ -90,23 +105,27 @@
 
         <div class="row mobile-hide">
           <div class="col-7">
-            <img src="../assets/images/banner.png" height="40px"/>
+            <a href="/home-ch">
+              <img src="../assets/images/banner.png" height="40px"/>
+            </a>
           </div>
           <div class="col-5 right-txt">
             <div class="right-txt" style="float:right;">
               <div class="nav-custom-item right-txt">
-                <a href="./home-ch.html">
+                <a href="/home.html">
                   <i class="icofont icofont-globe"></i>
-                   简体中文
+                   English
                 </a>
               </div>
               <div class="nav-custom-item right-txt" id="alt-nav-btn">
                 <i class="icofont icofont-navigation-menu"></i>
-                MENU
+                菜单
               </div>
               <div class="nav-custom-item right-txt register-item">
-                REGISTER
-                <i class="icofont icofont-dotted-right"></i>
+                <a href="https://whartonchinasummit.ticketleap.com/2018pwcs/">
+                  立即订票
+                  <i class="icofont icofont-dotted-right"></i>
+                </a>
               </div>
             </div>
           </div>
@@ -114,17 +133,19 @@
 
       <div class="container mobile-only">
         <div class="row height-100">
-          <div class="col-5 register-item">
-            REGISTER
-            <i class="icofont icofont-dotted-right"></i>
-          </div>
+            <div class="col-5 register-item">
+              <a href="https://whartonchinasummit.ticketleap.com/2018pwcs/" class="register-item">
+              订票
+              <i class="icofont icofont-dotted-right"></i>
+              </a>
+            </div>
           <div class="col-3 no-padding right-txt">
             <i class="icofont icofont-globe"></i>
-            中文
+            English
           </div>
           <div class="col-4 no-padding center-txt" id="m-alt-nav-btn">
             <i class="icofont icofont-navigation-menu"></i>
-            Menu
+            菜单
           </div>
         </div>
       </div>
@@ -137,44 +158,44 @@
       <div class="vertical-center mobile-hide">
         <div class="row center-txt">
           <div class="col-12">
-            <a href="#"><div class="navigation-action-btn">Register</div></a>
+            <a href="https://whartonchinasummit.ticketleap.com/2018pwcs/"><div class="navigation-action-btn">立即购票</div></a>
           </div>
         </div>
         <div class="row">
           <div class="col-12 col-md-12 row menu-items">
-            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item active-item" id="item-0"> <a href="/html/home.html" class="active-item">Home</a> <i class="icofont icofont-dotted-left"></i> </div>
-            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-4"> <a href="/html/about.html">About</a> </div>
-            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-1"> <a href="/html/panels.html">Panels</a> </div>
-            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-2"> <a href="/html/panels.html">Speakers</a> </div>
-            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-3"> <a href="/html/agenda.html">Agenda</a> </div>
-            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-3"> <a href="/html/past.html">Past</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item active-item" id="item-0"> <a href="/home-ch" class="active-item">峰会主页</a> <i class="icofont icofont-dotted-left"></i> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-4"> <a href="/about">关于我们</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-1"> <a href="/panels">论坛板块</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-2"> <a href="/panels">参会嘉宾</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-3"> <a href="/agenda">峰会日程</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-3"> <a href="/past.html">往届峰会</a> </div>
           </div>
         </div>
         <div class="row center-txt">
           <div class="col-4 offset-2 col-md-2 offset-md-2 center-txt">
             <div class="nav-social-item center-txt">
-              <a href="https://www.hotmail.com">
+              <a href="https://www.facebook.com/whartonPWCS">
                 <i class="icofont icofont-social-facebook"></i>
               </a>
             </div>
           </div>
           <div class="col-4 col-md-2 center-txt">
             <div class="nav-social-item center-txt">
-              <a href="https://www.hotmail.com">
+              <a href="../assets/images/wechat-code.jpeg">
                 <i class="icofont icofont-social-wechat"></i>
               </a>
             </div>
           </div>
           <div class="col-4 offset-2 col-md-2 offset-md-0 center-txt">
             <div class="nav-social-item center-txt">
-              <a href="https://www.hotmail.com">
+              <a href="https://weibo.com/whartonchinasummit">
                 <i class="icofont icofont-social-weibo"></i>
               </a>
             </div>
           </div>
           <div class="col-4 col-md-2 center-txt">
             <div class="nav-social-item center-txt">
-              <a href="https://www.hotmail.com">
+              <a href="mailto:official@whartonsummit.org">
                 <i class="icofont icofont-email"></i>
               </a>
             </div>
@@ -184,18 +205,18 @@
       <div class="verticl-center mobile-only">
         <div class="row">
           <div class="col-12 center-txt m-menu-title">
-            MENU
+            菜单
           </div>
         </div>
         <div class="row">
           <div class="col-12 col-md-12 row menu-items center-txt">
-            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item active-item" id="item-0"> <a href="/html/home.html" class="active-item">Home</a> <i class="icofont icofont-dotted-left"></i> </div>
-            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-4"> <a href="/html/about.html">About</a> </div>
-            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-1"> <a href="/html/panels.html">Panels</a> </div>
-            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-2"> <a href="/html/panels.html">Speakers</a> </div>
-            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-3"> <a href="/html/agenda.html">Agenda</a> </div>
-            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-3"> <a href="/html/past.html">Past</a> </div>
-            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-6"> <a href="/html/past.html">Register</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item active-item" id="item-0"> <a href="/home-ch" class="active-item">主页</a> <i class="icofont icofont-dotted-left"></i> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-4"> <a href="/about-ch">关于我们</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-1"> <a href="/panels-ch">分论坛</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-2"> <a href="/panels-ch">嘉宾</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-3"> <a href="/agenda-ch">日程</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-3"> <a href="/past-ch">往届峰会</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-6"> <a href="https://whartonchinasummit.ticketleap.com/2018pwcs/">立即订票</a> </div>
           </div>
         </div>
         <div class="row hide" id="m-close-nav">
@@ -221,14 +242,14 @@
       <div class="vertical-sub-title mobile-only">
         让我们一起，构筑中美交流的桥梁
       </div>
-      <div class="site-caption black-shadow">
+      <h1 class="site-caption black-shadow">
         宾大沃顿<br/>中美峰会
-      </div>
+      </h1>
       <div class="bottom-square">
         <div class="row">
           <div class="col-10 white-txt crimson-bg ls-1" style="letter-spacing: 3px;">立即订票</div>
           <div class="col-2 white-bg action-area">
-            <a href="#section-temp" class="black-txt"><i class="icofont icofont-dotted-right"></i></a>
+            <a href="https://whartonchinasummit.ticketleap.com/2018pwcs/" class="black-txt"><i class="icofont icofont-dotted-right"></i></a>
           </div>
         </div>
       </div>
@@ -272,10 +293,9 @@
       <div class="col-12 col-md-6 section-1-right">
         <div class="section-1-right-middle-content">
           <strong>
-            <span class="mobile-ultra">沃顿中美峰会2018年主题</span>
-            <div class="theme">我们这一代</div>
+            <span class="mobile-ultra">沃顿中美峰会2018年主题:</span>
+            <div class="theme">我们这一代: 展望中国未来</div>
           </strong><br/><br/>
-          <p class="mobile-hide">展望中国未来</p>
         </div>
         <img class="section-1-city-img" src="../assets/images/shanghai.jpeg">
       </div>
@@ -438,7 +458,7 @@
   </div>
 
   <div class="section-action" id="speakers-section-action">
-      <a href="./speakers.html">
+      <a href="/past-ch">
         <div class="section-action-btn">
           关于更多 <i class="icofont icofont-simple-right"></i>
         </div>
@@ -494,7 +514,7 @@
         </div>
         <div class="col-12 col-md-8 offset-md-1 panel-desc hide" class="hover-show mobile-hide" id="pdesc-1">
           <div class="vertical-center-m">
-            <h1 class="mobile-hide"> 变革与机遇：塑造中国新投资领域 </h1>
+            <h3 class="mobile-hide"> 变革与机遇：塑造中国新投资领域 </h3>
             <p>
               在过去10年期间，全球经济经历了一段漫长又缓慢的复苏期。以美国为首的多国央行维持多年的低利率政策以及萎靡不振的真实经济增长让全球的投资回报持续低迷。这也让大型的机构投资者逐渐将眼光投向新兴市场来寻求更高的增长。在这其中，中国以其快速的经济发展成为了最受关注的市场之一。
             </p>
@@ -509,7 +529,7 @@
         </div>
         <div class="col-12 col-md-8 offset-md-1 panel-desc hide" id="pdesc-2">
           <div class="vertical-center-m">
-            <h1 class="mobile-hide"> 互信与挑战：新时代下的中美关系 </h1>
+            <h3 class="mobile-hide"> 互信与挑战：新时代下的中美关系 </h3>
             <p>
               在我们即将迎来的新一个十年里，没有任何一对国家间关系比中美关系更加重要。 作为世界前两大经济体、最大的发达国家和最大的发展中国家，美国和中国应如何避免重蹈过去几百年间守成大国和新兴大国跌入“修昔底德陷阱”的覆辙？在本轮全球化浪潮下，“中美合作”能否成为两个大国相处的新常态？
             </p>
@@ -524,7 +544,7 @@
         </div>
         <div class="col-12 col-md-8 offset-md-1 panel-desc hide" id="pdesc-3">
           <div class="vertical-center-m">
-            <h1 class="mobile-hide"> 技术革新的挑战与机遇 </h1>
+            <h3 class="mobile-hide"> 技术革新的挑战与机遇 </h3>
             <p>
               当今世界，新一轮的科技革命正在孕育兴起，科技创新正加速推进，并深度融合、广泛渗透到人类社会的各个方面，成为重塑世界经济结构和竞争格局、创造人类未来的主导力量。在中国经济发展新常态下，科技创新引领的增长动力正在加快行成。站在新历史起点上的中国，明确提出将科技放在优先发展的战略地位。以互联网、大数据、人工智能、新能源等为核心的新产业、新业态不断涌现，但同时也给许多传统行业带来影响。
             </p>
@@ -536,7 +556,7 @@
         </div>
         <div class="col-12 col-md-8 offset-md-1 panel-desc hide" id="pdesc-4">
           <div class="vertical-center-m">
-            <h1 class="mobile-hide"> 中国地产转型新方向 </h1>
+            <h3 class="mobile-hide"> 中国地产转型新方向 </h3>
             <p>
               近年来中国房地产投资增速持续下滑，库存不断攀升，销售增长出现疲态。政府出台一系列刺激政策，并将“去库存”列为中央经济工作会议上主要任务之一。在此背景下，一线城市房地产市场率先复苏，而二三线城市的市场表现则差强人意，城市间分化格局进一步加剧。面对当下的楼市特征，房地产行业应如何突破瓶颈，转换思维，优化盈利模式，实现房地产市场从结构到功能的根本转变，成为迫在眉睫的焦点话题。
             </p>
@@ -548,7 +568,7 @@
         </div>
         <div class="col-12 col-md-8 offset-md-1 panel-desc hide" id="pdesc-5">
           <div class="vertical-center-m">
-            <h1 class="mobile-hide"> 中国企业可持续发展与社会责任 </h1>
+            <h3 class="mobile-hide"> 中国企业可持续发展与社会责任 </h3>
             <p>
               “我们这一代”不只是善于创新，敢于挑战的一代，更是勇于承担社会责任，践行可持续发展的一代。在中国经济结构转型的今天，许多社会问题逐步凸显，国家十三五规划和可持续发展目标的实施面临着诸多机遇和挑战。在各方探索者和实践者的努力，以及商业、媒体、科技、创新和文化等元素的融入之下，中国的公益慈善行业正在呈积极态势发展。对企业来讲，社会价值的实现与商业价值同样重要，公益元素可以帮助企业品牌与文化的建设、社会影响力的提升以及战略的转型；对公益机构来讲，社会各界资源的联动有利于社会问题的改善和解决；对政府和媒体来讲，关注社会议题，推动社会发展，传播社会正能量一直都是刚需。因此，本次分论坛将邀请优秀的企业家讨论中国企业可持续发展与社会责任的现状、问题、解决方案和未来展望。
             </p>
@@ -557,7 +577,7 @@
         </div>
         <div class="col-12 col-md-8 offset-md-1 panel-desc hide" id="pdesc-6">
           <div class="vertical-center-m">
-            <h1 class="mobile-hide"> 娱乐新时代：构建中美文化桥梁 </h1>
+            <h3 class="mobile-hide"> 娱乐新时代：构建中美文化桥梁 </h3>
             <p>
               中国文化娱乐产业正处在前所未有的黄金时代。随着2015年影视行业的高速发展与2016、17年票房增速减缓，尽管中国电影票房经历了“过山车式”的大起大落，中国电影正在回归质量，曾经“泡沫化”的中国电影票房也处在“返璞归真”的过程中。除此之外，中国网剧，综艺与其他新媒体相关的影视娱乐输出也处在欣欣向荣的发展中。各大娱乐内容制作与发行公司都跃跃欲试，通过大量资本注入为中国娱乐产业提出新思路。
             </p>
@@ -571,7 +591,7 @@
     </div>
 
     <div class="section-action" id="panels-section-action">
-        <a href="./panels.html">
+        <a href="/panels-ch">
           <div class="section-action-btn">
             更多板块资讯 <i class="icofont icofont-simple-right"></i>
           </div>
@@ -664,7 +684,7 @@
     </div>
 
     <div class="section-action" id="more-section-action">
-      <a href="./agenda.html">
+      <a href="/agenda-ch">
       <div class="section-action-btn">
         查看日程 <i class="icofont icofont-simple-right"></i>
       </div>
@@ -680,9 +700,9 @@
           <div class="row height-80 height-70-mobile">
             <div class="col-3 center-txt">
               <div class="vertical-center contact-icon">
-                <a href="https://www.facebook.com">
+                <a href="https://www.facebook.com/whartonPWCS">
                 <i class="icofont icofont-social-facebook"></i><br/>
-                <span class="txt-4-icon">Facebook</span>
+                <span class="txt-4-icon">脸书</span>
                 </a>
               </div>
             </div>
@@ -690,30 +710,30 @@
               <div class="vertical-center contact-icon">
                 <a href="../assets/images/wechat-code.jpeg">
                 <i class="icofont icofont-social-wechat"></i><br/>
-                <span class="txt-4-icon">WeChat</span>
+                <span class="txt-4-icon">微信<span class="mobile-hide">公众号</span></span>
               </a>
               </div>
             </div>
             <div class="col-3 center-txt">
               <div class="vertical-center contact-icon">
-                <a href="https://www.weibo.com">
+                <a href="https://weibo.com/whartonchinasummit">
                 <i class="icofont icofont-social-weibo"></i><br/>
-                <span class="txt-4-icon"><span class="mobile-hide">Sina</span> Weibo</span>
+                <span class="txt-4-icon"><span class="mobile-hide">新浪</span>微博</span>
                 </a>
               </div>
             </div>
             <div class="col-3 center-txt">
               <div class="vertical-center contact-icon">
-                <a href="https://www.weibo.com">
+                <a href="mailto:official@whartonsummit.org">
                 <i class="icofont icofont-ui-email"></i><br/>
-                <span class="txt-4-icon">Email<span class="mobile-hide"> Us</span></span>
+                <span class="txt-4-icon">邮件<span class="mobile-hide"></span></span>
                 </a>
               </div>
             </div>
           </div>
           <div class="row height-20">
             <div class="col-12 center-txt contact-caption">
-              <div>University of Pennsylvania · Philadelphia · 4.13 - 4.15</div>
+              <div>宾夕法尼亚大学 · 费城 · 4.13 - 4.15</div>
             </div>
           </div>
         </div>
@@ -749,8 +769,8 @@
 
     <script src="../js/bootstrap.min.js"></script>
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="../js/global.js"></script>
-    <script src="../js/home.js"></script>
+    <script src="../js/global-ch.js"></script>
+    <script src="../js/home-ch.js"></script>
     <script>
     mapboxgl.accessToken = 'pk.eyJ1IjoidG9teiIsImEiOiJjajJyN3dyenkwMDVqMndzN3Y0cjk0bTRmIn0.FEEGdubneAr17N9f8ZHh5g';
     var map = new mapboxgl.Map({
