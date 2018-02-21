@@ -512,5 +512,6 @@ a:hover {
 
 .white-paragraph {
   font-weight: 100;
-  color: rgba(255, 255, 255, 0.5);
+  font-family: avn-regular;
+  color: rgba(255, 255, 255, 0.8);
 }
