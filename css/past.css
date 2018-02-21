@@ -23,24 +23,24 @@
   background-color: crimson;
   padding: 10%;
   color: white;
-  font-family: avn-regular;
+  font-family: avn-regular, pf-regular;
   line-height: 30px;
 }
 
 #redbox .speaker-name{
-  font-family: avn-demi;
+  font-family: avn-demi, pf-heavy, pf-medium;
 }
 #blackbox{
   background-color: rgba(0, 0, 0, 0.8);
   padding: 10%;
   color: white;
-  font-family: avn-regular;
+  font-family: avn-regular, pf-regular;
   line-height: 30px;
   height: 100%;
 }
 
 #blackbox .speaker-name{
-  font-family: avn-demi;
+  font-family: avn-demi, pf-heavy, pf-medium;
 }
 
 .header {
@@ -50,24 +50,24 @@
 }
 
 .year-title {
-  font-family: avn-demi;
+  font-family: avn-demi, pf-heavy, pf-medium;
   font-size: 50px;
 }
 .slogan-title {
-  font-family: avn-regular;
+  font-family: avn-regular, pf-regular;
   font-size: 25px;
   line-height: 35px;
 }
 
 .year-desc p {
-  font-family: avn-regular;
+  font-family: avn-regular, pf-regular;
   font-size: 15px;
   line-height: 25px;
   text-align: justify;
 }
 
 .slogan-title span {
-  font-family: avn-demi;
+  font-family: avn-demi, pf-heavy, pf-medium;
   color: crimson;
 }
 .my-icon-next{
@@ -130,7 +130,7 @@
 .summit-year {
   width: 350px;
   margin: auto;
-  font-family: avn-ultra;
+  font-family: avn-ultra, pf-light;
   font-size: 50px;
   letter-spacing: 3px;
   margin-bottom: 30px;

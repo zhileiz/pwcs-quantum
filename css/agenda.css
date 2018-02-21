@@ -6,7 +6,7 @@
 
 .agenda-date {
   font-size: 45px;
-  font-family: avn-ultra;
+  font-family: avn-ultra, pf-light;
 }
 
 .agenda-item {
@@ -27,16 +27,16 @@
   margin: 3px 0px;
   color: crimson;
   font-size: 20px;
-  font-family: avn-demi;
+  font-family: avn-demi, pf-heavy, pf-medium;
 }
 
 .item-location {
-  font-family: avn-regular
+  font-family: avn-regular, pf-regular
 }
 
 .item-desc {
   color: #999;
-  font-family: avn-regular;
+  font-family: avn-regular, pf-regular;
   font-size: 14px;
   margin-top: 5px;
   text-align: justify;

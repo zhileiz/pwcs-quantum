@@ -22,11 +22,11 @@
 
 .navigation-item {
   font-size: 35px;
-  font-family: avn-ultra;
+  font-family: avn-ultra, pf-light;
 }
 
 .active-item {
-  font-family: avn-regular;
+  font-family: avn-regular, pf-regular;
   color: crimson;
 }
 
@@ -100,7 +100,7 @@
   line-height: 60px;
   color: white;
   font-size: 16px;
-  font-family: avn-regular;
+  font-family: avn-regular, pf-regular;
   padding: 0px 5%;
 }
 
@@ -115,6 +115,6 @@
 }
 
 .register-item {
-  font-family: avn-demi;
+  font-family: avn-demi, pf-heavy, pf-medium;
   color: crimson;
 }

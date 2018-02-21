@@ -6,7 +6,7 @@
 
 #whitebox .title{
   margin-bottom: 20px;
-  font-family: avn-demi;
+  font-family: avn-demi, pf-heavy, pf-medium, pf-medium;
 }
 #recap{
   text-align: right;
@@ -119,7 +119,7 @@
 }
 
 .team-profile h2{
-  font-family: avn-demi;
+  font-family: avn-demi, pf-heavy, pf-medium;
   letter-spacing: 3px;
   text-transform: uppercase;
 }
@@ -139,7 +139,7 @@
   font-size: 14px;
   margin-top: 0px;
   margin-bottom: 5px;
-  font-family: avn-regular;
+  font-family: avn-regular, pf-regular;
 }
 
 .links {
@@ -163,7 +163,7 @@
 }
 
 .summary {
-  font-family: avn-regular;
+  font-family: avn-regular, pf-regular;
   text-align: justify;
 }
 

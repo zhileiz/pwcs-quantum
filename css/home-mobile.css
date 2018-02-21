@@ -24,12 +24,12 @@
   .caller-h2 {
     font-size: 25px;
     letter-spacing: 1px;
-    font-family: avn-demi;
+    font-family: avn-demi, pf-heavy, pf-medium;
   }
 
   .caller-h5 {
     font-size: 15px;
-    font-family: avn-regular;
+    font-family: avn-regular, pf-regular;
   }
 
   .background-white {
@@ -47,7 +47,7 @@
 
   .section-1-left-middle-content {
     color: crimson;
-    font-family: avn-regular;
+    font-family: avn-regular, pf-regular;
     width: 100%;
     position: absolute;
     text-align: center;
@@ -57,7 +57,7 @@
   }
 
   .section-1-left-bottom-content {
-    font-family: avn-demi;
+    font-family: avn-demi, pf-heavy, pf-medium;
     font-size: 12px;
     width: 100%;
     position: absolute;
@@ -80,7 +80,7 @@
     text-align: center;
     letter-spacing: 1px;
     font-size: 21px;
-    font-family: avn-regular;
+    font-family: avn-regular, pf-regular;
     top: 10%;
     left: 0%;
     transform: translate(0%, 0%);
@@ -141,7 +141,7 @@
     max-width: 240px;
     text-align: left;
     color: white;
-    font-family: avn-demi;
+    font-family: avn-demi, pf-heavy, pf-medium;
     font-size: 15px;
     line-height: 20px;
     margin: auto;
@@ -176,7 +176,7 @@
   .sponsor-caption {
     padding-top: 15px;
     font-size: 25px;
-    font-family: avn-demi;
+    font-family: avn-demi, pf-heavy, pf-medium;
     letter-spacing: 2px;
     color: white;
   }
@@ -199,7 +199,7 @@
 
   .panel-name {
     position: absolute;
-    font-family: avn-demi;
+    font-family: avn-demi, pf-heavy, pf-medium;
     font-size: 30px;
     letter-spacing: 2px;
     color: white;
@@ -214,7 +214,7 @@
 
   .panel-desc p {
     font-size: 14px;
-    font-family: avn-regular;
+    font-family: avn-regular, pf-regular;
     text-align: justify;
     line-height: 18px;
   }
@@ -227,7 +227,7 @@
   }
 
   .mobile-ultra {
-    font-family: avn-ultra;
+    font-family: avn-ultra, pf-light;
     font-size: 18px;
   }
 

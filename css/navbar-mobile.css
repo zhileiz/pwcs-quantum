@@ -26,11 +26,11 @@
   .navigation-item {
     font-size: 25px;
     line-height: 40px;
-    font-family: avn-ultra;
+    font-family: avn-ultra, pf-light;
   }
 
   .active-item {
-    font-family: avn-regular;
+    font-family: avn-regular, pf-regular;
     color: crimson;
   }
 
@@ -89,7 +89,7 @@
 
   .m-menu-title {
     font-size: 30px;
-    font-family: avn-demi;
+    font-family: avn-demi, pf-heavy, pf-medium;
     letter-spacing: 2px;
     margin: 10px 0px;
   }

@@ -3,7 +3,7 @@
     html, body{
       height: 100%;
       width: 100%;
-      font-family: avn-medium;
+      font-family: avn-medium, pf-medium;
       background-color: crimson;
     }
 
@@ -107,7 +107,7 @@
     }
 
     .center-caption {
-      font-family: avn-ultra;
+      font-family: avn-ultra, pf-light;
       margin-bottom: 2%;
       letter-spacing: 2px;
       color: white;
@@ -125,7 +125,7 @@
       border-radius: 5px;
       line-height: 150px;
       font-size: 20px;
-      font-family: avn-regular;
+      font-family: avn-regular, pf-regular;
     }
 
     #mce-EMAIL {
@@ -216,7 +216,7 @@
     }
 
     .highlighted {
-      font-family: avn-medium;
+      font-family: avn-medium, pf-medium;
       color: crimson;
     }
 
@@ -245,7 +245,7 @@
     }
 
     .ultra-txt {
-      font-family: avn-ultra;
+      font-family: avn-ultra, pf-light;
     }
 
     .font-size-12 {

@@ -35,7 +35,7 @@ body{
 .caption .name {
   color: white;
   letter-spacing: 1px;
-  font-family: avn-demi;
+  font-family: avn-demi, pf-heavy, pf-medium;
   line-height:30px;
 }
 

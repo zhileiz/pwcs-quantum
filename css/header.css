@@ -15,7 +15,7 @@
 
 .site-caption {
   font-size: 60px;
-  font-family: avn-demi;
+  font-family: avn-demi, pf-heavy, pf-medium;
   letter-spacing: 4px;
   text-transform: uppercase;
   line-height: 80px;
@@ -27,7 +27,7 @@
 
 .page-caption {
   font-size: 80px;
-  font-family: avn-demi;
+  font-family: avn-demi, pf-heavy, pf-medium;
   letter-spacing: 3px;
   text-transform: uppercase;
   line-height: 100px;
@@ -42,7 +42,7 @@
   left: 32%;
   bottom: 20%;
   text-align: right;
-  font-family: avn-regular;
+  font-family: avn-regular, pf-regular;
   letter-spacing: 1.5px;
   font-size: 20px;
   color: white;
@@ -50,7 +50,7 @@
 
 .vertical-sub-title {
   color: crimson;
-  font-family: avn-demi;
+  font-family: avn-demi, pf-heavy, pf-medium;
   position: absolute;
   text-align:right;
   font-size: 18px;

@@ -84,7 +84,7 @@ body{
 .caption .name {
   color: white;
   letter-spacing: 1px;
-  font-family: avn-demi;
+  font-family: avn-demi, pf-heavy, pf-medium;
   line-height:30px;
 }
 
@@ -103,7 +103,7 @@ body{
 }
 
 .time-location{
-  font-family: avn-demi;
+  font-family: avn-demi, pf-heavy, pf-medium;
   margin: 5px;
 
 }
@@ -136,12 +136,12 @@ body{
 }
 
 .panel-desc {
-  font-family: avn-regular;
+  font-family: avn-regular, pf-regular;
   text-align: justify;
 }
 
 .speakers-header {
-  font-family: avn-demi;
+  font-family: avn-demi, pf-heavy, pf-medium;
   letter-spacing: 1px;
 }
 
@@ -159,7 +159,7 @@ body{
   max-width: 180px;
   text-align: left;
   color: white;
-  font-family: avn-demi;
+  font-family: avn-demi, pf-heavy, pf-medium;
   font-size: 20px;
   line-height: 30px;
   margin: auto;
