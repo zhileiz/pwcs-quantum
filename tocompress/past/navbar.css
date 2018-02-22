@@ -1,0 +1,120 @@
+#menu-container {
+  background-color: #222;
+  border: 25px solid #444;
+  padding: 5% 12%;
+  color: white;
+}
+
+#menu-container h1 {
+  font-size: 70px;
+}
+
+#temp-menu-container {
+  background-color: #222;
+  border: 25px solid #444;
+  padding: 8% 12%;
+  color: white;
+}
+
+#temp-menu-container h1 {
+  font-size: 40px;
+}
+
+.navigation-item {
+  font-size: 35px;
+  font-family: avn-ultra, pf-light;
+}
+
+.active-item {
+  font-family: avn-regular, pf-regular;
+  color: crimson;
+}
+
+.nav-socials {
+  line-height: 40px;
+  font-size: 40px;
+}
+
+.nav-social-item {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 15px solid #222;
+  margin: auto;
+  margin-top: 10px;
+  background-color: white;
+  text-align: center;
+  color: #222;
+  padding-bottom: 20px;
+  font-size: 25px;
+}
+
+.nav-social-item i {
+  color: black;
+}
+
+.nav-social-item i:hover {
+  color: crimson;
+}
+
+.navigation-action-btn {
+  border: 3px solid white;
+  color: white;
+  max-width: 40%;
+  padding: 10px 20px;
+  font-size: 30px;
+  text-align: center;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.navigation-action-btn:hover {
+  border: 3px solid crimson;
+  background-color: crimson;
+}
+
+.menu-items {
+  text-align: center;
+}
+
+
+
+.navigation-desc {
+  display: none;
+}
+
+.active-desc {
+  display: block;
+}
+
+
+.navigation-mb {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  height: 60px;
+  background-color: #272726;
+  z-index: 99;
+  line-height: 60px;
+  color: white;
+  font-size: 16px;
+  font-family: avn-regular, pf-regular;
+  padding: 0px 5%;
+}
+
+.nav-custom-item {
+  float: left;
+  margin: 0px 20px;
+}
+
+.nav-custom-item:hover {
+  color: crimson;
+  border-top: 5px solid crimson;
+}
+
+.register-item {
+  font-family: avn-demi, pf-heavy, pf-medium;
+  color: crimson;
+}

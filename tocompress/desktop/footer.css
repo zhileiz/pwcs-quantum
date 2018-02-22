@@ -1,0 +1,22 @@
+.footer-img{
+  height: 100%;
+  background: url("../assets/images/footer-1.jpg");
+  background-position: center top;
+  background-size: cover;
+}
+
+.footer-img img {
+  position: absolute;
+  bottom: 0%;
+  overflow: hidden;
+}
+
+.footer-img .stop-sign {
+  position: absolute;
+  top: 10%;
+  background-color: crimson;
+  height: 5px;
+  width: 20%;
+  margin-left: 40%;
+  overflow: hidden;
+}
