@@ -1,21 +1,12 @@
-
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/icofont.css">
-    <link rel="stylesheet" href="../css/global.css">
-    <link rel="stylesheet" href="../css/navbar.css">
-    <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/desktop.min.css">
     <link rel="stylesheet" href="../css/newSpeakers.css">
-    <link rel="stylesheet" href="../css/global-mobile.css">
-    <link rel="stylesheet" href="../css/navbar-mobile.css">
-    <link rel="stylesheet" href="../css/header-mobile.css">
-    <link rel="stylesheet" href="../css/footer-mobile.css">
-    <link rel="stylesheet" href="../css/newSpeakers-mobile.css">
+    <link rel="stylesheet" href="../css/mobile.min.css">
+    <!-- <link rel="stylesheet" href="../css/home-mobile.css"> -->
     <!-- Favicons -->
     <link rel="icon" type="image/png" href="../assets/favicons/favicon-196x196.png" sizes="196x196" />
     <link rel="icon" type="image/png" href="../assets/favicons/favicon-96x96.png" sizes="96x96" />
@@ -33,7 +24,7 @@
       gtag('js', new Date());
       gtag('config', 'UA-108713232-1');
     </script>
-    <title>PWCS 2018 | Speakers</title>
+    <title>Penn Wharton China Summit 2018: OUR GENERATION</title>
   </head>
   <body>
 
@@ -41,8 +32,8 @@
       MARK: Navigation Buttons
     -->
 
-    <div class="navigation row windows-hover-ne">
-      <div class="col-2 offset-2 right-txt no-padding font-size-30 mobile-only"  id="nav-toggle">
+    <div class="navigation row windows-hover-ne" id="abs-nav">
+      <!-- <div class="col-2 offset-2 right-txt no-padding font-size-30 mobile-only"  id="nav-toggle">
         <i class="icofont icofont-caret-right"></i>
       </div>
       <div class="col-4 offset-md-4 right-txt no-padding">
@@ -51,16 +42,16 @@
             REGISTER
           </div>
         </a>
-      </div>
-      <div class="col-2 right-txt no-padding">
-        <a href="./home-ch.html">
+      </div> -->
+      <div class="col-6 right-txt no-padding">
+        <a href="/home-ch">
           <div class="option" id="lang">
             <i class="icofont icofont-globe"></i><br/>
             <span class="hover-text">中文</span>
           </div>
         </a>
       </div>
-      <div class="col-2 right-txt no-padding">
+      <div class="col-6 right-txt no-padding">
         <div class="option" id="nav">
           <i class="icofont icofont-navigation-menu"></i><br/>
           <span class="hover-text">Menu</span>
@@ -68,71 +59,139 @@
       </div>
     </div>
 
-    <!--
-      MARK: (TODO) Navigation Menu
-    -->
-
-    <div class="fixed-full" id="menu-container">
-      <div class="row">
-        <div class="col-12 col-md-5">
-          <h1>Menu</h1>
+    <div class="navigation windows-hover-ne hide" id="close-nav">
+      <div class="col-6 offset-6 right-txt no-padding">
+        <div id="close">
+          <i class="icofont icofont-close"></i><br/>
         </div>
-        <div class="mobile-hide col-md-7 row nav-socials">
-          <div class="col-3">
-            <div class="nav-social-item">
-              <a href="https://www.hotmail.com">
-              <i class="icofont icofont-social-facebook"></i>
+      </div>
+    </div>
+
+    <div class="navigation-mb hide" id="alt-nav">
+
+        <div class="row mobile-hide">
+          <div class="col-7">
+            <a href="/home">
+            <img src="../assets/images/banner.png" height="40px"/>
+            </a>
+          </div>
+          <div class="col-5 right-txt">
+            <div class="right-txt" style="float:right;">
+              <div class="nav-custom-item right-txt">
+                <a href="/home-ch">
+                  <i class="icofont icofont-globe"></i>
+                   简体中文
+                </a>
+              </div>
+              <div class="nav-custom-item right-txt" id="alt-nav-btn">
+                <i class="icofont icofont-navigation-menu"></i>
+                MENU
+              </div>
+              <div class="nav-custom-item right-txt register-item">
+                <a href="https://whartonchinasummit.ticketleap.com/2018pwcs/" target="_blank">
+                  REGISTER
+                  <i class="icofont icofont-dotted-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <div class="container mobile-only">
+        <div class="row height-100">
+          <div class="col-5 register-item">
+            <a href="https://whartonchinasummit.ticketleap.com/2018pwcs/" target="_blank">
+              REGISTER
+              <i class="icofont icofont-dotted-right"></i>
+            </a>
+          </div>
+          <div class="col-3 no-padding right-txt">
+            <a href="/home-ch">
+              <i class="icofont icofont-globe"></i>
+              中文
+            </a>
+          </div>
+          <div class="col-4 no-padding center-txt" id="m-alt-nav-btn">
+            <i class="icofont icofont-navigation-menu"></i>
+            Menu
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--
+      MARK:  Navigation Menu
+    -->
+    <div class="fixed-full" id="menu-container">
+      <div class="vertical-center mobile-hide">
+        <div class="row center-txt">
+          <div class="col-12">
+            <a href="https://whartonchinasummit.ticketleap.com/2018pwcs/" target="_blank"><div class="navigation-action-btn">Register</div></a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-12 row menu-items">
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item active-item" id="item-0"> <a href="/home" class="active-item">Home</a> <i class="icofont icofont-dotted-left"></i> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-4"> <a href="/about">About</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-1"> <a href="/panels">Panels</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-2"> <a href="/panels">Speakers</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-3"> <a href="/agenda">Agenda</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-3"> <a href="/past">Past</a> </div>
+          </div>
+        </div>
+        <div class="row center-txt">
+          <div class="col-4 offset-2 col-md-2 offset-md-2 center-txt">
+            <div class="nav-social-item center-txt">
+              <a href="https://www.facebook.com/whartonPWCS" target="_blank">
+                <i class="icofont icofont-social-facebook"></i>
               </a>
             </div>
           </div>
-          <div class="col-3">
-            <div class="nav-social-item">
-              <a href="https://www.hotmail.com">
-              <i class="icofont icofont-social-wechat"></i>
+          <div class="col-4 col-md-2 center-txt">
+            <div class="nav-social-item center-txt">
+              <a href="../assets/images/wechat-code.jpeg" target="_blank">
+                <i class="icofont icofont-social-wechat"></i>
               </a>
             </div>
           </div>
-          <div class="col-3">
-            <div class="nav-social-item">
-              <a href="https://www.hotmail.com">
+          <div class="col-4 offset-2 col-md-2 offset-md-0 center-txt">
+            <div class="nav-social-item center-txt">
+              <a href="https://weibo.com/whartonchinasummit" target="_blank">
                 <i class="icofont icofont-social-weibo"></i>
               </a>
             </div>
           </div>
-          <div class="col-3">
-            <div class="nav-social-item">
-              <a href="https://www.hotmail.com">
+          <div class="col-4 col-md-2 center-txt">
+            <div class="nav-social-item center-txt">
+              <a href="mailto:official@whartonsummit.org" target="_blank">
                 <i class="icofont icofont-email"></i>
               </a>
             </div>
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-12 col-md-5 offset-md-0 row left-txt">
-          <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item active-item" id="item-0"> <a href="./home.html" class="active-item">Home</a> <i class="icofont icofont-dotted-left"></i> </div>
-          <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-4"> <a href="./about.html">About</a> </div>
-          <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-1"> <a href="./panels.html">Panels</a> </div>
-          <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-2"> <a href="./speakers.html">Speakers</a> </div>
-          <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-3"> <a href="./agenda.html">Agenda</a> </div>
-          <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-3"> <a href="./past.html">Past</a> </div>
-          <div class="col-12 navigation-action-btn"> <a href="#">Register</a> </div>
+      <div class="verticl-center mobile-only">
+        <div class="row">
+          <div class="col-12 center-txt m-menu-title">
+            MENU
+          </div>
         </div>
-        <div class="mobile-hide col-md-7 row">
-          <div class="col-12 navigation-desc active-desc" id="desc-0">
-            Stay Tuned, Our Site is Under Maintenance
+        <div class="row">
+          <div class="col-12 col-md-12 row menu-items center-txt">
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item active-item" id="item-0"> <a href="/home" class="active-item">Home</a> <i class="icofont icofont-dotted-left"></i> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-4"> <a href="/about">About</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-1"> <a href="/panels">Panels</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-2"> <a href="/panels">Speakers</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-3"> <a href="/agenda">Agenda</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-3"> <a href="/past">Past</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-6"> <a href="https://whartonchinasummit.ticketleap.com/2018pwcs/" target="_blank">Register</a> </div>
           </div>
-          <div class="col-12 navigation-desc" id="desc-1">
-            My Panels
-          </div>
-          <div class="col-12 navigation-desc" id="desc-2">
-            My Speakers
-          </div>
-          <div class="col-12 navigation-desc" id="desc-3">
-            My Partnership
-          </div>
-          <div class="col-12 navigation-desc" id="desc-4">
-            My About
+        </div>
+        <div class="row hide" id="m-close-nav">
+          <div class="col-12 center-txt">
+            <div class="m-close-btn verticl-center">
+              <i class="icofont icofont-close"></i>
+            </div>
           </div>
         </div>
       </div>
@@ -142,42 +201,23 @@
       MARK: Header
     -->
 
-    <!--
-      TODO: NEW SECTIONS HERE
-    -->
-    <div class="section-free white-bg">
-      <div class="grid-containe">
-        <div class="row overflow-hide">
-          <div class="col-12 col-md-6 overflow-hide no-padding right-txt">
-            <div class="left-test-speaker-grid">
-              <div class="row height-100">
-                <div class="col-6 no-padding">
-                  <img src="../assets/images/10.jpg" width="100%" height="100%"/>
-                </div>
-                <div class="col-6 no-padding">
-                  <div class="test-desc-block">
-                    <div class="vertical-center center-txt">
-                        Tiankai Cui </br>
-                        Chinese Ambassador
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 overflow-hide no-padding left-txt">
-            <div class="right-test-speaker-grid">
-              <div class="row">
-                <div class="col-6 no-padding">
-                  <img src="../assets/images/10.jpg" width="100%" height="100%"/>
-                </div>
-                <div class="col-6 no-padding">
-                  <div class="test-desc-block">
-
-                  </div>
-                </div>
-              </div>
-            </div>
+    <div class="section-full header" id="section-0">
+      <div class="left-square"></div>
+      <div class="sub-title">April.13th - 15th<br/>University of Pennsylvania</div>
+      <div class="vertical-sub-title mobile-hide">
+        To Build the Bridge Between Us
+      </div>
+      <div class="vertical-sub-title mobile-only">
+        To Build the Bridge Between Us
+      </div>
+      <h1 class="site-caption black-shadow">
+        Penn <br/>Wharton<br/>China <br/>Summit
+      </h1>
+      <div class="bottom-square">
+        <div class="row">
+          <div class="col-10 white-txt crimson-bg ls-1" style="letter-spacing: 3px;">REGISTER</div>
+          <div class="col-2 white-bg action-area">
+            <a href="https://whartonchinasummit.ticketleap.com/2018pwcs/" target="_blank" class="black-txt"><i class="icofont icofont-dotted-right"></i></a>
           </div>
         </div>
       </div>

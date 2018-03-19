@@ -293,9 +293,17 @@
         <div class="carousel-item active">
           <div class="row">
             <div class="col-6 col-md-3 center-txt speaker-item">
-              <img class="speaker-img" src="../assets/images/cuitiankai.jpg"/>
+              <img id="Tiankai" class="speaker-img" src="../assets/images/cuitiankai.jpg"/>
               <div class="speaker-name">Tiankai Cui <span class="mobile-small hide">2016</span></div>
               <div class="speaker-title">Chinese Ambassador</div>
+              <!-- The Modal -->
+              <div id="myModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p>Some text in the Modal..</p>
+                </div>
+              </div>
             </div>
             <div class="col-6 col-md-3 center-txt speaker-item">
               <img class="speaker-img" src="../assets/images/lining.jpg"/>
@@ -640,7 +648,7 @@
       		<div class="direction-l">
       			<div class="flag-wrapper">
       				<span class="flag">Career Panel</span>
-      				<span class="time-wrapper"><span class="time">4/14 15:00-17:00</span></span>
+      				<span class="time-wrapper"><span class="time">4/14 18:00-20:00</span></span>
       			</div>
       			<div class="desc">An excellent speed-dating opportunity for companies and job seekers. Bring your resumes and talk with the Human Resource representatives at the desks.</div>
       		</div>
@@ -759,6 +767,33 @@
     interactive: false
     });
     $('.carousel').carousel();
+    </script>
+    <script>
+    // Get the modal
+    var modal = document.getElementById('myModal');
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("Tiankai");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on the button, open the modal
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
     </script>
   </body>
 </html>
