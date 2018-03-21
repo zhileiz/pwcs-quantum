@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -41,8 +40,8 @@
       MARK: Navigation Buttons
     -->
 
-    <div class="navigation row windows-hover-ne">
-      <div class="col-2 offset-2 right-txt no-padding font-size-30 mobile-only"  id="nav-toggle">
+    <div class="navigation row windows-hover-ne" id="abs-nav">
+      <!-- <div class="col-2 offset-2 right-txt no-padding font-size-30 mobile-only"  id="nav-toggle">
         <i class="icofont icofont-caret-right"></i>
       </div>
       <div class="col-4 offset-md-4 right-txt no-padding">
@@ -51,16 +50,16 @@
             REGISTER
           </div>
         </a>
-      </div>
-      <div class="col-2 right-txt no-padding">
-        <a href="./home-ch.html">
+      </div> -->
+      <div class="col-6 right-txt no-padding">
+        <a href="/speakers-ch">
           <div class="option" id="lang">
             <i class="icofont icofont-globe"></i><br/>
             <span class="hover-text">中文</span>
           </div>
         </a>
       </div>
-      <div class="col-2 right-txt no-padding">
+      <div class="col-6 right-txt no-padding">
         <div class="option" id="nav">
           <i class="icofont icofont-navigation-menu"></i><br/>
           <span class="hover-text">Menu</span>
@@ -68,80 +67,173 @@
       </div>
     </div>
 
-    <!--
-      MARK: (TODO) Navigation Menu
-    -->
-    <div class="fixed-full" id="menu-container">
-      <div class="vertical-center">
-        <div class="row center-txt">
-          <div class="col-12">
-            <a href="#"><div class="navigation-action-btn">Register</div></a>
+    <div class="navigation windows-hover-ne hide" id="close-nav">
+      <div class="col-6 offset-6 right-txt no-padding">
+        <div id="close">
+          <i class="icofont icofont-close"></i><br/>
+        </div>
+      </div>
+    </div>
+
+    <div class="navigation-mb hide" id="alt-nav">
+
+        <div class="row mobile-hide">
+          <div class="col-7">
+            <a href="/home">
+            <img src="../assets/images/banner.png" height="40px"/>
+            </a>
+          </div>
+          <div class="col-5 right-txt">
+            <div class="right-txt" style="float:right;">
+              <div class="nav-custom-item right-txt">
+                <a href="/speakers-ch">
+                  <i class="icofont icofont-globe"></i>
+                   简体中文
+                </a>
+              </div>
+              <div class="nav-custom-item right-txt" id="alt-nav-btn">
+                <i class="icofont icofont-navigation-menu"></i>
+                MENU
+              </div>
+              <div class="nav-custom-item right-txt register-item">
+                <a href="https://whartonchinasummit.ticketleap.com/" target="_blank">
+                  REGISTER
+                  <i class="icofont icofont-dotted-right"></i>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-12 col-md-12 row menu-items">
-            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item active-item" id="item-0"> <a href="./home.html" class="active-item">Home</a> <i class="icofont icofont-dotted-left"></i> </div>
-            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-4"> <a href="./about.html">About</a> </div>
-            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-1"> <a href="./panels.html">Panels</a> </div>
-            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-2"> <a href="./panels.html">Speakers</a> </div>
-            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-3"> <a href="./agenda.html">Agenda</a> </div>
-            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-3"> <a href="./past.html">Past</a> </div>
+
+      <div class="container mobile-only">
+        <div class="row height-100">
+          <div class="col-5 register-item">
+            <a href="https://whartonchinasummit.ticketleap.com/" target="_blank">
+              REGISTER
+              <i class="icofont icofont-dotted-right"></i>
+            </a>
           </div>
-        </div>
-        <div class="row center-txt">
-          <div class="col-4 offset-2 col-md-2 offset-md-2 center-txt">
-            <div class="nav-social-item center-txt">
-              <a href="https://www.hotmail.com">
-                <i class="icofont icofont-social-facebook"></i>
-              </a>
-            </div>
+          <div class="col-3 no-padding right-txt">
+            <a href="/speakers-ch">
+              <i class="icofont icofont-globe"></i>
+              中文
+            </a>
           </div>
-          <div class="col-4 col-md-2 center-txt">
-            <div class="nav-social-item center-txt">
-              <a href="https://www.hotmail.com">
-                <i class="icofont icofont-social-wechat"></i>
-              </a>
-            </div>
-          </div>
-          <div class="col-4 offset-2 col-md-2 offset-md-0 center-txt">
-            <div class="nav-social-item center-txt">
-              <a href="https://www.hotmail.com">
-                <i class="icofont icofont-social-weibo"></i>
-              </a>
-            </div>
-          </div>
-          <div class="col-4 col-md-2 center-txt">
-            <div class="nav-social-item center-txt">
-              <a href="https://www.hotmail.com">
-                <i class="icofont icofont-email"></i>
-              </a>
-            </div>
+          <div class="col-4 no-padding center-txt" id="m-alt-nav-btn">
+            <i class="icofont icofont-navigation-menu"></i>
+            Menu
           </div>
         </div>
       </div>
     </div>
 
     <!--
+      MARK:  Navigation Menu
+    -->
+    <div class="fixed-full" id="menu-container">
+      <div class="vertical-center mobile-hide">
+        <div class="row center-txt">
+          <div class="col-12">
+            <a href="https://whartonchinasummit.ticketleap.com/" target="_blank"><div class="navigation-action-btn">Register</div></a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-12 row menu-items">
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-0"> <a href="/home">Home</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-4"> <a href="/about">About</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item active-item" id="item-1"> <a class="active-item" href="/panels">Panels</a> <i class="icofont icofont-dotted-left"></i> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-2"> <a href="/panels">Panels</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-3"> <a href="/agenda">Agenda</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-3"> <a href="/past">Past</a> </div>
+          </div>
+        </div>
+        <div class="row center-txt">
+          <div class="col-4 offset-2 col-md-2 offset-md-2 center-txt">
+            <div class="nav-social-item center-txt">
+              <a href="https://www.facebook.com/whartonPWCS" target="_blank">
+                <i class="icofont icofont-social-facebook"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-4 col-md-2 center-txt">
+            <div class="nav-social-item center-txt">
+              <a href="../assets/images/wechat-code.jpeg" target="_blank">
+                <i class="icofont icofont-social-wechat"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-4 offset-2 col-md-2 offset-md-0 center-txt">
+            <div class="nav-social-item center-txt">
+              <a href="https://weibo.com/whartonchinasummit" target="_blank">
+                <i class="icofont icofont-social-weibo"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-4 col-md-2 center-txt">
+            <div class="nav-social-item center-txt">
+              <a href="mailto:official@whartonsummit.org" target="_blank">
+                <i class="icofont icofont-email"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="verticl-center mobile-only">
+        <div class="row">
+          <div class="col-12 center-txt m-menu-title">
+            MENU
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-12 row menu-items center-txt">
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-0"> <a href="/home">Home</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-4"> <a href="/about">About</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item active-item" id="item-1"> <a class="active-item" href="/panels">Panels</a> <i class="icofont icofont-dotted-left"></i> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-2"> <a href="/panels">Panels</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-3"> <a href="/agenda">Agenda</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-3"> <a href="/past">Past</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-6"> <a href="https://whartonchinasummit.ticketleap.com/" target="_blank">Register</a> </div>
+          </div>
+        </div>
+        <div class="row hide" id="m-close-nav">
+          <div class="col-12 center-txt">
+            <div class="m-close-btn verticl-center">
+              <i class="icofont icofont-close"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--
       MARK: Header
+
+      <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-0"> <a href="./home.html">Home</a> </div>
+      <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-4"> <a href="./about.html">About</a> </div>
+      <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item active-item" id="item-1"> <a class="active-item" href="./panels.html">Panels</a> <i class="icofont icofont-dotted-left"></i> </div>
+      <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-2"> <a href="./panels.html">Speakers</a> </div>
+      <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-3"> <a href="./agenda.html">Agenda</a> </div>
+      <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-3"> <a href="./past.html">Past</a> </div>
     -->
 
     <div class="section-full header" id="section-0">
       <div class="left-square"></div>
       <div class="sub-title">April.13th - 15th<br/>University of Pennsylvania</div>
       <div class="vertical-sub-title mobile-hide">
-        A Summit that builds the bridge between us
+        To Build the Bridge Between Us
       </div>
       <div class="vertical-sub-title mobile-only">
         To Build the Bridge Between Us
       </div>
-      <div class="page-caption black-shadow">
-         30+ <br/> SPEAKERS
-      </div>
+      <h1 class="page-caption black-shadow">
+         32 <br/> SPEAKERS
+      </h1>
       <div class="bottom-square">
         <div class="row">
           <div class="col-10 white-txt crimson-bg ls-1" style="letter-spacing: 3px;">REGISTER</div>
           <div class="col-2 white-bg action-area">
-            <a href="#section-temp" class="black-txt"><i class="icofont icofont-dotted-right"></i></a>
+            <a href="https://whartonchinasummit.ticketleap.com/" target="_blank" class="black-txt"><i class="icofont icofont-dotted-right"></i></a>
           </div>
         </div>
       </div>
@@ -150,666 +242,424 @@
     <!--
       TODO: NEW SECTIONS HERE
     -->
+    <div class="container panel-nav">
+      <div class="row">
+        <div class="col-12 col-sm-6 col-md-3 center-txt">
+          <a href="#opening-ceremony">Opening Ceremony</a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 center-txt">
+          <a href="#first-panel">Finance</a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 center-txt">
+          <a href="#second-panel">Technology</a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 center-txt">
+          <a href="#third-panel">I.R.</a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 center-txt">
+          <a href="#fourth-panel">Real Estate</a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 center-txt">
+          <a href="#fifth-panel">Entertainment</a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 center-txt">
+          <a href="#sixth-panel">Social</a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 center-txt">
+          <a href="#closing-ceremony">Closing Ceremony</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-sm-6 col-md-12 center-txt">
+          <a href="#hosts">Hosts</a>
+        </div>
+      </div>
+    </div>
 
     <!-- Speakers main section -->
+    <div class="main-section">
+      <div class="container">
 
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <div class="grand-title">
-            Speakers
-          </div>
-        </div>
-      </div>
-      <!-- First set of five speakers -->
-      <div class="row">
-        <div class="col-xs-12 col-sm-6">
-          <div class="row">
-            <div class="col">
-              <div class="image_container1 TiankaiCui generic-speaker-img">
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col">
-          <div class="caption">
-            <div class="name">
-              Tiankai Cui
-            </div>
-            <div class="title">
-              Chinese Embassador
-            </div>
-        </div>
-      </div>
-    </div>
-    </div>
-
-
-        <div class="col-xs-12 col-sm-6">
-          <div class="row">
-            <div class="col">
-              <div class="image_container2 ShiyiPan generic-speaker-img">
-              </div>
-              <div class="caption">
-                <div class="name">
-                  Shiyi Pan
-                </div>
-                <div class="title">
-                  Chairman of SOHO China
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="image_container2 QiyueZhang generic-speaker-img">
-              </div>
-              <div class="caption">
-                <div class="name">
-                  Qiyue Zhang
-                </div>
-                <div class="title">
-                  Consul General of Chinese Consulate
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col">
-              <div class="image_container2 JizhongZhang generic-speaker-img">
-              </div>
-              <div class="caption">
-                <div class="name">
-                  Jizhong Zhang
-                </div>
-                <div class="title">
-                  Chinese TV Producer
-                </div>
-            </div>
-          </div>
-            <div class="col">
-              <div class="image_container2 XinZhou generic-speaker-img">
-              </div>
-              <div class="caption">
-                <div class="name">
-                  Xin Zhou
-                </div>
-                <div class="title">
-                  Chairman of E-House Holdings
-                </div>
+        <!-- opening ceremony -->
+        <div class="row" id="opening-ceremony">
+          <div class="col">
+            <div class="panels-header">
+              Opening Ceremony
             </div>
           </div>
         </div>
-      </div>
-  </div>
-      <div class="row spacer">
-      </div>
-      <!-- Second set of five speakers -->
+        <div class="row">
+          <div class="col-md-auto col-6 center-txt speaker-item">
+            <img class="speaker-img buttonImg" src="../assets/images/Baoguo_Zhu.jpeg"/ speaker-name="BaoguoZhu">
+            <div class="speaker-name">Baoguo Zhu</div>
+            <div class="speaker-title">Founder of Joincare and Livzon</div>
 
-      <div class="row">
-        <div class="col-xs-12 col-sm-6 order-sm-2">
-          <div class="row">
-            <div class="col">
-              <div class="image_container1 NingLi generic-speaker-img">
+            <!-- The Modal -->
+            <div id="BaoguoZhuBio" class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Mr. Zhu Baoguo, the Founder and Chairman of China public listed pharmaceutical companies – Joincare and Livzon Pharmaceutical Group. Mr. Zhu dedicates a third of his time to philanthropy over the past decade. He serves as the core initiator and participant of The Paradise International Foundation (TaoHuaYuan); Secretary general and trustee of The Nature Conservancy’s China Global Conservation Fund Board Committee. Besides Pharmaceutical business, Mr. Zhu is also known as the joint founder with Tencent’s Webank.</p>
               </div>
             </div>
+
           </div>
-          <div class="row">
-            <div class="col">
-              <div class="caption">
-                <div class="name">
-                  Ning Li
-                </div>
-                <div class="title">
-                  Executive Director of Li Ning CO.
-                </div>
-              </div>
+          <div class="col-md-auto col-6 center-txt speaker-item">
+            <img class="speaker-img" src="../assets/images/placeholder-female.jpg"/>
+            <div class="speaker-name">Speaker</div>
+            <div class="speaker-title">To Be Announced</div>
           </div>
+          <div class="col-md-auto col-6 center-txt speaker-item">
+            <img class="speaker-img" src="../assets/images/placeholder-female.jpg"/>
+            <div class="speaker-name">Speaker</div>
+            <div class="speaker-title">To Be Announced</div>
+          </div>
+          <div class="col-md-auto col-6 center-txt speaker-item">
+            <img class="speaker-img" src="../assets/images/placeholder-male.jpg"/>
+            <div class="speaker-name">Speaker</div>
+            <div class="speaker-title">To Be Announced</div>
+          </div>
+          <div class="col-md-auto col-6 center-txt speaker-item">
+            <img class="speaker-img" src="../assets/images/placeholder-male.jpg"/>
+            <div class="speaker-name">Speaker</div>
+            <div class="speaker-title">To Be Announced</div>
+          </div>
+          <!-- <div class="col-12 center-txt">
+            <img src="../assets/images/speakers-tba.jpg" style="width:100%; max-height: 100%;"/>
+          </div> -->
         </div>
-    </div>
 
-
-        <div class="col-xs-12 col-sm-6 order-sm-1">
-          <div class="row">
-            <div class="col">
-              <div class="image_container2 YimingZhang generic-speaker-img">
-              </div>
-              <div class="caption">
-                <div class="name">
-                  Yiming Zhang
-                </div>
-                <div class="title">
-                  CEO of TouTiao
+            <!-- first panel -->
+            <div class="row" id="first-panel">
+              <div class="col">
+                <div class="panels-header">
+                  Finance Panel:
                 </div>
               </div>
             </div>
-            <div class="col">
-              <div class="image_container2 KaijingYan generic-speaker-img">
+            <div class="row">
+              <div class="col-md-auto col-6 center-txt speaker-item">
+                <img class="speaker-img" src="../assets/images/placeholder-male.jpg"/>
+                <div class="speaker-name">Speaker</div>
+                <div class="speaker-title">To Be Announced</div>
               </div>
-              <div class="caption">
-                <div class="name">
-                  Kaijing Yan
-                </div>
-                <div class="title">
-                  Chairman of Tasly Pharmaceutical Group
-                </div>
+              <div class="col-md-auto col-6 center-txt speaker-item">
+                <img class="speaker-img" src="../assets/images/placeholder-female.jpg"/>
+                <div class="speaker-name">Speaker</div>
+                <div class="speaker-title">To Be Announced</div>
               </div>
+              <div class="col-md-auto col-6 center-txt speaker-item">
+                <img class="speaker-img" src="../assets/images/placeholder-female.jpg"/>
+                <div class="speaker-name">Speaker</div>
+                <div class="speaker-title">To Be Announced</div>
+              </div>
+              <div class="col-md-auto col-6 center-txt speaker-item">
+                <img class="speaker-img" src="../assets/images/placeholder-male.jpg"/>
+                <div class="speaker-name">Speaker</div>
+                <div class="speaker-title">To Be Announced</div>
+              </div>
+              <div class="col-md-auto col-6 center-txt speaker-item">
+                <img class="speaker-img" src="../assets/images/placeholder-male.jpg"/>
+                <div class="speaker-name">Speaker</div>
+                <div class="speaker-title">To Be Announced</div>
+              </div>
+              <!-- <div class="col-12 center-txt">
+                <img src="../assets/images/speakers-tba.jpg" style="width:100%; max-height: 100%;"/>
+              </div> -->
             </div>
-          </div>
-          <div class="row">
-            <div class="col">
-              <div class="image_container2 JiwuWang generic-speaker-img">
-              </div>
-              <div class="caption">
-                <div class="name">
-                  Jiwu Wang
-                </div>
-                <div class="title">
-                  Board Director of Tuspark Holdings
-                </div>
-            </div>
-          </div>
-            <div class="col">
-              <div class="image_container2 TadSmith generic-speaker-img">
-              </div>
-              <div class="caption">
-                <div class="name">
-                  Tad Smith
-                </div>
-                <div class="title">
-                  CEO of Sotheby's
-                </div>
-            </div>
-          </div>
-        </div>
-      </div>
-  </div>
-    <div class="row spacer">
-    </div>
-  </div>
 
-    <!-- Panel Specific Speakers -->
-    <div class="black">
-      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner" role="listbox">
-          <div class="carousel-item active">
-
-            <!-- Panel 1 -->
-
-            <div class="container">
-              <div class="row">
-                <div class="col">
-                  <div class="panel">
-                    Panel 1: Corporations
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-6 col-sm-6 col-lg-3">
-                  <div class="image_container3">
-                  </div>
-                  <div class="caption">
-                    <div class="panel-name">
-                      Tiankai Cui
-                    </div>
-                    <div class="panel-title">
-                      Chinese Embassador
-                    </div>
-                  </div>
-                </div>
-                <div class="col-6 col-sm-6 col-lg-3">
-                    <div class="image_container3">
-                    </div>
-                    <div class="caption">
-                      <div class="panel-name">
-                        Tiankai Cui
-                      </div>
-                      <div class="panel-title">
-                        Chinese Embassador
-                      </div>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-6 col-lg-3">
-                  <div class="image_container3">
-                  </div>
-                  <div class="caption">
-                    <div class="panel-name">
-                      Tiankai Cui
-                    </div>
-                    <div class="panel-title">
-                      Chinese Embassador
-                    </div>
-                  </div>
-                </div>
-                <div class="col-6 col-sm-6 col-lg-3">
-                  <div class="image_container3">
-                  </div>
-                  <div class="caption">
-                    <div class="panel-name">
-                      Tiankai Cui
-                    </div>
-                    <div class="panel-title">
-                      Chinese Embassador
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-
-            <!-- Panel 2 -->
-
-            <div class="container">
-              <div class="row">
-                <div class="col">
-                  <div class="panel">
-                    Panel 2: Real Estate
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-6 col-sm-6 col-lg-3">
-                  <div class="image_container3">
-                  </div>
-                  <div class="caption">
-                    <div class="panel-name">
-                      Tiankai Cui
-                    </div>
-                    <div class="panel-title">
-                      Chinese Embassador
-                    </div>
-                  </div>
-                </div>
-                <div class="col-6 col-sm-6 col-lg-3">
-                    <div class="image_container3">
-                    </div>
-                    <div class="caption">
-                      <div class="panel-name">
-                        Tiankai Cui
-                      </div>
-                      <div class="panel-title">
-                        Chinese Embassador
-                      </div>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-6 col-lg-3">
-                  <div class="image_container3">
-                  </div>
-                  <div class="caption">
-                    <div class="panel-name">
-                      Tiankai Cui
-                    </div>
-                    <div class="panel-title">
-                      Chinese Embassador
-                    </div>
-                  </div>
-                </div>
-                <div class="col-6 col-sm-6 col-lg-3">
-                  <div class="image_container3">
-                  </div>
-                  <div class="caption">
-                    <div class="panel-name">
-                      Tiankai Cui
-                    </div>
-                    <div class="panel-title">
-                      Chinese Embassador
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-
-            <!-- Panel 3 -->
-
-            <div class="container">
-              <div class="row">
-                <div class="col">
-                  <div class="panel">
-                    Panel 3: Finance Market
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-6 col-sm-6 col-lg-3">
-                  <div class="image_container3">
-                  </div>
-                  <div class="caption">
-                    <div class="panel-name">
-                      Tiankai Cui
-                    </div>
-                    <div class="panel-title">
-                      Chinese Embassador
-                    </div>
-                  </div>
-                </div>
-                <div class="col-6 col-sm-6 col-lg-3">
-                    <div class="image_container3">
-                    </div>
-                    <div class="caption">
-                      <div class="panel-name">
-                        Tiankai Cui
-                      </div>
-                      <div class="panel-title">
-                        Chinese Embassador
-                      </div>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-6 col-lg-3">
-                  <div class="image_container3">
-                  </div>
-                  <div class="caption">
-                    <div class="panel-name">
-                      Tiankai Cui
-                    </div>
-                    <div class="panel-title">
-                      Chinese Embassador
-                    </div>
-                  </div>
-                </div>
-                <div class="col-6 col-sm-6 col-lg-3">
-                  <div class="image_container3">
-                  </div>
-                  <div class="caption">
-                    <div class="panel-name">
-                      Tiankai Cui
-                    </div>
-                    <div class="panel-title">
-                      Chinese Embassador
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-
-            <!-- Panel 4 -->
-
-            <div class="container">
-              <div class="row">
-                <div class="col">
-                  <div class="panel">
-                    Panel 4: Healthcare
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-6 col-sm-6 col-lg-3">
-                  <div class="image_container3">
-                  </div>
-                  <div class="caption">
-                    <div class="panel-name">
-                      Tiankai Cui
-                    </div>
-                    <div class="panel-title">
-                      Chinese Embassador
-                    </div>
-                  </div>
-                </div>
-                <div class="col-6 col-sm-6 col-lg-3">
-                    <div class="image_container3">
-                    </div>
-                    <div class="caption">
-                      <div class="panel-name">
-                        Tiankai Cui
-                      </div>
-                      <div class="panel-title">
-                        Chinese Embassador
-                      </div>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-6 col-lg-3">
-                  <div class="image_container3">
-                  </div>
-                  <div class="caption">
-                    <div class="panel-name">
-                      Tiankai Cui
-                    </div>
-                    <div class="panel-title">
-                      Chinese Embassador
-                    </div>
-                  </div>
-                </div>
-                <div class="col-6 col-sm-6 col-lg-3">
-                  <div class="image_container3">
-                  </div>
-                  <div class="caption">
-                    <div class="panel-name">
-                      Tiankai Cui
-                    </div>
-                    <div class="panel-title">
-                      Chinese Embassador
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-
-            <!-- Panel 5 -->
-
-            <div class="container">
-              <div class="row">
-                <div class="col">
-                  <div class="panel">
-                    Panel 5: Internet
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <!-- <div class="col-6 col-sm-6 col-lg-3">
-                  <div class="image_container3">
-                  </div>
-                  <div class="caption">
-                    <div class="panel-name">
-                      Tiankai Cui
-                    </div>
-                    <div class="panel-title">
-                      Chinese Embassador
-                    </div>
-                  </div>
-                </div>
-                <div class="col-6 col-sm-6 col-lg-3">
-                    <div class="image_container3">
-                    </div>
-                    <div class="caption">
-                      <div class="panel-name">
-                        Tiankai Cui
-                      </div>
-                      <div class="panel-title">
-                        Chinese Embassador
-                      </div>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-6 col-lg-3">
-                  <div class="image_container3">
-                  </div>
-                  <div class="caption">
-                    <div class="panel-name">
-                      Tiankai Cui
-                    </div>
-                    <div class="panel-title">
-                      Chinese Embassador
-                    </div>
-                  </div>
-                </div>
-                <div class="col-6 col-sm-6 col-lg-3">
-                  <div class="image_container3">
-                  </div>
-                  <div class="caption">
-                    <div class="panel-name">
-                      Tiankai Cui
-                    </div>
-                    <div class="panel-title">
-                      Chinese Embassador
-                    </div>
-                  </div>
-                </div> -->
-                <img src="../assets/speakers-tba.jpg" width="100%">
-              </div>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-
-            <!-- Panel 6 -->
-
-            <div class="container">
-              <div class="row">
-                <div class="col">
-                  <div class="panel">
-                    Panel 6: Arts and Culture
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-6 col-sm-6 col-lg-3">
-                  <div class="image_container3">
-                  </div>
-                  <div class="caption">
-                    <div class="panel-name">
-                      Tiankai Cui
-                    </div>
-                    <div class="panel-title">
-                      Chinese Embassador
-                    </div>
-                  </div>
-                </div>
-                <div class="col-6 col-sm-6 col-lg-3">
-                    <div class="image_container3">
-                    </div>
-                    <div class="caption">
-                      <div class="panel-name">
-                        Tiankai Cui
-                      </div>
-                      <div class="panel-title">
-                        Chinese Embassador
-                      </div>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-6 col-lg-3">
-                  <div class="image_container3">
-                  </div>
-                  <div class="caption">
-                    <div class="panel-name">
-                      Tiankai Cui
-                    </div>
-                    <div class="panel-title">
-                      Chinese Embassador
-                    </div>
-                  </div>
-                </div>
-                <div class="col-6 col-sm-6 col-lg-3">
-                  <div class="image_container3">
-                  </div>
-                  <div class="caption">
-                    <div class="panel-name">
-                      Tiankai Cui
-                    </div>
-                    <div class="panel-title">
-                      Chinese Embassador
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-
-            <!-- Panel 7 -->
-
-            <div class="container">
-              <div class="row">
-                <div class="col">
-                  <div class="panel">
-                    Panel 7: Education
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-6 col-sm-6 col-lg-3">
-                  <div class="image_container3">
-                  </div>
-                  <div class="caption">
-                    <div class="panel-name">
-                      Tiankai Cui
-                    </div>
-                    <div class="panel-title">
-                      Chinese Embassador
-                    </div>
-                  </div>
-                </div>
-                <div class="col-6 col-sm-6 col-lg-3">
-                    <div class="image_container3">
-                    </div>
-                    <div class="caption">
-                      <div class="panel-name">
-                        Tiankai Cui
-                      </div>
-                      <div class="panel-title">
-                        Chinese Embassador
-                      </div>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-6 col-lg-3">
-                  <div class="image_container3">
-                  </div>
-                  <div class="caption">
-                    <div class="panel-name">
-                      Tiankai Cui
-                    </div>
-                    <div class="panel-title">
-                      Chinese Embassador
-                    </div>
-                  </div>
-                </div>
-                <div class="col-6 col-sm-6 col-lg-3">
-                  <div class="image_container3">
-                  </div>
-                  <div class="caption">
-                    <div class="panel-name">
-                      Tiankai Cui
-                    </div>
-                    <div class="panel-title">
-                      Chinese Embassador
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-    </div>
-
-    <!-- Footnote: Call for speakers -->
-
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <div class="caption">
-            <div class="first-line">
-              become a speaker
-            </div>
-            <div class="second-line">
-              CALL FOR SPEAKERS
+        <!-- Second Panel -->
+        <div class="row" id="second-panel">
+          <div class="col">
+            <div class="panels-header">
+              Technology Panel
             </div>
           </div>
         </div>
+        <div class="row">
+          <div class="col-md-3 col-6 center-txt speaker-item">
+            <img class="speaker-img buttonImg" src="../assets/images/Shuling_Ying.jpeg"/ speaker-name="ShulingYing">
+            <div class="speaker-name">Shuling Ying</div>
+            <div class="speaker-title">Founder and CEO of Hero Entertainment Group</div>
+
+            <!-- The Modal -->
+            <div id="ShulingYingBio" class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Ying Shuling is the founder and CEO of Hero Entertainment Group (ticker symbol: 430127),Executive Vice President of the E-sports Gaming Sub-committee of Chinese Ministry of Culture, and Chairman of the Hong Kong Electronic Sports Federation. He is a pioneer in China’s mobile game launching industry, and a forerunner of the mobile e-sports gaming. He is the captain of the Hero Racing fleet that has won the grand champion of China Cup International Regatta in 2014, 2015 and 2016.</p>
+
+                <p>On June 16, 2015, Ying Shuling founded Hero Entertainment – China’s “first share in mobile e-sports” which was successfully listed in the country. H.BROTHERS, Sequoia Capital, Focus Media, Zhen Fund, China Renaissance Partners and Wanzhong Tiandi made a joint investment of in Hero Entertainment. Hero Entertainment is geared to the strategic goal of pan-entertainment, promotion of “mobile e-sports gaming” and development of the Internet sports. The company is committed to providing users at home and abroad with high-caliber mobile gaming content . The company is the largest Chinese cultural exporting company in Hong Kong, Macao, Taiwan and Southeast Asia.</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-3 col-6 center-txt speaker-item">
+            <img class="speaker-img" src="../assets/images/Weixing_Chen.jpeg"/>
+            <div class="speaker-name">Weixing Chen</div>
+            <div class="speaker-title">Founder of Kuaidi Technology</div>
+          </div>
+          <div class="col-md-3 col-6 center-txt speaker-item">
+            <img class="speaker-img" src="../assets/images/Kebin_Dai.JPG"/>
+            <div class="speaker-name">Kebin Dai</div>
+            <div class="speaker-title">Founder of Liepin</div>
+          </div>
+          <div class="col-md-3 col-6 center-txt speaker-item">
+            <img class="speaker-img" src="../assets/images/placeholder-female.jpg"/>
+            <div class="speaker-name">Speaker</div>
+            <div class="speaker-title">To Be Announced</div>
+          </div>
+          <!-- <div class="col-12 center-txt">
+            <img src="../assets/images/speakers-tba.jpg" style="width:100%; max-height: 100%;"/>
+          </div> -->
+        </div>
+
+        <!-- Third Panel -->
+        <div class="row" id="third-panel">
+          <div class="col">
+            <div class="panels-header">
+              International Relations Panel:
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-6 center-txt speaker-item">
+            <img class="speaker-img" src="../assets/images/placeholder-male.jpg"/>
+            <div class="speaker-name">Speaker</div>
+            <div class="speaker-title">To Be Announced</div>
+          </div>
+          <div class="col-md-6 col-6 center-txt speaker-item">
+            <img class="speaker-img" src="../assets/images/placeholder-female.jpg"/>
+            <div class="speaker-name">Speaker</div>
+            <div class="speaker-title">To Be Announced</div>
+          </div>
+          <!-- <div class="col-12 center-txt">
+            <img src="../assets/images/speakers-tba.jpg" style="width:100%; max-height: 100%;"/>
+          </div> -->
+        </div>
+
+        <!-- Fourth Panel -->
+        <div class="row" id="fourth-panel">
+          <div class="col">
+            <div class="panels-header">
+              Real Estate Panel:
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 col-6 center-txt speaker-item">
+            <img class="speaker-img buttonImg" src="../assets/images/Yue_Yuan.jpeg"/ speaker-name="YueYuan">
+            <div class="speaker-name">Yue Yuan</div>
+            <div class="speaker-title">Chairman of Dataway Horizon</div>
+
+            <!-- The Modal -->
+            <div id="YueYuanBio" class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Dr. Victor Yuan is chairman of Dataway Horizon, which is founded in 1992, providing data intelligence service for decision-making from data-recruiting to data-mining. He founded PEGASUS in 2011, committing to incubating and accelerating the entrepreneurial & innovative companies. And he is also president of YES: Horizon Center of Youth Entrepreneurship for Society, cultivating talented youth in the field of public welfare and pushing forward the development and social engagement of Chinese youth.</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-3 col-6 center-txt speaker-item">
+            <img class="speaker-img" src="../assets/images/Xi_Wang.jpeg"/>
+            <div class="speaker-name">Xi Wang</div>
+            <div class="speaker-title">Vice President of Yanlord Land</div>
+          </div>
+          <div class="col-md-3 col-6 center-txt speaker-item">
+            <img class="speaker-img" src="../assets/images/placeholder-female.jpg"/>
+            <div class="speaker-name">Speaker</div>
+            <div class="speaker-title">To Be Announced</div>
+          </div>
+          <div class="col-md-3 col-6 center-txt speaker-item">
+            <img class="speaker-img" src="../assets/images/placeholder-male.jpg"/>
+            <div class="speaker-name">Speaker</div>
+            <div class="speaker-title">To Be Announced</div>
+          </div>
+          <!-- <div class="col-12 center-txt">
+            <img src="../assets/images/speakers-tba.jpg" style="width:100%; max-height: 100%;"/>
+          </div> -->
+        </div>
+
+        <!-- Fifth Panel -->
+
+        <div class="row" id="fifth-panel">
+          <div class="col">
+            <div class="panels-header">
+              Entertainment and Fashion Panel:
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-6 center-txt speaker-item">
+            <img class="speaker-img" src="../assets/images/Ming_Yang.jpg"/>
+            <div class="speaker-name">Ming Yang</div>
+            <div class="speaker-title">Founder of Mountain Top</div>
+          </div>
+          <div class="col-md-4 col-6 center-txt speaker-item">
+            <img class="speaker-img" src="../assets/images/placeholder-female.jpg"/>
+            <div class="speaker-name">Speaker</div>
+            <div class="speaker-title">To Be Announced</div>
+          </div>
+          <div class="col-md-4 col-6 center-txt speaker-item">
+            <img class="speaker-img" src="../assets/images/placeholder-female.jpg"/>
+            <div class="speaker-name">Speaker</div>
+            <div class="speaker-title">To Be Announced</div>
+          </div>
+          <!-- <div class="col-12 center-txt">
+            <img src="../assets/images/speakers-tba.jpg" style="width:100%; max-height: 100%;"/>
+          </div> -->
+        </div>
+
+        <!-- Sixth Panel -->
+        <div class="row" id="sixth-panel">
+          <div class="col">
+            <div class="panels-header">
+              Social Responsibilities Panel:
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-auto col-6 center-txt speaker-item">
+            <img class="speaker-img buttonImg" src="../assets/images/Sai_Wang.jpg"/ speaker-name="SaiWang">
+            <div class="speaker-name">Sai Wang</div>
+            <div class="speaker-title">Founder of Yiqiao</div>
+
+            <!-- The Modal -->
+            <div id="SaiWangBio" class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Steven Wang is the founder and chairperson of Yiqiao, a social initiative and platform that cultivates top graduates and young professionals to serve in the social sector in China. The organized is supported by Gates Foundation and a number of leading Chinese foundations. Steven completed a Master of Public Policy degree at Oxford University on the Rhodes Scholarship. He was part of the founding staff of the Yenching Academy at Peking University and served as a Program Manager at Teach for China based in Yunnan. Steven has studied international relations in Toronto, Paris, and Jerusalem and is on an extended deferral from Harvard Law School. He has also worked on development projects in East Africa and legal aid programs for migrant workers in the suburbs of Beijing. Steven is the ambassador for the Rhodes Scholarship in China and a World Economic Forum Global Shaper. He serves as a mentor and advisor to the Schwarzman scholars at Tsinghua University. Steven was selected this year for Forbes 30 Under 30 in China, representing a new generation of social leaders bridging China and the world.
+                </p>
+
+                <p>Yiqiao (益桥) is a social initiative and platform that recruits, places, and cultivates top young Chinese graduates and professionals to serve in the social sector through a prestigious service fellowship. The fellowship provides stipend, intensive training, mentorship and coaching, and continuous community support. The first cohort of fellows were chosen from applications from around the world, and the final ten were announced at the Bird’s Nest in Beijing. Fellows are currently at work in nonprofits, foundations, and social enterprises across China, tackling issues of education, migrant workers, poverty, environment, etc. They come from a range of backgrounds, including consulting, academia, international organizations, and the countryside. Yiqiao aspires to cultivate a new generation of young Chinese with a sense of social responsibility and global citizenship who can be a bridge between the privileged and underprivileged, the private and social sector, China and the world. Its work has been reported by major national news outlets such as Xinhua and Forbes.
+                </p>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-auto col-6 center-txt speaker-item">
+            <img class="speaker-img" src="../assets/images/placeholder-female.jpg"/>
+            <div class="speaker-name">Speaker</div>
+            <div class="speaker-title">To Be Announced</div>
+          </div>
+          <div class="col-md-auto col-6 center-txt speaker-item">
+            <img class="speaker-img" src="../assets/images/placeholder-female.jpg"/>
+            <div class="speaker-name">Speaker</div>
+            <div class="speaker-title">To Be Announced</div>
+          </div>
+          <div class="col-md-auto col-6 center-txt speaker-item">
+            <img class="speaker-img" src="../assets/images/placeholder-male.jpg"/>
+            <div class="speaker-name">Speaker</div>
+            <div class="speaker-title">To Be Announced</div>
+          </div>
+          <div class="col-md-auto col-6 center-txt speaker-item">
+            <img class="speaker-img" src="../assets/images/placeholder-male.jpg"/>
+            <div class="speaker-name">Speaker</div>
+            <div class="speaker-title">To Be Announced</div>
+          </div>
+          <div class="col-md-auto col-6 center-txt speaker-item">
+            <img class="speaker-img" src="../assets/images/placeholder-male.jpg"/>
+            <div class="speaker-name">Speaker</div>
+            <div class="speaker-title">To Be Announced</div>
+          </div>
+          <div class="col-md-auto col-6 center-txt speaker-item">
+            <img class="speaker-img" src="../assets/images/placeholder-male.jpg"/>
+            <div class="speaker-name">Speaker</div>
+            <div class="speaker-title">To Be Announced</div>
+          </div>
+          <div class="col-md-auto col-6 center-txt speaker-item">
+            <img class="speaker-img" src="../assets/images/placeholder-male.jpg"/>
+            <div class="speaker-name">Speaker</div>
+            <div class="speaker-title">To Be Announced</div>
+          </div>
+          <div class="col-md-auto col-6 center-txt speaker-item">
+            <img class="speaker-img" src="../assets/images/placeholder-male.jpg"/>
+            <div class="speaker-name">Speaker</div>
+            <div class="speaker-title">To Be Announced</div>
+          </div>
+          <!-- <div class="col-12 center-txt">
+            <img src="../assets/images/speakers-tba.jpg" style="width:100%; max-height: 100%;"/>
+          </div> -->
+        </div>
+
+        <!-- closing ceremony -->
+        <div class="row" id="closing-ceremony">
+          <div class="col">
+            <div class="panels-header">
+              Closing Ceremony
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 col-6 center-txt speaker-item">
+            <img class="speaker-img" src="../assets/images/placeholder-male.jpg"/>
+            <div class="speaker-name">Speaker</div>
+            <div class="speaker-title">To Be Announced</div>
+          </div>
+          <div class="col-md-3 col-6 center-txt speaker-item">
+            <img class="speaker-img" src="../assets/images/placeholder-female.jpg"/>
+            <div class="speaker-name">Speaker</div>
+            <div class="speaker-title">To Be Announced</div>
+          </div>
+          <div class="col-md-3 col-6 center-txt speaker-item">
+            <img class="speaker-img" src="../assets/images/placeholder-female.jpg"/>
+            <div class="speaker-name">Speaker</div>
+            <div class="speaker-title">To Be Announced</div>
+          </div>
+          <div class="col-md-3 col-6 center-txt speaker-item">
+            <img class="speaker-img" src="../assets/images/placeholder-male.jpg"/>
+            <div class="speaker-name">Speaker</div>
+            <div class="speaker-title">To Be Announced</div>
+          </div>
+          <!-- <div class="col-12 center-txt">
+            <img src="../assets/images/speakers-tba.jpg" style="width:100%; max-height: 100%;"/>
+          </div> -->
+        </div>
+
+        <!-- hosts -->
+        <div class="row" id="hosts">
+          <div class="col">
+            <div class="panels-header">
+              Hosts
+            </div>
+          </div>
+        </div>
+        <div class="row" id="last-row">
+          <div class="col-md-2 col-6 center-txt speaker-item">
+            <img class="speaker-img" src="../assets/images/placeholder-male.jpg"/>
+            <div class="speaker-name">Speaker</div>
+            <div class="speaker-title">To Be Announced</div>
+          </div>
+          <div class="col-md-2 col-6 center-txt speaker-item">
+            <img class="speaker-img" src="../assets/images/placeholder-female.jpg"/>
+            <div class="speaker-name">Speaker</div>
+            <div class="speaker-title">To Be Announced</div>
+          </div>
+          <div class="col-md-2 col-6 center-txt speaker-item">
+            <img class="speaker-img" src="../assets/images/placeholder-female.jpg"/>
+            <div class="speaker-name">Speaker</div>
+            <div class="speaker-title">To Be Announced</div>
+          </div>
+          <div class="col-md-2 col-6 center-txt speaker-item">
+            <img class="speaker-img" src="../assets/images/placeholder-male.jpg"/>
+            <div class="speaker-name">Speaker</div>
+            <div class="speaker-title">To Be Announced</div>
+          </div>
+          <div class="col-md-2 col-6 center-txt speaker-item">
+            <img class="speaker-img" src="../assets/images/placeholder-male.jpg"/>
+            <div class="speaker-name">Speaker</div>
+            <div class="speaker-title">To Be Announced</div>
+          </div>
+          <div class="col-md-2 col-6 center-txt speaker-item">
+            <img class="speaker-img" src="../assets/images/placeholder-male.jpg"/>
+            <div class="speaker-name">Speaker</div>
+            <div class="speaker-title">To Be Announced</div>
+          </div>
+          <!-- <div class="col-12 center-txt">
+            <img src="../assets/images/speakers-tba.jpg" style="width:100%; max-height: 100%;"/>
+          </div> -->
+        </div>
+
+
       </div>
     </div>
 
@@ -837,6 +687,29 @@
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="../js/global.js"></script>
     <script src="../js/home.js"></script>
+    <script>
+    var modalBtns = [...document.querySelectorAll(".buttonImg")];
+      modalBtns.forEach(function(btn){
+        btn.onclick = function() {
+          var name = btn.getAttribute('speaker-name');
+          document.getElementById(name + 'Bio').style.display = "block";
+        }
+      });
+
+      var closeBtns = [...document.querySelectorAll(".close")];
+      closeBtns.forEach(function(btn){
+        btn.onclick = function() {
+          var modal = btn.closest('.modal');
+          modal.style.display = "none";
+        }
+      });
+
+      window.onclick = function(event) {
+        if (event.target.className === "modal") {
+          event.target.style.display = "none";
+        }
+      }
+    </script>
     <script>
     mapboxgl.accessToken = 'pk.eyJ1IjoidG9teiIsImEiOiJjajJyN3dyenkwMDVqMndzN3Y0cjk0bTRmIn0.FEEGdubneAr17N9f8ZHh5g';
     var map = new mapboxgl.Map({

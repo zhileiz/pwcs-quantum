@@ -1,0 +1,757 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/icofont.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/speakers.css">
+    <link rel="stylesheet" href="../css/global-mobile.css">
+    <link rel="stylesheet" href="../css/navbar-mobile.css">
+    <link rel="stylesheet" href="../css/header-mobile.css">
+    <link rel="stylesheet" href="../css/footer-mobile.css">
+    <link rel="stylesheet" href="../css/speakers-mobile.css">
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="../assets/favicons/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="../assets/favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="../assets/favicons/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="../assets/favicons/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="../assets/favicons/favicon-128.png" sizes="128x128" />
+    <!-- External JS -->
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.css' rel='stylesheet' />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108713232-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-108713232-1');
+    </script>
+    <title>参会嘉宾 | 宾大沃顿中美峰会 2018</title>
+  </head>
+  <body>
+
+    <!--
+      MARK: Navigation Buttons
+    -->
+
+    <div class="navigation row windows-hover-ne" id="abs-nav">
+      <!-- <div class="col-2 offset-2 right-txt no-padding font-size-30 mobile-only"  id="nav-toggle">
+        <i class="icofont icofont-caret-right"></i>
+      </div>
+      <div class="col-4 offset-md-4 right-txt no-padding">
+        <a href="#">
+          <div class="button-box" id="reg">
+            REGISTER
+          </div>
+        </a>
+      </div> -->
+      <div class="col-6 right-txt no-padding">
+        <a href="/speakers">
+          <div class="option" id="lang">
+            <i class="icofont icofont-globe"></i><br/>
+            <span class="hover-text">English</span>
+          </div>
+        </a>
+      </div>
+      <div class="col-6 right-txt no-padding">
+        <div class="option" id="nav">
+          <i class="icofont icofont-navigation-menu"></i><br/>
+          <span class="hover-text">菜单</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="navigation windows-hover-ne hide" id="close-nav">
+      <div class="col-6 offset-6 right-txt no-padding">
+        <div id="close">
+          <i class="icofont icofont-close"></i><br/>
+        </div>
+      </div>
+    </div>
+
+    <div class="navigation-mb hide" id="alt-nav">
+
+        <div class="row mobile-hide">
+          <div class="col-7">
+            <a href="/home">
+            <img src="../assets/images/banner.png" height="40px"/>
+            </a>
+          </div>
+          <div class="col-5 right-txt">
+            <div class="right-txt" style="float:right;">
+              <div class="nav-custom-item right-txt">
+                <a href="/speakers">
+                  <i class="icofont icofont-globe"></i>
+                   English
+                </a>
+              </div>
+              <div class="nav-custom-item right-txt" id="alt-nav-btn">
+                <i class="icofont icofont-navigation-menu"></i>
+                菜单
+              </div>
+              <div class="nav-custom-item right-txt register-item">
+                <a href="https://whartonchinasummit.ticketleap.com/" target="_blank">
+                  立即订票
+                  <i class="icofont icofont-dotted-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <div class="container mobile-only">
+        <div class="row height-100">
+          <div class="col-5 register-item">
+            <a href="https://whartonchinasummit.ticketleap.com/" target="_blank">
+              立即订票
+              <i class="icofont icofont-dotted-right"></i>
+            </a>
+          </div>
+          <div class="col-3 no-padding right-txt">
+            <a href="/speakers">
+              <i class="icofont icofont-globe"></i>
+              English
+            </a>
+          </div>
+          <div class="col-4 no-padding center-txt" id="m-alt-nav-btn">
+            <i class="icofont icofont-navigation-menu"></i>
+            菜单
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--
+      MARK:  Navigation Menu
+    -->
+    <div class="fixed-full" id="menu-container">
+      <div class="vertical-center mobile-hide">
+        <div class="row center-txt">
+          <div class="col-12">
+            <a href="https://whartonchinasummit.ticketleap.com/" target="_blank"><div class="navigation-action-btn">立即订票</div></a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-12 row menu-items">
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-0"> <a href="/home-ch">峰会主页</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-4"> <a href="/about-ch">关于我们</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item active-item" id="item-1"> <a class="active-item" href="/panels-ch">论坛板块</a> <i class="icofont icofont-dotted-left"></i> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-2"> <a href="/speakers-ch">参会嘉宾</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-3"> <a href="/agenda-ch">峰会日程</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-3"> <a href="/past-ch">往届峰会</a> </div>
+          </div>
+        </div>
+        <div class="row center-txt">
+          <div class="col-4 offset-2 col-md-2 offset-md-2 center-txt">
+            <div class="nav-social-item center-txt">
+              <a href="https://www.facebook.com/whartonPWCS" target="_blank">
+                <i class="icofont icofont-social-facebook"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-4 col-md-2 center-txt">
+            <div class="nav-social-item center-txt">
+              <a href="../assets/images/wechat-code.jpeg" target="_blank">
+                <i class="icofont icofont-social-wechat"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-4 offset-2 col-md-2 offset-md-0 center-txt">
+            <div class="nav-social-item center-txt">
+              <a href="https://weibo.com/whartonchinasummit" target="_blank">
+                <i class="icofont icofont-social-weibo"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-4 col-md-2 center-txt">
+            <div class="nav-social-item center-txt">
+              <a href="mailto:official@whartonsummit.org" target="_blank">
+                <i class="icofont icofont-email"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="verticl-center mobile-only">
+        <div class="row">
+          <div class="col-12 center-txt m-menu-title">
+            菜单
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-12 row menu-items center-txt">
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-0"> <a href="/home-ch">峰会首页</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-4"> <a href="/about-ch">关于我们</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item active-item" id="item-1"> <a class="active-item" href="/panels-ch">论坛版块</a> <i class="icofont icofont-dotted-left"></i> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-2"> <a href="/speakers-ch">参会嘉宾</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-3"> <a href="/agend-ch">峰会日程</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-3"> <a href="/past-ch">往届峰会</a> </div>
+            <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-6"> <a href="https://whartonchinasummit.ticketleap.com/" target="_blank">立即订票</a> </div>
+          </div>
+        </div>
+        <div class="row hide" id="m-close-nav">
+          <div class="col-12 center-txt">
+            <div class="m-close-btn verticl-center">
+              <i class="icofont icofont-close"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--
+      MARK: Header
+
+      <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-0"> <a href="./home.html">Home</a> </div>
+      <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-4"> <a href="./about.html">About</a> </div>
+      <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item active-item" id="item-1"> <a class="active-item" href="./panels.html">Panels</a> <i class="icofont icofont-dotted-left"></i> </div>
+      <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-2"> <a href="./panels.html">Speakers</a> </div>
+      <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-3"> <a href="./agenda.html">Agenda</a> </div>
+      <div class="col-8 offset-2 col-md-12 offset-md-0 navigation-item" id="item-3"> <a href="./past.html">Past</a> </div>
+    -->
+
+    <div class="section-full header" id="section-0">
+      <div class="left-square"></div>
+      <div class="sub-title">4月13日-15日<br/>宾夕法尼亚大学</div>
+      <div class="vertical-sub-title mobile-hide">
+        让我们一起构筑中美交流的桥梁
+      </div>
+      <div class="vertical-sub-title mobile-only">
+        构筑中美交流的桥梁
+      </div>
+      <h1 class="page-caption black-shadow">
+         32位 <br/> 参会嘉宾
+      </h1>
+      <div class="bottom-square">
+        <div class="row">
+          <div class="col-10 white-txt crimson-bg ls-1" style="letter-spacing: 3px;">立即订票</div>
+          <div class="col-2 white-bg action-area">
+            <a href="https://whartonchinasummit.ticketleap.com/" target="_blank" class="black-txt"><i class="icofont icofont-dotted-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--
+      TODO: NEW SECTIONS HERE
+    -->
+    <div class="container panel-nav">
+      <div class="row">
+        <div class="col-12 col-sm-6 col-md-3 center-txt">
+          <a href="#opening-ceremony">开幕式</a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 center-txt">
+          <a href="#first-panel">财经</a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 center-txt">
+          <a href="#second-panel">科技</a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 center-txt">
+          <a href="#third-panel">国际关系</a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 center-txt">
+          <a href="#fourth-panel">房地产</a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 center-txt">
+          <a href="#fifth-panel">娱乐与时尚</a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 center-txt">
+          <a href="#sixth-panel">社会责任</a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 center-txt">
+          <a href="#closing-ceremony">闭幕式</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-sm-6 col-md-12 center-txt">
+          <a href="#hosts">主持人</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Speakers main section -->
+    <div class="main-section">
+      <div class="container">
+
+        <!-- opening ceremony -->
+        <div class="row" id="opening-ceremony">
+          <div class="col">
+            <div class="panels-header">
+              开幕式
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-auto col-6 center-txt speaker-item">
+            <img class="speaker-img" src="../assets/images/Baoguo_Zhu.jpeg"/ speaker-name="BaoguoZhu">
+            <div class="speaker-name">朱保国</div>
+            <div class="speaker-title">丽珠医药创始人</div>
+          </div>
+          <div class="col-md-auto col-6 center-txt speaker-item">
+            <img class="speaker-img" src="../assets/images/placeholder-female.jpg"/>
+            <div class="speaker-name">Speaker</div>
+            <div class="speaker-title">To Be Announced</div>
+          </div>
+          <div class="col-md-auto col-6 center-txt speaker-item">
+            <img class="speaker-img" src="../assets/images/placeholder-female.jpg"/>
+            <div class="speaker-name">Speaker</div>
+            <div class="speaker-title">To Be Announced</div>
+          </div>
+          <div class="col-md-auto col-6 center-txt speaker-item">
+            <img class="speaker-img" src="../assets/images/placeholder-male.jpg"/>
+            <div class="speaker-name">Speaker</div>
+            <div class="speaker-title">To Be Announced</div>
+          </div>
+          <div class="col-md-auto col-6 center-txt speaker-item">
+            <img class="speaker-img" src="../assets/images/placeholder-male.jpg"/>
+            <div class="speaker-name">Speaker</div>
+            <div class="speaker-title">To Be Announced</div>
+          </div>
+          <!-- <div class="col-12 center-txt">
+            <img src="../assets/images/speakers-tba.jpg" style="width:100%; max-height: 100%;"/>
+          </div> -->
+        </div>
+
+            <!-- first panel -->
+            <div class="row" id="first-panel">
+              <div class="col">
+                <div class="panels-header">
+                  Finance Panel:
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-auto col-6 center-txt speaker-item">
+                <img class="speaker-img" src="../assets/images/placeholder-male.jpg"/>
+                <div class="speaker-name">Speaker</div>
+                <div class="speaker-title">To Be Announced</div>
+              </div>
+              <div class="col-md-auto col-6 center-txt speaker-item">
+                <img class="speaker-img" src="../assets/images/placeholder-female.jpg"/>
+                <div class="speaker-name">Speaker</div>
+                <div class="speaker-title">To Be Announced</div>
+              </div>
+              <div class="col-md-auto col-6 center-txt speaker-item">
+                <img class="speaker-img" src="../assets/images/placeholder-female.jpg"/>
+                <div class="speaker-name">Speaker</div>
+                <div class="speaker-title">To Be Announced</div>
+              </div>
+              <div class="col-md-auto col-6 center-txt speaker-item">
+                <img class="speaker-img" src="../assets/images/placeholder-male.jpg"/>
+                <div class="speaker-name">Speaker</div>
+                <div class="speaker-title">To Be Announced</div>
+              </div>
+              <div class="col-md-auto col-6 center-txt speaker-item">
+                <img class="speaker-img" src="../assets/images/placeholder-male.jpg"/>
+                <div class="speaker-name">Speaker</div>
+                <div class="speaker-title">To Be Announced</div>
+              </div>
+              <!-- <div class="col-12 center-txt">
+                <img src="../assets/images/speakers-tba.jpg" style="width:100%; max-height: 100%;"/>
+              </div> -->
+            </div>
+
+        <!-- Second Panel -->
+        <div class="row" id="second-panel">
+          <div class="col">
+            <div class="panels-header">
+              Technology Panel
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 col-6 center-txt speaker-item">
+            <img class="speaker-img buttonImg" src="../assets/images/Shuling_Ying.jpeg"/ speaker-name="ShulingYing">
+            <div class="speaker-name">应书岭</div>
+            <div class="speaker-title">英雄互娱创始人</div>
+
+            <!-- The Modal -->
+            <div id="ShulingYingBio" class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>英雄互娱（430127）集团创始人兼首席执行官，文化部电竞分会常务副会长，香港电子竞技联盟主席，国内手游发行业先导者，移动电竞领航人，14年、15年、16年中国杯帆船赛总冠军Hero船队船长</p>
+                <p>2015年6月16日，应书岭创办中国“移动电竞第一股”英雄互娱并成功在中国上市，华谊兄弟、红杉资本、分众传媒、真格基金、华兴资本、万众天地联合注资英雄互娱。英雄互娱以泛娱乐为战略目标，推广“移动电竞”，发展互联网体育，致力于为海内外用户提供优质的移动游戏内容，同时，英雄互娱也是中国在港澳台、东南亚地区最大的文化类出口企业。
+                </p>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-3 col-6 center-txt speaker-item">
+            <img class="speaker-img buttonImg" src="../assets/images/Weixing_Chen.jpeg"/ speaker-name="WeixingChen">
+            <div class="speaker-name">陈伟星</div>
+            <div class="speaker-title">快滴打车创始人</div>
+
+            <!-- The Modal -->
+            <div id="WeixingChenBio" class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>陈伟星，泛城控股有限公司董事长，“快的打车”创始人曾获2015年第19届“中国青年五四奖章”、《福布斯》中国3030创业者等荣誉。先后创办了浙江泛城资产管理有限公司、杭州泛城科技有限公司、杭州快驰科技有限公司、杭州微易科技有限公司、通用计算集团、Fingo group等多家公司。</p>
+                <p>泛城控股一直秉持着“服务技术创新  共建未来生态”的理念，专注于更为先进的生产力和更为公平的生产关系方面的最新技术的投资和研究，包括区块链、互联网金融、大数据、AI、IOT等领域，重点发现、整合并投资“超级独角兽”项目。</p>
+                <p>公司已投资车和家、新潮传媒、51信用卡、氪空间、老虎证券、UT斯达康、OTMS、亿方云、爱上租、九州量子、现金白卡、51卡宝、华卓科技、咪哒、玩啊信息等80余家海内外优秀创业公司；同时，公司在区块链领域的投资与布局已在全国具有一定影响力，计划在未来两年内完成挖矿算力占全网算力的10%，拥有自己的交易所、加密货币钱包以及媒体社群，完成全产业链的生态建设，已投交易量全球排名第一的交易所币安Binance、交易量全球排名第五的交易所火币Huobi，虚拟币全球排名前20名的量子链QUTM、唯链VeChain、波场币TRON，以及ZB、EXX等近百个区块链相关项目。</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-3 col-6 center-txt speaker-item">
+            <img class="speaker-img buttonImg" src="../assets/images/Kebin_Dai.JPG"/ speaker-name="KebinDai">
+            <div class="speaker-name">戴科彬</div>
+            <div class="speaker-title">猎聘创始人</div>
+
+            <!-- The Modal -->
+            <div id="KebinDaiBio" class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>2003年 毕业于中山大学</p>
+                <p>2003-2008年  担任P&G宝洁公司市场部大中华区品牌经理，管理过碧浪、护舒宝、佳洁士、欧乐B等品牌。</p>
+                <p>2011年，由戴科彬创建的猎聘网正式上线，搭建了企业、猎头、经理人三方互动平台，全面提升了招聘与求职效率。戴科彬带领的猎聘团队始终以“帮助职场人更成功”为使命，实现每个人的价值。</p>
+                <p>戴科彬先生2014年、2015年连续两年当选《财富》（中文版）“中国40位40岁以下的商界精英”。</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-3 col-6 center-txt speaker-item">
+            <img class="speaker-img" src="../assets/images/placeholder-female.jpg"/>
+            <div class="speaker-name">Speaker</div>
+            <div class="speaker-title">To Be Announced</div>
+          </div>
+          <!-- <div class="col-12 center-txt">
+            <img src="../assets/images/speakers-tba.jpg" style="width:100%; max-height: 100%;"/>
+          </div> -->
+        </div>
+
+        <!-- Third Panel -->
+        <div class="row" id="third-panel">
+          <div class="col">
+            <div class="panels-header">
+              International Relations Panel:
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-6 center-txt speaker-item">
+            <img class="speaker-img" src="../assets/images/placeholder-male.jpg"/>
+            <div class="speaker-name">Speaker</div>
+            <div class="speaker-title">To Be Announced</div>
+          </div>
+          <div class="col-md-6 col-6 center-txt speaker-item">
+            <img class="speaker-img" src="../assets/images/placeholder-female.jpg"/>
+            <div class="speaker-name">Speaker</div>
+            <div class="speaker-title">To Be Announced</div>
+          </div>
+          <!-- <div class="col-12 center-txt">
+            <img src="../assets/images/speakers-tba.jpg" style="width:100%; max-height: 100%;"/>
+          </div> -->
+        </div>
+
+        <!-- Fourth Panel -->
+        <div class="row" id="fourth-panel">
+          <div class="col">
+            <div class="panels-header">
+              Real Estate Panel:
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 col-6 center-txt speaker-item">
+            <img class="speaker-img buttonImg" src="../assets/images/Yue_Yuan.jpeg"/ speaker-name="YueYuan">
+            <div class="speaker-name">袁岳</div>
+            <div class="speaker-title">零点有数集团董事长</div>
+
+            <!-- The Modal -->
+            <div id="YueYuanBio" class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>袁岳博士，零点有数集团董事长、飞马旅联合创始人、零点青年公益创业发展中心理事长。1992 年创办的零点，目前已成为源自中国的国际化数据智能服务机构；2011 年成立飞马旅，致力于创新创业企业的孵化与加速服务；2010 年发起零点青年公益黑苹果项目，引导和推动大学生和年轻白领的社会服务，有效提高其社会参与的意识和能力。</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-3 col-6 center-txt speaker-item">
+            <img class="speaker-img buttonImg" src="../assets/images/Xi_Wang.jpeg"/ speaker-name="XiWang">
+            <div class="speaker-name">王晞</div>
+            <div class="speaker-title">仁恒置地副总裁</div>
+
+            <!-- The Modal -->
+            <div id="XiWangBio" class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>建筑师、管理科学与工程硕士、战略管理学博士生。清华大学再教育学院房地产专业课程客座讲师,中房协房地产核心竞争力课题研究组组长，易居沃顿课题组导师。现任新加坡上市公司仁恒置地集团执行副总裁。曾任上海实业发展股份有限公司策划总监， 招商蛇口副总经理、华东区域总部总经理。</p>
+                <p>房地产从业20余年。在国内房地产界率先提出项目前期策划理念和项目系统运营理论，擅长土地前期、策划设计、营销推广、项目管理及企业管理等工作，曾系统主责招商地产标准化产品体系、绿色建筑体系的研发和实施工作，并善于利用资本杠杆获取优质资源，在房地产投资和融资方面经验丰富。合计完成近30个城市、50多个项目的投融资和不同阶段的开发管理工作。</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-3 col-6 center-txt speaker-item">
+            <img class="speaker-img" src="../assets/images/placeholder-female.jpg"/>
+            <div class="speaker-name">Speaker</div>
+            <div class="speaker-title">To Be Announced</div>
+          </div>
+          <div class="col-md-3 col-6 center-txt speaker-item">
+            <img class="speaker-img" src="../assets/images/placeholder-male.jpg"/>
+            <div class="speaker-name">Speaker</div>
+            <div class="speaker-title">To Be Announced</div>
+          </div>
+          <!-- <div class="col-12 center-txt">
+            <img src="../assets/images/speakers-tba.jpg" style="width:100%; max-height: 100%;"/>
+          </div> -->
+        </div>
+
+        <!-- Fifth Panel -->
+
+        <div class="row" id="fifth-panel">
+          <div class="col">
+            <div class="panels-header">
+              Entertainment and Fashion Panel:
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-6 center-txt speaker-item">
+            <img class="speaker-img buttonImg" src="../assets/images/Ming_Yang.jpg"/ speaker-name="MingYang">
+            <div class="speaker-name">杨铭</div>
+            <div class="speaker-title">泰洋川禾创始人</div>
+
+            <!-- The Modal -->
+            <div id="MingYangBio" class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>杨铭，2009年毕业于中央戏剧学院导演系，中国顶尖经纪公司泰洋川禾创始人、CEO，后与papi酱（姜逸磊）共同创立知名短视频机构papitube。</p>
+                <p>杨铭在2014年年底成立泰洋川禾，旗下合作艺人有Angelababy、周冬雨、陈赫。随后，相继与 王子文、谢娜、张杰、张钧甯等数十名艺人以及新生代歌手、导演、编剧等签署全约合作，帮助艺术家与创作者们找到在行业中的立足点。在三年间泰洋川禾在行业内发展迅速，已成为中国新一代经纪公司巨头。</p>
+                <p>于2015年上半年，杨铭发现自媒体视频这一机遇，策划与姜逸磊合作拍摄短视频，使其粉丝总量暴增到近2500万。在2016年初，杨铭筹划了革命性的广告拍卖，获得2200万元广告投资，并将2200万元全额广告费捐赠给母校中央戏剧学院，用于新生代创作者培养。Papitube品牌机构也在Papi酱影响力下进行孵化，成为中文互联网最具影响力的短视频内容品牌之一。</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4 col-6 center-txt speaker-item">
+            <img class="speaker-img" src="../assets/images/placeholder-female.jpg"/>
+            <div class="speaker-name">Speaker</div>
+            <div class="speaker-title">To Be Announced</div>
+          </div>
+          <div class="col-md-4 col-6 center-txt speaker-item">
+            <img class="speaker-img" src="../assets/images/placeholder-female.jpg"/>
+            <div class="speaker-name">Speaker</div>
+            <div class="speaker-title">To Be Announced</div>
+          </div>
+          <!-- <div class="col-12 center-txt">
+            <img src="../assets/images/speakers-tba.jpg" style="width:100%; max-height: 100%;"/>
+          </div> -->
+        </div>
+
+        <!-- Sixth Panel -->
+        <div class="row" id="sixth-panel">
+          <div class="col">
+            <div class="panels-header">
+              Social Responsibilities Panel:
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-auto col-6 center-txt speaker-item">
+            <img class="speaker-img buttonImg" src="../assets/images/Sai_Wang.jpg"/ speaker-name="SaiWang">
+            <div class="speaker-name">王赛</div>
+            <div class="speaker-title">益桥创始人</div>
+
+            <!-- The Modal -->
+            <div id="SaiWangBio" class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>王赛，益桥创始人，罗德学者。出生于山西，曾就读于多伦多大学、巴黎政治学院、耶路撒冷希伯来大学，攻读国际关系学，后以罗德学者身份在牛津大学获得公共政策硕士学位，并三次推迟哈佛大学法学博士的入学。近年来，王赛多次回到祖国，为中国社会发展尽一己之力，包括加入美丽中国教育项目，在云南保山担任项目主管；任职于北京大学燕京学堂，负责培养来自世界顶尖大学的中国与国际学生；曾参与东非社区发展项目与丰台农民工法律援助等项目。此外，他还担任清华大学苏世民学者导师以及北京大学法学院全球高端人才培养项目导师。王赛曾当选世界经济论坛杰出青年代表，并入选福布斯 30 Under 30。</p>
+                <p>益桥中国是一家开创型的社会创新机构，寓意为“公益之桥”，致力于把优秀人才和跨界资源带入中国公益行业，创新性地解决社会问题，并激发社会大众对公益的理解与参与。“益桥伙伴计划”面向全球华人青年，旨在培养有益于中国发展的社会创新领袖，让海内外优秀华人毕业生和职业人士有机会进入中国顶尖的公益机构工作，同时给予其导师、培训、社群、经费等丰富的资源支持，使其快速提升自我，建立社会影响，并构筑起一个在各行业间相互支持、共同引领的社群。
+                </p>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-auto col-6 center-txt speaker-item">
+            <img class="speaker-img" src="../assets/images/placeholder-female.jpg"/>
+            <div class="speaker-name">Speaker</div>
+            <div class="speaker-title">To Be Announced</div>
+          </div>
+          <div class="col-md-auto col-6 center-txt speaker-item">
+            <img class="speaker-img" src="../assets/images/placeholder-female.jpg"/>
+            <div class="speaker-name">Speaker</div>
+            <div class="speaker-title">To Be Announced</div>
+          </div>
+          <div class="col-md-auto col-6 center-txt speaker-item">
+            <img class="speaker-img" src="../assets/images/placeholder-male.jpg"/>
+            <div class="speaker-name">Speaker</div>
+            <div class="speaker-title">To Be Announced</div>
+          </div>
+          <div class="col-md-auto col-6 center-txt speaker-item">
+            <img class="speaker-img" src="../assets/images/placeholder-male.jpg"/>
+            <div class="speaker-name">Speaker</div>
+            <div class="speaker-title">To Be Announced</div>
+          </div>
+          <div class="col-md-auto col-6 center-txt speaker-item">
+            <img class="speaker-img" src="../assets/images/placeholder-male.jpg"/>
+            <div class="speaker-name">Speaker</div>
+            <div class="speaker-title">To Be Announced</div>
+          </div>
+          <div class="col-md-auto col-6 center-txt speaker-item">
+            <img class="speaker-img" src="../assets/images/placeholder-male.jpg"/>
+            <div class="speaker-name">Speaker</div>
+            <div class="speaker-title">To Be Announced</div>
+          </div>
+          <div class="col-md-auto col-6 center-txt speaker-item">
+            <img class="speaker-img" src="../assets/images/placeholder-male.jpg"/>
+            <div class="speaker-name">Speaker</div>
+            <div class="speaker-title">To Be Announced</div>
+          </div>
+          <div class="col-md-auto col-6 center-txt speaker-item">
+            <img class="speaker-img" src="../assets/images/placeholder-male.jpg"/>
+            <div class="speaker-name">Speaker</div>
+            <div class="speaker-title">To Be Announced</div>
+          </div>
+          <!-- <div class="col-12 center-txt">
+            <img src="../assets/images/speakers-tba.jpg" style="width:100%; max-height: 100%;"/>
+          </div> -->
+        </div>
+
+        <!-- closing ceremony -->
+        <div class="row" id="closing-ceremony">
+          <div class="col">
+            <div class="panels-header">
+              Closing Ceremony
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 col-6 center-txt speaker-item">
+            <img class="speaker-img" src="../assets/images/placeholder-male.jpg"/>
+            <div class="speaker-name">Speaker</div>
+            <div class="speaker-title">To Be Announced</div>
+          </div>
+          <div class="col-md-3 col-6 center-txt speaker-item">
+            <img class="speaker-img" src="../assets/images/placeholder-female.jpg"/>
+            <div class="speaker-name">Speaker</div>
+            <div class="speaker-title">To Be Announced</div>
+          </div>
+          <div class="col-md-3 col-6 center-txt speaker-item">
+            <img class="speaker-img" src="../assets/images/placeholder-female.jpg"/>
+            <div class="speaker-name">Speaker</div>
+            <div class="speaker-title">To Be Announced</div>
+          </div>
+          <div class="col-md-3 col-6 center-txt speaker-item">
+            <img class="speaker-img" src="../assets/images/placeholder-male.jpg"/>
+            <div class="speaker-name">Speaker</div>
+            <div class="speaker-title">To Be Announced</div>
+          </div>
+          <!-- <div class="col-12 center-txt">
+            <img src="../assets/images/speakers-tba.jpg" style="width:100%; max-height: 100%;"/>
+          </div> -->
+        </div>
+
+        <!-- hosts -->
+        <div class="row" id="hosts">
+          <div class="col">
+            <div class="panels-header">
+              Hosts
+            </div>
+          </div>
+        </div>
+        <div class="row" id="last-row">
+          <div class="col-md-2 col-6 center-txt speaker-item">
+            <img class="speaker-img" src="../assets/images/placeholder-male.jpg"/>
+            <div class="speaker-name">Speaker</div>
+            <div class="speaker-title">To Be Announced</div>
+          </div>
+          <div class="col-md-2 col-6 center-txt speaker-item">
+            <img class="speaker-img" src="../assets/images/placeholder-female.jpg"/>
+            <div class="speaker-name">Speaker</div>
+            <div class="speaker-title">To Be Announced</div>
+          </div>
+          <div class="col-md-2 col-6 center-txt speaker-item">
+            <img class="speaker-img" src="../assets/images/placeholder-female.jpg"/>
+            <div class="speaker-name">Speaker</div>
+            <div class="speaker-title">To Be Announced</div>
+          </div>
+          <div class="col-md-2 col-6 center-txt speaker-item">
+            <img class="speaker-img" src="../assets/images/placeholder-male.jpg"/>
+            <div class="speaker-name">Speaker</div>
+            <div class="speaker-title">To Be Announced</div>
+          </div>
+          <div class="col-md-2 col-6 center-txt speaker-item">
+            <img class="speaker-img" src="../assets/images/placeholder-male.jpg"/>
+            <div class="speaker-name">Speaker</div>
+            <div class="speaker-title">To Be Announced</div>
+          </div>
+          <div class="col-md-2 col-6 center-txt speaker-item">
+            <img class="speaker-img" src="../assets/images/placeholder-male.jpg"/>
+            <div class="speaker-name">Speaker</div>
+            <div class="speaker-title">To Be Announced</div>
+          </div>
+          <!-- <div class="col-12 center-txt">
+            <img src="../assets/images/speakers-tba.jpg" style="width:100%; max-height: 100%;"/>
+          </div> -->
+        </div>
+
+
+      </div>
+    </div>
+
+
+
+    <!--
+      MARK: Footer
+    -->
+
+    <div class="row footer-img" id="section-footer">
+      <div class="col-12" style="text-align:center;">
+        <div class="stop-sign"></div>
+      </div>
+      <div class="col-12">
+        <img src="../assets/images/footer-banner.png" width="100%">
+      </div>
+    </div>
+
+    <!--
+      MARK: Page End
+    *******************
+    -->
+
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="../js/global.js"></script>
+    <script src="../js/home.js"></script>
+    <script>
+    var modalBtns = [...document.querySelectorAll(".buttonImg")];
+      modalBtns.forEach(function(btn){
+        btn.onclick = function() {
+          var name = btn.getAttribute('speaker-name');
+          document.getElementById(name + 'Bio').style.display = "block";
+        }
+      });
+
+      var closeBtns = [...document.querySelectorAll(".close")];
+      closeBtns.forEach(function(btn){
+        btn.onclick = function() {
+          var modal = btn.closest('.modal');
+          modal.style.display = "none";
+        }
+      });
+
+      window.onclick = function(event) {
+        if (event.target.className === "modal") {
+          event.target.style.display = "none";
+        }
+      }
+    </script>
+    <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoidG9teiIsImEiOiJjajJyN3dyenkwMDVqMndzN3Y0cjk0bTRmIn0.FEEGdubneAr17N9f8ZHh5g';
+    var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/dark-v9',
+    center: [-75.1982673, 39.9529105],
+    zoom: 9
+    });
+    $('.carousel').carousel();
+    </script>
+  </body>
+</html>

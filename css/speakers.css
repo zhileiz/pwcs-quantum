@@ -12,164 +12,96 @@ body{
   /*overflow: hidden;*/
 }
 
-.container{
-  max-width: none;
-  margin-left: 8%;
-  width: 84%;
-  margin-right: 8%;
-  padding-top: 3%;
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-.grand-title{
-  color: red;
-  font-size: 400%;
-  padding-bottom: 3%;
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
 }
 
-.caption{
-  margin-bottom: 3%;
-  font-size: 100%;
-  height: 20%;
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    max-width: 50px;
 }
 
-.caption .name {
-  color: white;
-  letter-spacing: 1px;
-  font-family: avn-demi, pf-heavy, pf-medium;
-  line-height:30px;
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
 
-.panel{
+.panels-header{
   font-size: 200%;
-  padding-bottom: 3%;
-}
-
-.name{
-  color: red;
-  font-size: 120%;
-}
-
-.panel-name{
-  color: white;
-  font-size: 120%;
-}
-
-.panel-title{
-  color: grey;
-  font-size: 100%;
-}
-
-.first-line{
+  margin-bottom: 20px;
+  color: crimson;
   text-align: center;
-  color: grey;
-  font-size: 180%
+  padding-top: 45px;
 }
 
-.second-line{
-  text-align: center;
-  color: red;
-  font-size: 200%
+.panel-nav {
+  margin: 4% 0px;
 }
 
-.spacer{
-  padding-top: 3%;
+.panel-nav a {
+  color: crimson;
+  font-size: 20px;
+  line-height: 35px;
+  letter-spacing: 1px;
 }
 
-.black{
-  width:100%;
-  margin-left: 0px;
-  margin-right: 0px;
-  margin-top: 3%;
-  padding-bottom: 10%;
-  background-color: black;
+.speaker-img {
+  border: 10px solid #EFE9E1;
+  box-shadow: -10px 30px crimson;
+  margin-top: 0px;
+  width: 100%;
+  max-width: 180px;
+  height: auto;
+}
+
+.speaker-name {
+  width: 100%;
+  max-width: 180px;
+  text-align: left;
   color: white;
+  font-family: avn-demi, pf-heavy, pf-medium;
+  font-size: 20px;
+  line-height: 30px;
+  margin: auto;
+  letter-spacing: 1px;
 }
 
-.image_container1{
+.speaker-title {
   width: 100%;
-  padding-top: 111%;
-  background-image: url("../assets/images/10.jpg");
-  background-color: rgba(100, 0, 0, 0.2);
-  background-blend-mode: multiply;
-  filter: brightness(120%);
-  background-position: 20% 20%;
-  background-size: 100%;
-  background-repeat: no-repeat;
+  max-width: 180px;
+  text-align: left;
+  line-height: 25px;
+  font-size: 15px;
+  margin: auto;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
 }
 
-.image_container2{
-  width: 100%;
-  padding-top: 100%;
-  background-image: url("../assets/images/10.jpg");
-  filter: contrast(70%) brightness(120%);
-  background-position: 20% 20%;
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-
-.image_container3{
-  width: 100%;
-  padding-top: 100%;
-  background-image: url("../assets/images/10.jpg");
-  background-color: rgba(100, 0, 0, 0.2);
-  background-blend-mode: multiply;
-  filter: brightness(120%);
-  background-position: 20% 20%;
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-
-.image_container4{
-  width: 100%;
-  padding-top: 50%;
-  background-image: url("../../../assets/images/panels/1.jpg");
-  background-position: 0% 5%;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  filter: contrast(80%);
-}
-
-.TiankaiCui{
-  background-image: url("../assets/images/TiankaiCui.jpg");
-}
-
-.QiyueZhang{
-  background-image: url("../assets/images/QiyueZhang.png");
-}
-
-.JizhongZhang{
-  background-image: url("../assets/images/JizhongZhang.png");
-  background-position: 20% 0%;
-}
-
-.ShiyiPan{
-  background-image: url("../assets/images/ShiyiPan.png");
-  background-position: 20% 0%;
-}
-
-.XinZhou{
-  background-image: url("../assets/images/XinZhou.png");
-  background-position: 20% 0%;
-}
-
-.NingLi{
-  background-image: url("../assets/images/NingLi.png");
-  background-position: 20% 0%;
-}
-.YimingZhang{
-  background-image: url("../assets/images/YimingZhang.png");
-  background-position: 20% 0%;
-}
-.TadSmith{
-  background-image: url("../assets/images/TadSmith.jpg");
-  background-size: 95%;
-  background-position: 20% 5%;
-}
-.JiwuWang{
-  background-image: url("../assets/images/JiwuWang.png");
-  background-position: 20% 0%;
-}
-.KaijingYan{
-  background-image: url("../assets/images/KaijingYan.png");
-  background-position: 20% 0%;
+#last-row {
+  margin-bottom: 80px;
 }
