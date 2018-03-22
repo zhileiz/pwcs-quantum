@@ -102,6 +102,10 @@ body{
   letter-spacing: 1px;
 }
 
+.buttonImg{
+  cursor: pointer;
+}
+
 #last-row {
   margin-bottom: 80px;
 }
