@@ -20,7 +20,7 @@
   }
 
   .panel-desc p {
-    font-size: 14px;
+    font-size: 13px;
   }
 
   .speakers-header {
@@ -61,5 +61,9 @@
 
   .speaker-item {
     padding: 0px 8px;
+  }
+
+  .panel-title{
+    font-size: 180%;
   }
 }

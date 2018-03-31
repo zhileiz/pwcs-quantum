@@ -30,7 +30,7 @@ body{
   color: crimson;
 }
 
-.fancy {
+/* .fancy {
   line-height: 0.5;
   text-align: center;
 }
@@ -59,7 +59,7 @@ body{
 .fancy span:after {
   left: 100%;
   margin-left: 15px;
-}
+} */
 
 .image_container2{
   width: 100%;
@@ -68,11 +68,6 @@ body{
   background-position: 20% 20%;
   background-size: 100%;
   background-repeat: no-repeat;
-}
-
-.ShiyiPan{
-  background-image: url("../assets/images/ShiyiPan.png");
-  background-position: 20% 0%;
 }
 
 .caption{
@@ -102,6 +97,11 @@ body{
   margin-bottom: 10px;
 }
 
+.panel-title{
+  font-size: 200%;
+  margin-bottom: 0px;
+}
+
 .time-location{
   font-family: avn-demi, pf-heavy, pf-medium;
   margin: 5px;
@@ -113,7 +113,7 @@ body{
 }
 
 .panel-row {
-  margin: 7% 0px;
+  margin: 3% 0px;
 }
 
 .panel-nav {
